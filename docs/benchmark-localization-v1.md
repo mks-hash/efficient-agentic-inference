@@ -1,5 +1,8 @@
 # Benchmark contract: SWE-bench file localization v1
 
+Archived fixture contract. The active separated-program contract is
+[localization-v2](benchmark-localization-v2.md); the combined v1 CLI is retired.
+
 Contract identifier: `localization-v1`. Status: design; SWE-bench pipeline not yet
 implemented. The CPU runner consumes the canonical records described here.
 

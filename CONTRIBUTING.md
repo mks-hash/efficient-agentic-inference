@@ -4,7 +4,7 @@ Read AGENTS.md and the relevant versioned research contract first. Keep changes
 small, explain their effect on comparability, and preserve all failed attempts.
 
 ```bash
-uv sync --locked
+uv sync --locked --extra data
 uv run ruff check .
 uv run ruff format --check .
 uv run python -m unittest discover -s tests -v

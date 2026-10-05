@@ -7,7 +7,7 @@ Specialist is Track 1. Start with a bounded, reproducible localization benchmark
 do not turn this repository into a generic agent framework or a training demo.
 
 Read README.md, RESEARCH_PLAN.md, WORK_TRACKER.md, the relevant decision records,
-and docs/benchmark-localization-v1.md before changing research behavior.
+and docs/benchmark-localization-v2.md before changing research behavior.
 The initial planning sources are local-only in ignored `.develop/`.
 
 Work in this order: contract and preregistration, deterministic dataset and labels,

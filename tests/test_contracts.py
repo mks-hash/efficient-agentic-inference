@@ -1,15 +1,7 @@
-"""Independent gold expectations, leakage checks and failure accounting."""
+"""Independent quality and input contract expectations."""
 
-import argparse
-import json
-import tempfile
 import unittest
-from pathlib import Path
-from unittest.mock import patch
 
-from jsonschema import ValidationError
-
-from efficient_agentic_inference.cli import digest, run, validate
 from efficient_agentic_inference.localization import (
     Task,
     evaluate,
@@ -17,8 +9,6 @@ from efficient_agentic_inference.localization import (
     rank_files,
     summarize,
 )
-
-ROOT = Path(__file__).resolve().parents[1]
 
 
 def task_record():
@@ -118,71 +108,6 @@ class LocalizationContracts(unittest.TestCase):
         )
         self.assertIsNone(summary["cost_per_success_usd"])
         self.assertEqual(summary["cost_per_success_reason"], "zero_successes")
-
-
-class RunnerContracts(unittest.TestCase):
-    def args(self, output):
-        return argparse.Namespace(
-            project_root=ROOT,
-            tasks=ROOT / "examples/localization-v1/tasks.jsonl",
-            gold=ROOT / "examples/localization-v1/gold.jsonl",
-            output=output,
-            limit=10,
-            synthetic=True,
-        )
-
-    def test_synthetic_end_to_end_schema_hashes_and_immutable_output(self):
-        with tempfile.TemporaryDirectory() as folder:
-            args = self.args(Path(folder) / "fixture")
-            summary = run(args)
-            self.assertEqual(summary["attempted_tasks"], 3)
-            self.assertEqual(summary["strict_successes"], 2)
-            self.assertAlmostEqual(summary["mean_recall_at_k"]["5"], 2 / 3)
-            self.assertIsNone(summary["cost_per_success_usd"])
-            manifest = json.loads((args.output / "manifest.json").read_text())
-            validate(manifest, ROOT / "schemas/v1/experiment.schema.json")
-            self.assertTrue(manifest["synthetic"])
-            self.assertEqual(manifest["evidence"]["economics"]["status"], "UNKNOWN")
-            for name, sha in json.loads((args.output / "checksums.json").read_text()).items():
-                self.assertEqual(digest((args.output / name).read_bytes()), sha)
-            with self.assertRaises(ValueError):
-                run(args)
-            manifest["model"] = {"repo": "unversioned"}
-            with self.assertRaises(ValidationError):
-                validate(manifest, ROOT / "schemas/v1/experiment.schema.json")
-
-    def test_runtime_failures_still_produce_all_records(self):
-        with tempfile.TemporaryDirectory() as folder:
-            args = self.args(Path(folder) / "failed")
-            with patch(
-                "efficient_agentic_inference.cli.rank_files", side_effect=RuntimeError("oops")
-            ):
-                summary = run(args)
-            self.assertEqual(summary["attempted_tasks"], 3)
-            self.assertEqual(summary["failed_outputs"], 3)
-            self.assertEqual(summary["strict_successes"], 0)
-            self.assertEqual(summary["mean_recall_at_k"]["5"], 0)
-
-    def test_invalid_raw_output_preserved(self):
-        with tempfile.TemporaryDirectory() as folder:
-            args = self.args(Path(folder) / "invalid")
-            with patch("efficient_agentic_inference.cli.rank_files", return_value=["unknown.py"]):
-                summary = run(args)
-            self.assertEqual(summary["failed_outputs"], 3)
-            first = json.loads((args.output / "predictions.jsonl").read_text().splitlines()[0])
-            self.assertEqual(first["raw_output"], '["unknown.py"]')
-            self.assertEqual(first["ranked_files"], [])
-            self.assertEqual(first["disposition"], "invalid_output")
-
-    def test_gold_join_mismatch_aborts_before_writing_run(self):
-        with tempfile.TemporaryDirectory() as folder:
-            args = self.args(Path(folder) / "mismatch")
-            gold = Path(folder) / "gold.jsonl"
-            gold.write_text('{"instance_id":"other","changed_files":["a.py"]}\n')
-            args.gold = gold
-            with self.assertRaises(ValueError):
-                run(args)
-            self.assertFalse(args.output.exists())
 
 
 if __name__ == "__main__":

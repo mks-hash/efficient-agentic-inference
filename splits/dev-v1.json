@@ -1,0 +1,106 @@
+{
+  "instances": [
+    {
+      "base_commit": "23d0551569d748460c504af85996451edd685371",
+      "instance_id": "marshmallow-code__marshmallow-1810",
+      "issue_sha256": "079efbfb49230be99eccdb7fcea97a338ffe6d3582750eb4338b9ead21df0279",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "b40df75ddbc467a113b87643c1faef073cc37b3e",
+      "instance_id": "pvlib__pvlib-python-1165",
+      "issue_sha256": "e71f9c868d3ac074974507e0fbea4148a735db8fc7a86f424845d965bc0114cb",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "7d0889e7143f5d4773fa74606efa816ed4e54c9f",
+      "instance_id": "pydicom__pydicom-811",
+      "issue_sha256": "94e68b436989e8bff44fea55871af0fdf49dbde2d8d7b218515bd2d713f37106",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "9363c34934f94124f4867caf1bdf8f6755201ccd",
+      "instance_id": "pylint-dev__astroid-1364",
+      "issue_sha256": "0b46d7b52159167e4006639c50807f74902cfe2f628d18f9a087e4af4ed6f9d4",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "a8921b94b91a7d9809c9b5ac2ef9c981b5f71ea1",
+      "instance_id": "pyvista__pyvista-4417",
+      "issue_sha256": "2bbb06dd03128777046365f7b4372dc529e655461fa9b4fbcba884858f83c4f6",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "d44c83e7cee923869e3ca6149da4e6d1ad0286eb",
+      "instance_id": "sqlfluff__sqlfluff-2625",
+      "issue_sha256": "d7d5a1cdb874da4dce3add0d4810d6de7a983c1331b4f7e10c0ec790592b7a3a",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "b063a103ae5222a5953cd7453a1eb0d161dc5b52",
+      "instance_id": "marshmallow-code__marshmallow-1252",
+      "issue_sha256": "7a87afebdc0fef1ea489221980a49cf4f0d34b5398d47cf5870ff28a5d9574d1",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "a7edb8b582174ed45f2d3859f29261908f5e0ab5",
+      "instance_id": "pvlib__pvlib-python-1033",
+      "issue_sha256": "c1f320ee181715c846ad3fa4f0f40e66661dc7a6166cdcd201db8ec3dc762680",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "5e70c1dfe09820023fec519dac4c51bebcb7f60d",
+      "instance_id": "pydicom__pydicom-1194",
+      "issue_sha256": "5a25af9538d0996a0232f28ae74206106b2cfaa9ca138f5c9f21cf9968c34d21",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "5bb3ddef43b35c07485a84f90b6a453fc649e31d",
+      "instance_id": "pylint-dev__astroid-1719",
+      "issue_sha256": "e76ba3bae5d41ce87e702574dc76217749f663b0bab21083effe0c2b8e0f15d8",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "db6ee8dd4a747b8864caae36c5d05883976a3ae5",
+      "instance_id": "pyvista__pyvista-4315",
+      "issue_sha256": "ae1c4844af2ff18e9099788e4bbb511a8cfe5618480de1765af3ae4050373ccb",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "8e724ef8906eecce7179f4b7c52d4fc0672e4bd9",
+      "instance_id": "sqlfluff__sqlfluff-3435",
+      "issue_sha256": "54c54fd32b0cc2b93b1f87404ae8b60f4451bbeb9f97e55352a687cd85e5ad01",
+      "repo": "sqlfluff/sqlfluff"
+    }
+  ],
+  "name": "dev-v1",
+  "overlap_exclusions": [],
+  "schema_version": "1.0.0",
+  "selection": {
+    "algorithm": "repo-round-robin-sha256-v1",
+    "count": 12,
+    "seed": "eai-dev-v1"
+  },
+  "source_population": 225,
+  "sources": {
+    "schema_version": "1.0.0",
+    "sources": [
+      {
+        "dataset": "SWE-bench/SWE-bench",
+        "local_name": "dev.parquet",
+        "path": "data/dev-00000-of-00001.parquet",
+        "revision": "c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2",
+        "sha256": "7812438935be9cbe36049b93c73412d523fb07251bd255813168c38c5fc92454",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench/resolve/c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2/data/dev-00000-of-00001.parquet"
+      },
+      {
+        "dataset": "SWE-bench/SWE-bench_Verified",
+        "local_name": "verified.parquet",
+        "path": "data/test-00000-of-00001.parquet",
+        "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+        "sha256": "030cfd7f2a704c4c0226e7f104c725a3b41230b1d3517f9c915ad7ea5be3fa25",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified/resolve/78f471bf655a3137b2e8a75af1501690ec009ec3/data/test-00000-of-00001.parquet"
+      }
+    ]
+  }
+}

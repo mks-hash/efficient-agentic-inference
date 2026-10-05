@@ -49,7 +49,7 @@ amortization, fallback behavior and generalization.
 ## Reproducibility
 
 Experiments use versioned configurations, explicit model and dataset revisions,
-and reproducible result records. See the [benchmark contract](docs/benchmark-localization-v1.md)
+and reproducible result records. See the [benchmark contract](docs/benchmark-localization-v2.md)
 and [reproduction guide](docs/reproducibility.md) for measurement definitions.
 
 To run the included CPU lexical example, use Python 3.11+ and uv from the
@@ -57,10 +57,12 @@ repository root:
 
 ```bash
 uv sync --locked
-uv run eai baseline --synthetic \
-  --tasks examples/localization-v1/tasks.jsonl \
-  --gold examples/localization-v1/gold.jsonl \
+uv run eai-predict --synthetic \
+  --inputs examples/localization-v2/tasks.jsonl \
   --output results/runs/first-fixture
+uv run eai-evaluate --predictions results/runs/first-fixture \
+  --gold examples/localization-v2/gold.jsonl \
+  --output results/runs/first-evaluation
 ```
 
 The example uses synthetic inputs to verify the evaluation pipeline; it is not a
@@ -69,7 +71,7 @@ SWE-bench performance result. Choose a fresh output directory for each run.
 ## Research documentation
 
 - [Research plan](RESEARCH_PLAN.md)
-- [Benchmark contract](docs/benchmark-localization-v1.md)
+- [Benchmark contract](docs/benchmark-localization-v2.md)
 - [Reproducibility](docs/reproducibility.md)
-- [Experiment schemas](schemas/v1/README.md)
+- [Artifact schemas](schemas/v2/README.md)
 - [Results and artifacts](results/README.md)

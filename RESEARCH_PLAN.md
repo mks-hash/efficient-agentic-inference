@@ -1,6 +1,7 @@
 # Research plan — Small Specialist
 
-Status: design v1, 2026-10-06. No measured research evidence. This plan is not a
+Status: research design, 2026-10-06; localization contract v2. A small lexical dev
+pilot is being measured; no model or specialization claims exist. This plan is not a
 completed preregistration: numerical decisions below must be frozen in a dated,
 hashed experiment config before model evaluation.
 

@@ -12,6 +12,12 @@ dependencies = ["jsonschema>=4.23,<5"]
 
 [project.scripts]
 eai = "efficient_agentic_inference.cli:main"
+eai-predict = "efficient_agentic_inference.predict:main"
+eai-evaluate = "efficient_agentic_inference.evaluation:main"
+eai-snapshot = "efficient_agentic_inference.snapshot:main"
+
+[project.optional-dependencies]
+data = ["pyarrow>=19,<24"]
 
 [dependency-groups]
 dev = ["ruff>=0.11,<1"]

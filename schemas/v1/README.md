@@ -1,5 +1,8 @@
 # Experiment schemas v1
 
+Archived bootstrap design. Current separated inference/prediction/evaluation
+records use [schemas v2](../v2/README.md). Old results retain their v1 meaning.
+
 `experiment.schema.json` defines run provenance and independent evidence states.
 `result.schema.json` defines per-task predictions, measurements and failure states.
 Schema version is `1.0.0`; benchmark contract is independently `localization-v1`.
