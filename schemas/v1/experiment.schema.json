@@ -1,0 +1,644 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mks-hash/efficient-agentic-inference/schemas/v1/experiment.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "benchmark_contract": {
+      "const": "localization-v1"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "code": {
+      "type": "object",
+      "properties": {
+        "git_commit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dirty": {
+          "type": "boolean"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "git_commit",
+        "dirty",
+        "source_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "dataset": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "split": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tasks_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "gold_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "task_ids_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "label_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "leakage_policy": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "revision",
+        "split",
+        "tasks_sha256",
+        "gold_sha256",
+        "task_ids_sha256",
+        "label_policy",
+        "leakage_policy"
+      ],
+      "additionalProperties": false
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tokenizer_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "template_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "repo",
+            "revision",
+            "tokenizer_revision",
+            "template_sha256"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "variant": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "lexical",
+            "small_untuned",
+            "prompt_retrieval",
+            "specialist",
+            "generalist",
+            "specialist_fallback"
+          ]
+        },
+        "adapter_revision": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prompt_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "retrieval_profile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "config_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "kind",
+        "adapter_revision",
+        "prompt_sha256",
+        "retrieval_profile",
+        "config_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "object"
+    },
+    "hardware": {
+      "type": "object",
+      "properties": {
+        "cpu": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gpu": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gpu_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "cpu",
+        "gpu",
+        "gpu_count"
+      ],
+      "additionalProperties": false
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "python": {
+          "type": "string",
+          "minLength": 1
+        },
+        "backend": {
+          "type": "string",
+          "minLength": 1
+        },
+        "backend_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "python",
+        "backend",
+        "backend_version"
+      ],
+      "additionalProperties": false
+    },
+    "cost_model": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "const": "USD"
+        },
+        "rate_usd_per_hour": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "price_source": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price_snapshot_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allocation_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "training_usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "currency",
+        "rate_usd_per_hour",
+        "price_source",
+        "price_snapshot_date",
+        "allocation_boundary",
+        "training_usd"
+      ],
+      "additionalProperties": false
+    },
+    "accounting": {
+      "type": "object",
+      "properties": {
+        "latency_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unknown_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "latency_boundary",
+        "unknown_reasons"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "identity": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "render": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "token_provenance": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "output_contract": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "resource_fit": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "useful_localization": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "trainability": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "frozen_evaluation": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "economics": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "generalization": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "systems": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "PASS",
+                "FAIL",
+                "NOT_RUN",
+                "UNKNOWN",
+                "UNSUPPORTED"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "identity",
+        "render",
+        "token_provenance",
+        "output_contract",
+        "resource_fit",
+        "useful_localization",
+        "trainability",
+        "frozen_evaluation",
+        "economics",
+        "generalization",
+        "systems"
+      ],
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "predictions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checksums": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "predictions",
+        "summary",
+        "checksums"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "benchmark_contract",
+    "run_id",
+    "created_at",
+    "synthetic",
+    "code",
+    "dataset",
+    "model",
+    "variant",
+    "config",
+    "hardware",
+    "environment",
+    "cost_model",
+    "accounting",
+    "evidence",
+    "artifacts"
+  ],
+  "additionalProperties": false
+}
