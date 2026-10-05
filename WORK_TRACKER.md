@@ -12,6 +12,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: none.
 | EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | TODO | Measured on development data |
 | EAI-007 | Untuned small/generalist matrix | TODO | Verify primary model sources; freeze config and authorize resources |
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
+| EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 
 ## Open decisions before model evaluation
 

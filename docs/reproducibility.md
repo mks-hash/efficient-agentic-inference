@@ -45,3 +45,32 @@ interrupted jobs cannot silently omit costly failed tasks.
 
 Normal CI is CPU-only. Model downloads, GPU tests, paid runs and final evaluation
 are explicit campaigns, independently authorized and recorded.
+
+## CPU verification and current implementation
+
+The first executable baseline is a CPU BM25 runner on synthetic contract fixtures.
+It ranks the supplied candidate corpus; it does not yet acquire or index SWE-bench
+repositories. Fixtures establish software behavior, not model performance or
+research evidence. Check WORK_TRACKER.md for the current implementation stage.
+
+From the repository root, with Python 3.11+ and uv:
+
+```bash
+uv sync --locked
+uv run ruff check .
+uv run ruff format --check .
+uv run python -m unittest discover -s tests -v
+uv run eai baseline --synthetic \
+  --tasks examples/localization-v1/tasks.jsonl \
+  --gold examples/localization-v1/gold.jsonl \
+  --output results/runs/first-fixture
+```
+
+Use a fresh output directory. The runner writes a manifest, per-task predictions,
+summary and checksums, with JSON Schema validation. Monetary cost and CPS are null
+until cost is measured; per-task GPU-seconds are known zero for this CPU-only run.
+Timing measures ranking, validation and raw serialization, excluding file I/O,
+gold joining, evaluation and process startup.
+
+GitHub CI checks lint, formatting, contracts and the fixture on Python 3.11 and 3.14.
+Model downloads, training and GPU runs are outside the CPU verification workflow.

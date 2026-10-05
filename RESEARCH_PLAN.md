@@ -11,6 +11,14 @@ function. Start with file localization on SWE-bench; add symbol localization and
 fixed downstream repair only after independent contracts exist. Use established
 model/training machinery; own the data, evaluator, routing and evidence contracts.
 
+ToolGap remains an independent runtime/cache study. Reuse its methodological
+discipline without importing its runtime or SGLang code. Gemma/Kaggle is an
+optional opportunity track; competition requirements do not define the core.
+
+Initial model candidates include Qwen and Gemma small models and larger references.
+Before selecting the matrix, verify availability, licenses, exact revisions,
+hardware fit and any applicable competition details against primary sources.
+
 ## Hypotheses
 
 | ID | Claim to test | Falsification or limit |
