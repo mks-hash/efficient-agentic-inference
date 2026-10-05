@@ -46,6 +46,18 @@ amortization, fallback behavior and generalization.
 
 **A negative result is a result.**
 
+## First result
+
+The frozen SWE-bench development pilot covers **12 tasks across 6 repositories**.
+The CPU lexical baseline achieved **Recall@5 = 0.5417**, **Strict Success@5 = 6/12**
+and **candidate recall ceiling = 1.0**. A separate machine reproduced the
+deterministic artifacts, predictions and quality metrics.
+
+These are file-localization results on a small development sample. Model
+comparisons, downstream repair quality and economic gains remain untested.
+See the [report and artifacts](results/reports/swebench-dev-v1/README.md) and
+[v0.1.0 release](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.1.0).
+
 ## Reproducibility
 
 Experiments use versioned configurations, explicit model and dataset revisions,

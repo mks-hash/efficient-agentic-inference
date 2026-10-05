@@ -1,6 +1,6 @@
 # Work tracker
 
-Updated: 2026-10-06. Track: Small Specialist. Research runs: none.
+Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical dev pilot; no model runs.
 
 | ID | Work | Status | Completion evidence / next gate |
 | --- | --- | --- | --- |
@@ -15,6 +15,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: none.
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | TODO | Freeze a new population before expansion; measure setup/ranking costs before economics claims |
+| EAI-012 | v0.1.0 research milestone release | READY | Version metadata, notes, policy and evidence archive prepared; locked sync, 30 tests, lint/format and evidence checksums PASS; commit/push authorized, release-commit reproduction pending; tag/release publication pending |
 
 ## Open decisions before model evaluation
 
