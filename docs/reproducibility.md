@@ -15,6 +15,12 @@ snapshot/checksum; a commit alone is insufficient. Model identities include exac
 model, tokenizer and template revisions. Non-model baselines have model=null and
 must explicitly state why model-specific gates are UNSUPPORTED.
 
+The CPU runner's source checksum covers pyproject.toml, uv.lock and regular files
+under src/, schemas/, tests/, examples/ and docs/, excluding bytecode. Sorted relative
+paths and each file's SHA-256 are combined with NUL separators. This detects local
+implementation changes; retain the matching source checkout to reproduce a dirty
+run, since a checksum alone cannot recover its bytes.
+
 | Gate | What PASS establishes |
 | --- | --- |
 | G0 Identity | Pinned source/data/model identities |

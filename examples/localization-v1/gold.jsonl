@@ -1,0 +1,3 @@
+{"instance_id":"fixture-parser","changed_files":["src/parser.py"]}
+{"instance_id":"fixture-cache","changed_files":["src/cache.py","src/clock.py"]}
+{"instance_id":"fixture-new-file","changed_files":["src/export.py"]}

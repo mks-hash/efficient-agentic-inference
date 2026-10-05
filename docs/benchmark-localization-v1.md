@@ -51,7 +51,8 @@ separately; candidate misses must not disappear from gold denominators.
 
 ## Timing and economics
 
-Define every timing boundary. CPU fixture wall_ms measures ranking per task;
+Define every timing boundary. CPU fixture wall_ms measures ranking, prediction
+validation and raw serialization per task;
 file I/O, gold join, evaluation and process startup are excluded. It is not end-to-end
 agent latency. Model experiments must record preparation, generation, router and
 fallback stages and total latency separately. Allocated GPU time is the reservation
