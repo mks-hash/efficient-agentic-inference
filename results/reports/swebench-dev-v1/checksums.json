@@ -1,10 +1,12 @@
 {
   "audit.json": "449da25e69a793f8b3895caa154afa4f0815597da44bebf115214355224eb426",
+  "cross-host-comparison.json": "46e4733c0f4b304eba22613c01a8754fdae588ab7f9cb36e6972394db1b23f83",
   "isolation.json": "3b97efc41463f5e8dc52dd10adc21c62bc22ab908c958bc02fad3a2fe54d1e40",
   "manifest.json": "64821c43b5d3eb3af7c49871a4586f1eec41dd8a20c4470566ad8074375d2567",
   "metrics.jsonl": "b75fbbc0e4c1ae9c73519ea2d0e38d295de4b18c5ffe284485d25c875fc05fd9",
   "predictions.jsonl": "d5959afcf93fa07c6accb22d4a25fdd21631fcaa1bcaa41eb38c3e1eb629b884",
   "predictions.sha256": "b243e90e11419bf80f4f49d7d40114e3c1c623bc1b9b110ad0de9029836abc4a",
+  "remote-audit.json": "d268b9bd7cab83c7be0b8955589521c1c6ce953fe52d7b2d89d4d626d66f9343",
   "snapshot.json": "9949d172aa6bdcd0b0445399c313eec42280f00dbdc96d352981241e6e29ce6c",
   "summary.json": "2cf70594406b74aefe00bab02f3a86e08ef470707041a0b7b8547d3e9d06a5fe"
 }

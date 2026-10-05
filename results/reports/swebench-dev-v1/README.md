@@ -63,8 +63,17 @@ The prediction sources are the four explicitly checksummed inference modules.
 All 500 Verified IDs are reserved; dev/final ID intersection and normalized
 same-repository issue overlap are empty. No final labels or predictions were built.
 
-Independent-host reproduction is pending the manual GitHub CPU workflow. CPU CI
-passed on Python 3.11 and 3.14; CI fixture success is separate from research evidence.
+Separate-host reproduction **PASS** on [GitHub Actions](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37379561857),
+clean code `397df23`. Pinned sources were downloaded again and
+snapshots reconstructed on INTEL(R) XEON(R) PLATINUM 8573C, with builder/predictor Python
+3.12.3 and git version 2.55.0.
+Snapshot/input/gold hashes, semantic predictions and all quality metrics matched
+this local reference exactly. Timings were deliberately excluded from identity.
+The source implementation of inference/evaluation is unchanged between these
+commits; the reproducer adds its separate workflow and sudo isolation launcher.
+
+CPU CI also passed on Python 3.11 and 3.14; its fixture evidence is separate from
+the real-data cross-host audit.
 
 ## Reproduce and inspect
 
@@ -78,6 +87,7 @@ and compares snapshot, input, gold and semantic prediction hashes to this refere
 - [Saved predictions](predictions.jsonl), [inference manifest](manifest.json)
 - [Snapshot manifest](snapshot.json), [leakage audit](audit.json)
 - [Artifact checksums](checksums.json), [OS isolation probe](isolation.json)
+- [Cross-host comparison](cross-host-comparison.json), [remote audit](remote-audit.json)
 
 Saved predictions contain ranked/candidate paths and measurements, without issue
 text, repository source, gold patches or gold file lists. Original datasets,
@@ -89,5 +99,5 @@ Small dev sample, no confidence interval or population-wide quality claim.
 Gold files represent one accepted patch, not every possible valid repair.
 Exact overlap checks do not prove absence of near duplicates or pretraining
 contamination. No temporal test, model comparison, downstream repair result,
-priced economics or specialization evidence exists yet. Independent-host results
-must be recorded separately from the local audit.
+priced economics or specialization evidence exists yet. The cross-host result
+confirms this frozen pilot; it is not evidence of broad task/model generalization.

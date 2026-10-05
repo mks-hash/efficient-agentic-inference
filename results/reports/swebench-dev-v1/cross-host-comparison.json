@@ -1,0 +1,24 @@
+{
+  "identical_all_file_and_implementation_metrics": true,
+  "identical_snapshot_inputs_gold_semantic_predictions": true,
+  "reference_code_commit": "0edd9e666bac8306f658efb1c1390b5f0f06464e",
+  "reference_environment": {
+    "builder_python": "3.12.14",
+    "git": "git version 2.56.0",
+    "predict_python": "3.14.7",
+    "pyarrow": "23.0.1"
+  },
+  "reference_hardware": "Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz",
+  "reproduction_code_commit": "397df23d98d7baf634949002962bd2584628c63e",
+  "reproduction_environment": {
+    "builder_python": "3.12.3",
+    "git": "git version 2.55.0",
+    "predict_python": "3.12.3",
+    "pyarrow": "23.0.1"
+  },
+  "reproduction_hardware": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "scope": "12-task frozen development pilot; no final/model evaluation",
+  "status": "PASS",
+  "timing_comparison": "not required for deterministic reproduction; timings depend on host",
+  "workflow_url": "https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37379561857"
+}

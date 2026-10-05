@@ -1,0 +1,100 @@
+{
+  "base_patch_applicability": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1810",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1165",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-811",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1364",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4417",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2625",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1252",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1033",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1194",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1719",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4315",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3435",
+      "reason": null,
+      "status": "PASS"
+    }
+  ],
+  "code_commit": "397df23d98d7baf634949002962bd2584628c63e",
+  "code_dirty": false,
+  "dev_final_id_overlap": [],
+  "environment": {
+    "builder_python": "3.12.3",
+    "git": "git version 2.55.0",
+    "predict_python": "3.12.3",
+    "pyarrow": "23.0.1"
+  },
+  "forbidden_fields_inputs_candidates_order_predictions_identical": true,
+  "gold_mutation_metrics_changed": true,
+  "gold_mutation_predictions_identical": true,
+  "gold_sha256": "55e204f896a6715df81ed071211bfdaf9b71145b455106fcc4e219e3517d11b2",
+  "hardware_cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "inputs_sha256": "0577b5bf608b061e342cc1f5a1406d1d71c52795d2ca4e23ab440d974f50fc12",
+  "isolation": {
+    "ipv4_routes": 0,
+    "network_errno": 101,
+    "project_visible": false,
+    "separate_network_namespace": true
+  },
+  "limits": [
+    "Same-host fresh-directory rebuild, not an independently operated second machine",
+    "Exact ID/normalized issue overlap audit; no near-duplicate/pretraining guarantee",
+    "Small development pilot; no final Verified inference or labels generated"
+  ],
+  "rebuild_compared_artifacts": 27,
+  "rebuild_identical": true,
+  "repeated_evaluation_identical": true,
+  "schema_version": "1.0.0",
+  "schemas_valid": true,
+  "selected": 12,
+  "semantic_predictions_sha256": "8d7131736f1451866edd82520dbeb299e556acc0353249e1c6d26f7337fcff0f",
+  "snapshot_sha256": "9949d172aa6bdcd0b0445399c313eec42280f00dbdc96d352981241e6e29ce6c",
+  "status": "PASS",
+  "verified_regular_tree_files_across_both_builds": 17698
+}
