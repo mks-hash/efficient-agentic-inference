@@ -60,7 +60,7 @@ and exact rendered/tokenized inputs.
 
 File Recall@1/3/5/10, Precision@K, MRR and strict all-gold-files Success@K;
 all-changed and implementation-only metrics reported separately. Latency p50/p95,
-input/output tokens, allocated GPU-seconds, peak memory, monetary cost, fallback
+input/output tokens, accelerator time with an explicit measurement boundary, peak memory, monetary cost, fallback
 rate and errors. CPS = sum(cost of all attempts) / strict successes at frozen K.
 Unknown cost blocks a numeric CPS claim. Zero successes gives undefined CPS.
 
@@ -94,6 +94,9 @@ tests independently; do not tune routing or prompts against final evaluation.
 6. Fallback and generalization: only after independent core measurements. Broader
    serving/concurrency and ToolGap composition require separate evidence gates.
 
-Dates and model choices are planning inputs, not mandatory campaigns. v0.1.0
-requires a reproducible measured comparison; scaffolding alone is not a release
-claim. No training code or paid runs belong to the bootstrap milestone.
+The released v0.1.0 records a reproducible lexical dev pilot. The next campaign
+is [untuned-dev-v2](docs/experiments/untuned-dev-v2.md): 60 new development issues,
+full-corpus and matched-context lexical controls, followed by one untuned model
+on the identical context packet. Its execution/resource gates remain separate.
+Dates and model choices are planning inputs. Training follows an evidence-based
+decision; paid runs require budget authorization.

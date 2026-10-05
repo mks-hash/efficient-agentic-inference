@@ -175,9 +175,8 @@ def audit(
         validator.check_schema(validator.schema)
         for record in records:
             validator.validate(record)
-    dev = json.loads((ROOT / "splits/dev-v1.json").read_text())
     final = json.loads((ROOT / "splits/evaluation-v1.json").read_text())
-    overlap = set(r["instance_id"] for r in dev["instances"]) & set(final["instance_ids"])
+    overlap = {r["instance"]["instance_id"] for r in inputs} & set(final["instance_ids"])
     if overlap:
         raise ValueError("Dev/final ID overlap")
     report = {

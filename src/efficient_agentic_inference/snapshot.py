@@ -30,7 +30,12 @@ def issue_fingerprint(record: dict) -> str:
 
 
 def select(
-    dev: list[dict], final: list[dict], count: int, seed: str
+    dev: list[dict],
+    final: list[dict],
+    count: int,
+    seed: str,
+    excluded_ids: frozenset[str] = frozenset(),
+    excluded_issues: frozenset[str] = frozenset(),
 ) -> tuple[list[dict], list[dict]]:
     final_ids = {r["instance_id"] for r in final}
     final_issues = {issue_fingerprint(r) for r in final}
@@ -39,6 +44,10 @@ def select(
         r = projection(raw)
         if r["instance_id"] in final_ids or issue_fingerprint(r) in final_issues:
             excluded.append({"instance_id": r["instance_id"], "reason": "evaluation_overlap"})
+        elif r["instance_id"] in excluded_ids or issue_fingerprint(r) in excluded_issues:
+            excluded.append(
+                {"instance_id": r["instance_id"], "reason": "previous_development_exposure"}
+            )
         else:
             groups[r["repo"]].append(r)
     for rows in groups.values():
@@ -77,10 +86,28 @@ def verify_sources(config: Path, folder: Path) -> dict:
     return result
 
 
-def freeze_splits(config: Path, upstream: Path, output: Path, count: int, seed: str) -> None:
+def freeze_splits(
+    config: Path,
+    upstream: Path,
+    output: Path,
+    count: int,
+    seed: str,
+    name: str = "dev-v1",
+    exclude_splits: list[Path] | None = None,
+) -> None:
     import pyarrow.parquet as pq
 
     sources = verify_sources(config, upstream)
+    if not re.fullmatch(r"[a-z][a-z0-9-]+", name):
+        raise ValueError("Unsafe split name")
+    previous_ids, previous_issues, previous = set(), set(), []
+    for path in exclude_splits or []:
+        record = json.loads(path.read_text())
+        if record["sources"] != sources:
+            raise ValueError("Excluded split source identity differs from pinned sources")
+        previous_ids.update(r["instance_id"] for r in record["instances"])
+        previous_issues.update(r["issue_sha256"] for r in record["instances"])
+        previous.append({"name": record["name"], "sha256": digest(path.read_bytes())})
     # Selection never reads patches, labels, difficulty, hints or test metadata.
     dev = pq.read_table(
         upstream / "dev.parquet", columns=list(ALLOWED_INFERENCE_FIELDS)
@@ -88,10 +115,12 @@ def freeze_splits(config: Path, upstream: Path, output: Path, count: int, seed: 
     final = pq.read_table(
         upstream / "verified.parquet", columns=list(ALLOWED_INFERENCE_FIELDS)
     ).to_pylist()
-    selected, excluded = select(dev, final, count, seed)
+    selected, excluded = select(
+        dev, final, count, seed, frozenset(previous_ids), frozenset(previous_issues)
+    )
     dev_manifest = {
         "schema_version": "1.0.0",
-        "name": "dev-v1",
+        "name": name,
         "sources": sources,
         "selection": {"algorithm": "repo-round-robin-sha256-v1", "count": count, "seed": seed},
         "source_population": len(dev),
@@ -106,6 +135,8 @@ def freeze_splits(config: Path, upstream: Path, output: Path, count: int, seed: 
             for r in selected
         ],
     }
+    if previous:
+        dev_manifest["excluded_development_splits"] = previous
     evaluation_manifest = {
         "schema_version": "1.0.0",
         "name": "evaluation-v1",
@@ -115,7 +146,7 @@ def freeze_splits(config: Path, upstream: Path, output: Path, count: int, seed: 
     }
     write_artifacts(
         output,
-        {"dev-v1.json": encoded(dev_manifest), "evaluation-v1.json": encoded(evaluation_manifest)},
+        {f"{name}.json": encoded(dev_manifest), "evaluation-v1.json": encoded(evaluation_manifest)},
     )
 
 
@@ -369,6 +400,8 @@ def main() -> None:
         p.add_argument("--output", type=Path, required=True)
     freeze.add_argument("--count", type=int, default=12)
     freeze.add_argument("--seed", default="eai-dev-v1")
+    freeze.add_argument("--name", default="dev-v1")
+    freeze.add_argument("--exclude-splits", type=Path, nargs="*", default=[])
     prepare.add_argument("--split", type=Path, required=True)
     prepare.add_argument("--cache", type=Path, required=True)
     prepare.add_argument("--offline", action="store_true")

@@ -10,11 +10,11 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical 
 | EAI-004 | CPU lexical runner and synthetic contract fixture | DONE | 14 contract tests, ruff lint/format and locked sync pass; CLI fixture complete |
 | EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | DONE_PILOT | Clean-code local and separate-host audits PASS; pinned sources/splits and all 12 tasks prepared/labeled |
 | EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | DONE_PILOT | Full candidate corpus per each of 12 dev tasks; Recall@5 0.541667, ceiling 1; broader population not measured |
-| EAI-007 | Untuned small/generalist matrix | TODO | Verify primary model sources; freeze config and authorize resources |
+| EAI-007 | Untuned small/generalist matrix | PREPARING | ADR 0003 and untuned-dev-v2 protocol; Qwen3-4B-Instruct-2507 original/GGUF/backend revisions pinned; model execution and physical isolation NOT_RUN; local NVIDIA driver unavailable |
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
-| EAI-011 | Broader dev baseline and CPU/system cost accounting | TODO | Freeze a new population before expansion; measure setup/ranking costs before economics claims |
+| EAI-011 | Broader dev baseline and CPU/system cost accounting | IN_PROGRESS | dev-v2 frozen at 60 disjoint new tasks; matched context builder implemented; rebuilding base trees; no priced economics |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
 
 ## Open decisions before model evaluation

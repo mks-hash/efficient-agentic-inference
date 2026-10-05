@@ -1,0 +1,449 @@
+{
+  "excluded_development_splits": [
+    {
+      "name": "dev-v1",
+      "sha256": "25d618b27bcf1c9f51363cafbef03c446ecc3fe7444a5ec6ef76556c4db0a8f6"
+    }
+  ],
+  "instances": [
+    {
+      "base_commit": "2be2d83a1a9a6d3d9b85804f3ab545cecc409bb0",
+      "instance_id": "marshmallow-code__marshmallow-1343",
+      "issue_sha256": "1d5bdabd8ba5928e9aeba525623fbccde4051af4c2443e2ef889a61dee56ee49",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "0415365031ca8d0b2867f2a2877e0ad9d7098ffc",
+      "instance_id": "pvlib__pvlib-python-1225",
+      "issue_sha256": "2fff5b092c91d3d58fbff5dec449a73d083201903417e278faac14be09772e0e",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "701c1062bf66de2b29df68fa5540be6009943885",
+      "instance_id": "pydicom__pydicom-1033",
+      "issue_sha256": "0ebb031e0c8f5ea23d5b4261eb728373282a85418b8eedb6a142ca4ecccd9894",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "39c2a9805970ca57093d32bbaf0e6a63e05041d8",
+      "instance_id": "pylint-dev__astroid-1196",
+      "issue_sha256": "f7c53d20db12f7943abf533d75a4b4e64bdaf034dce515bb2d124771395d1532",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "846f1834f7428acff9395ef4b8a3bd39b42c99e6",
+      "instance_id": "pyvista__pyvista-3710",
+      "issue_sha256": "f72a3f0ea96ce42e0db48a9f2d9ad35852bcbbdb0bb229e45d4c4a2d44aa6c7d",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "e60272a859e37e335088ae79a7ad59ea771545a1",
+      "instance_id": "sqlfluff__sqlfluff-3411",
+      "issue_sha256": "719ecf911a60b8aab04f2cd006481bd7e7be2436546c25cd608ac71b6fd5bf37",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "fa6c7379468f59d4568e29cbbeb06b797d656215",
+      "instance_id": "marshmallow-code__marshmallow-1702",
+      "issue_sha256": "89da2be45ce103b79d79e459b39eb01ae0e04d9336c040efb05d808eb2fbb161",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "30c62e368529df01faa609d6b38456a7b0db9b53",
+      "instance_id": "pvlib__pvlib-python-1719",
+      "issue_sha256": "a480d18b4871973598a0ce99f9ef42cc27cc9d2853a6099a38684ba611bcfa3d",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "bd82f01faf4212f6e43f55a1cc6da17956122d8f",
+      "instance_id": "pydicom__pydicom-1365",
+      "issue_sha256": "42077c513e19cfe370f4365c4d2eb81371b90ea98bcaa8ff6ab142c6bdfb96d7",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "514991036806e9cda2b12cef8ab3184ac373bd6c",
+      "instance_id": "pylint-dev__astroid-2240",
+      "issue_sha256": "e274c971d80dbc4eea54a1d5953c10c312e039fcfcfe49d246f286f576633649",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "905044f26df65188c6c612695c3370fcc2d007f0",
+      "instance_id": "pyvista__pyvista-3675",
+      "issue_sha256": "d3bcb0b18ad0ccd2141d4f34f5e5f8e70cf3bcdea706ca43c6c19b57b9043328",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "305159ea643baf6b4744b98c3566613754b2f659",
+      "instance_id": "sqlfluff__sqlfluff-2907",
+      "issue_sha256": "e01c8024a06a5c5bd42b170a0c9c7f39e93c8844a29285841d6487a584a9d065",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "5a10e83c557d2ee97799c2b85bec49fc90381656",
+      "instance_id": "marshmallow-code__marshmallow-2123",
+      "issue_sha256": "75df7779de9f1398938699477bc5c5b6a5a34c457d51b475e16754839b467d7b",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "c78b50f4337ecbe536a961336ca91a1176efc0e8",
+      "instance_id": "pvlib__pvlib-python-1606",
+      "issue_sha256": "237c7c172986af7c99bca825d517dba06fe8e3d23857c51a7beefb8adb63812e",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "356a51ab4bc54fd18950041ebc44dbfa1a425a10",
+      "instance_id": "pydicom__pydicom-809",
+      "issue_sha256": "365ef9ff68e7d1e732f0cb2bd28b3d3b1110b475ee420c6e815856f8296f68b9",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "49691cc04f2d38b174787280f7ed38f818c828bd",
+      "instance_id": "pylint-dev__astroid-1959",
+      "issue_sha256": "dc951e15163da39d10819120d7efaff891ae8cbf6a9fd8fcc45bfb164cc65413",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "3db44d72070ccd6e8fc5c7f708500424011bcc47",
+      "instance_id": "pyvista__pyvista-3750",
+      "issue_sha256": "c2b97671f5961b35303ad7ba6b8f89e8cdaec33a3cdf7aa31191173028495008",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "8822bf4d831ccbf6bc63a44b34978daf6939d996",
+      "instance_id": "sqlfluff__sqlfluff-2573",
+      "issue_sha256": "c2339919493887192a61bb7868e2f8ee83899f8d246f13fd9beb3f61f1a83b9d",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "1e26d14facab213df5009300b997481aa43df80a",
+      "instance_id": "marshmallow-code__marshmallow-1164",
+      "issue_sha256": "34d58f9e0973ceb4ea48694aa64d63ed0afd459a52a23c066b565b14e661d375",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "f8b129418025b47ad669ba4802d03348a275e329",
+      "instance_id": "pvlib__pvlib-python-1852",
+      "issue_sha256": "0256f4deb98fd9f4c48b2603af0d066c49b63cd9fbbabfe1888e001097e911af",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "b4b44acbf1ddcaf03df16210aac46cb3a8acd6b9",
+      "instance_id": "pydicom__pydicom-863",
+      "issue_sha256": "744681d2878c636fb301366d9c1012df10b233cd561b2ca5f66e8895041ac0e8",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "2108ae51b516458243c249cf67301cb387e33afa",
+      "instance_id": "pylint-dev__astroid-2023",
+      "issue_sha256": "36091b23c0d4b5bad12836c9a00637f4870e106fb6113523ad251ea7782ac681",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "db6ee8dd4a747b8864caae36c5d05883976a3ae5",
+      "instance_id": "pyvista__pyvista-4311",
+      "issue_sha256": "73e81c32ef523244f4e6927c55bb71df9540ce4c27fae81f8f8c75ce7f1da8db",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "1000cf1beae75186cadf3a586c87e86e9f30ecb2",
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "issue_sha256": "4762cd64be3e802fc9bea452679a35b63808c8a187cbbb3defeba9d96d6ed96d",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "456bacbbead4fa30a1a82892c9446ac9efb8055b",
+      "instance_id": "marshmallow-code__marshmallow-1229",
+      "issue_sha256": "4729d34462327467ebc4388bb7303403667fcad73348118a222e5d9b881fafbf",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "d5d1d66aae4913f0e23b9a79c655efa1bdafe5f4",
+      "instance_id": "pvlib__pvlib-python-1089",
+      "issue_sha256": "150b82abf115df753abc4fa854fe41d38406c696f2aa5106930c28bd52f4c37b",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "41e984c8df5533805ae13cbcf419e6c5f63da30c",
+      "instance_id": "pydicom__pydicom-997",
+      "issue_sha256": "6ace8f98311f1261ed2237f6ec4eae276b005cb8cafc1b16cf3543d34f02a458",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "344454c8ee25d41a4ce12980bc85ba604b7835dd",
+      "instance_id": "pylint-dev__astroid-1903",
+      "issue_sha256": "f6c1dd59e8cb2225c2e3c52bade51883f0e99dc7c54b44372ac94fff89a1e74f",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "d804a93a3bcae250c74a9f0f7c37fbc8bf002011",
+      "instance_id": "pyvista__pyvista-4648",
+      "issue_sha256": "46db5ad99c4fdfa157333a974dac63ed61ad29a942d126e4984fdea812746776",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "181918e9c2840dc3f5ff1c713bf6b5a00d0725b5",
+      "instance_id": "sqlfluff__sqlfluff-4084",
+      "issue_sha256": "a1b0d24ced18192c1c06046650630ee5cecd4285f8110ae1dca67178d0f32c2c",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "b40a0f4e33823e6d0f341f7e8684e359a99060d1",
+      "instance_id": "marshmallow-code__marshmallow-1359",
+      "issue_sha256": "7adf8e9c0a34a5e47d3f835edea1151f34efda8f4cbb92f81515474760a7e51d",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "26579bec7e65296223503b9e05da4af914af6777",
+      "instance_id": "pvlib__pvlib-python-1395",
+      "issue_sha256": "509836ddbc51ec3c55d2b3a7d00da2c2094581cd30f04206b8ae426432aaebce",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "b9fb05c177b685bf683f7f57b2d57374eb7d882d",
+      "instance_id": "pydicom__pydicom-1139",
+      "issue_sha256": "62de5d68202509b090a91e470c8e76f468957053453a3483727918243e803df4",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "e840a7c54d3d8b5be2db1e66f34a5368c64fc3f7",
+      "instance_id": "pylint-dev__astroid-1262",
+      "issue_sha256": "68edf8038e223bc92d036ca32eb32461b230bc1ec4ba90a43040f403c9267005",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "e1bac62d2f3df7bcba25d58ed5e83d89f9a6be98",
+      "instance_id": "pyvista__pyvista-432",
+      "issue_sha256": "f1eaa79f7b850bb7a87f88f046e9e69c63ef00b916e2224917d71881adb2f743",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "12f272627cd263f2acadf2ad976aec4819ee98c3",
+      "instance_id": "sqlfluff__sqlfluff-880",
+      "issue_sha256": "8d6f55c1362617ac46cce2ac917c4ba518794dd834a0dd50346b25768dced69c",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "7015fc4333a2f32cd58c3465296e834acd4496ff",
+      "instance_id": "marshmallow-code__marshmallow-1524",
+      "issue_sha256": "979f4ee5c5e3bb52d41fd7033e810a904ac1ab2ae21d0b46ee916966214231d0",
+      "repo": "marshmallow-code/marshmallow"
+    },
+    {
+      "base_commit": "0a14b273517a082603cc157faa88a5ab0ac4cac9",
+      "instance_id": "pvlib__pvlib-python-763",
+      "issue_sha256": "10f3fc3d66beffa329a1ef85bc0879d5a1d2f65aa224f3b69e4077f35464b6da",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "24a86b316441ac3a46e569779627e24482786a8a",
+      "instance_id": "pydicom__pydicom-1334",
+      "issue_sha256": "07467f680efc7c450024f79c0043664d486eabcf212888ca3369fafb317ac9fc",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "da745538c7236028a22cdf0405f6829fcf6886bc",
+      "instance_id": "pylint-dev__astroid-1417",
+      "issue_sha256": "131a2848da3dca9cd14b44d52a54689945c0118745695c0be30b6976865741a6",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "4a44e4c63c6b8d6a3f1db0aa193f4ccb631ed698",
+      "instance_id": "pyvista__pyvista-4853",
+      "issue_sha256": "4729672397610d99c1563dc21d899ba6fc8a56d26a126f9a0315a676d9cca10f",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "a1579a16b1d8913d9d7c7d12add374a290bcc78c",
+      "instance_id": "sqlfluff__sqlfluff-1733",
+      "issue_sha256": "caf95dd1c12f08a36b186354c9da250282eb89c246e46b10561dec5387d9f63c",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "40ba4bd5c8b91754aa73e638ed984ab9657847cd",
+      "instance_id": "pvlib__pvlib-python-1213",
+      "issue_sha256": "236c826bfafe55c5aae4081e890da55ca7c35b55e4d194bdea328789e68bf379",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "699c9f0a8e190d463dd828822106250523d38154",
+      "instance_id": "pydicom__pydicom-1416",
+      "issue_sha256": "8ccc8a9e5a904e0eb9285491fc92eb770b6fef72d41a509eb11c9ae7df7c4bc1",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "efb34f2b84c9f019ffceacef3448d8351563b6a2",
+      "instance_id": "pylint-dev__astroid-2219",
+      "issue_sha256": "965f51f8163e2ff8997f72761b9ee056ca81d9ede7713854fc2c3c98930bd023",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "18694fa1a4e95027a055a958fef61ffdc5dba4d7",
+      "instance_id": "pyvista__pyvista-4225",
+      "issue_sha256": "0a45bf059af5ff34f2b9022059e42f16504f2660d39f0345bbed61bdd084286f",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "38c31c99f6be6c2ffcc9e4132387edb7af8c5d06",
+      "instance_id": "sqlfluff__sqlfluff-3109",
+      "issue_sha256": "eb29740cd3f650a8c8dcb0dc3778be4fefae6a2f43ba4ee71749c07bdc183b23",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "27872b83b0932cc419116f79e442963cced935bb",
+      "instance_id": "pvlib__pvlib-python-1031",
+      "issue_sha256": "9a09e3005dae973e16a4365dd6067f21d5d80e680d8fb42c61f505ef978dd798",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "897fe092ae3ef282a21c894b47134233bdd5cdd0",
+      "instance_id": "pydicom__pydicom-793",
+      "issue_sha256": "3af49eb199533ae94317eddcb77b081ecba670415119b8126fb11f88bf2eb382",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "40ea1a3b8e52bbfed43deb1725cde461f4bd8a96",
+      "instance_id": "pylint-dev__astroid-1164",
+      "issue_sha256": "aee77366066ac344996af8c4db6600d58485bd3f051d545b23683ae2a8f30bb9",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "461bb5ed5be8c9dda6e9ed765fab3224149d9c62",
+      "instance_id": "pyvista__pyvista-4406",
+      "issue_sha256": "0f6296f4bf5ff361c89219974341aeb0db55fe9b837b0ead050a732e9e4219e5",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "262010b91cf5616de242dad504c788e9cd33ac58",
+      "instance_id": "sqlfluff__sqlfluff-3220",
+      "issue_sha256": "5e350d1a39a478929fb74d6d83ff9b49bf130cebe8523b45b45ba71598c5b29e",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "909f86dc67eddc88154c9e7bff73fd9d6bfe2e4d",
+      "instance_id": "pvlib__pvlib-python-1739",
+      "issue_sha256": "20a4f68cb833b147cdc29ab4902dc5290b75b204018449beb174f426eaaf8c4a",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "2f3586b6f67383b1ec0c24c4772e65119c3f5261",
+      "instance_id": "pydicom__pydicom-800",
+      "issue_sha256": "9aad7c5888975388a39a55e818c3134f1e691fe268b3b33d3f5e14285d0492b3",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "fe058bff95745371df5796286d33677c21137847",
+      "instance_id": "pylint-dev__astroid-1962",
+      "issue_sha256": "dc951e15163da39d10819120d7efaff891ae8cbf6a9fd8fcc45bfb164cc65413",
+      "repo": "pylint-dev/astroid"
+    },
+    {
+      "base_commit": "438dd0d6ea2ebee73ecccdba878837af8fd83d7d",
+      "instance_id": "pyvista__pyvista-4414",
+      "issue_sha256": "6871f81a9d8c65c05ac05615b5b5b71f4993b6af21caae768a46b8fde1c2e543",
+      "repo": "pyvista/pyvista"
+    },
+    {
+      "base_commit": "7b7fd603a19755a9f3707ebbf95d18ee635716d8",
+      "instance_id": "sqlfluff__sqlfluff-5074",
+      "issue_sha256": "50f8d3d00ddbd668139ed03ee39416e5e4f30b039e968fe4e68f4eb372fa75f3",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "base_commit": "7fc595a13bcd42e3269c0806f5505ac907af9730",
+      "instance_id": "pvlib__pvlib-python-1048",
+      "issue_sha256": "4431d4b6e0503015f90588093810c3c4665b36601913fec9cef71303faa33069",
+      "repo": "pvlib/pvlib-python"
+    },
+    {
+      "base_commit": "1f099ae0f75f0e2ed402a21702e584aac54a30ef",
+      "instance_id": "pydicom__pydicom-1192",
+      "issue_sha256": "7b97c5bd3ce58988ece4b296c382181151d948ba8fa8d613a2b011b369580537",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "base_commit": "6280a758733434cba32b719519908314a5c2955b",
+      "instance_id": "pylint-dev__astroid-1616",
+      "issue_sha256": "045f488dcce3c1f9920a51be4820ccdfde1f9f3e40af5ba21e7d6008541bd1f6",
+      "repo": "pylint-dev/astroid"
+    }
+  ],
+  "name": "dev-v2",
+  "overlap_exclusions": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1252",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1810",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1033",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1165",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1194",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pydicom__pydicom-811",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1364",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1719",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4315",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4417",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2625",
+      "reason": "previous_development_exposure"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3435",
+      "reason": "previous_development_exposure"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selection": {
+    "algorithm": "repo-round-robin-sha256-v1",
+    "count": 60,
+    "seed": "eai-dev-v2"
+  },
+  "source_population": 225,
+  "sources": {
+    "schema_version": "1.0.0",
+    "sources": [
+      {
+        "dataset": "SWE-bench/SWE-bench",
+        "local_name": "dev.parquet",
+        "path": "data/dev-00000-of-00001.parquet",
+        "revision": "c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2",
+        "sha256": "7812438935be9cbe36049b93c73412d523fb07251bd255813168c38c5fc92454",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench/resolve/c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2/data/dev-00000-of-00001.parquet"
+      },
+      {
+        "dataset": "SWE-bench/SWE-bench_Verified",
+        "local_name": "verified.parquet",
+        "path": "data/test-00000-of-00001.parquet",
+        "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+        "sha256": "030cfd7f2a704c4c0226e7f104c725a3b41230b1d3517f9c915ad7ea5be3fa25",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified/resolve/78f471bf655a3137b2e8a75af1501690ec009ec3/data/test-00000-of-00001.parquet"
+      }
+    ]
+  }
+}

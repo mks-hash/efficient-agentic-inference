@@ -23,6 +23,14 @@ Without the optional data extra, tiny Parquet contract tests are explicitly skip
 CI installs it and runs the complete CPU suite on Python 3.11 and 3.14. Synthetic
 fixtures establish software behavior, not research quality or model support.
 
+The new [untuned-dev-v2 preparation protocol](experiments/untuned-dev-v2.md) freezes
+60 new development instances and introduces `eai-context`. The isolation wrapper
+accepts an optional third argument `context`; its default remains `predict`.
+Context construction mounts only its four inference source modules and canonical
+inputs, with the same filesystem/network boundary. Context tasks still use the
+v2 inference schema; context provenance uses its own v1 records. Model execution
+requires a separate model/backend isolation and resource check.
+
 ## Rebuild the pinned SWE-bench pilot
 
 The source download and first Git-object fetch require network access. All subsequent

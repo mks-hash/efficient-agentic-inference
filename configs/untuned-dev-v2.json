@@ -1,0 +1,69 @@
+{
+  "artifact": {
+    "bytes": 2497281120,
+    "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "id": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "source_url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+  },
+  "backend": {
+    "binary_identity_status": "NOT_RUN",
+    "binary_sha256": null,
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "revision": "7049ff0cbeb1f5ead231de4522af6b75d8d773c0"
+  },
+  "campaign": "untuned-dev-v2",
+  "context": {
+    "capacity_tokens_proposed": 16384,
+    "profile": "bm25-top20-prefix1200-v1",
+    "resource_fit": "NOT_RUN"
+  },
+  "decoding": {
+    "attempts": 1,
+    "max_output_tokens": 512,
+    "repair": false,
+    "retries": 0,
+    "seed": 0,
+    "temperature": 0
+  },
+  "evidence_gates": {
+    "model_output": "NOT_RUN",
+    "model_physical_isolation": "NOT_RUN",
+    "model_quality": "NOT_RUN",
+    "monetary_economics": "UNKNOWN",
+    "native_render_tokens": "NOT_RUN",
+    "resource_fit": "NOT_RUN",
+    "weights_checksum": "NOT_RUN"
+  },
+  "execution_status": "NOT_RUN",
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "license": "apache-2.0",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "population": {
+    "sha256": "011e415011b9dc91cfdc6015c1117a8d1fdf9a184d6820b949d825b63fb0a1d8",
+    "split": "splits/dev-v2.json"
+  },
+  "prompt": {
+    "sha256": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "system_file": "configs/prompts/localization-v1.txt",
+    "user_rendering": "canonical JSON {issue,candidates}; path-sorted packet, unchanged excerpts"
+  },
+  "resource_proposal": {
+    "device": "cpu",
+    "gpu_layers": 0,
+    "reason": "Local NVIDIA driver unavailable; paid resources not authorized.",
+    "threads": 4
+  },
+  "schema_version": "1.0.0",
+  "source_review_date": "2026-10-06",
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "https://github.com/ggml-org/llama.cpp/blob/7049ff0cbeb1f5ead231de4522af6b75d8d773c0/tools/server/README.md"
+  ],
+  "status": "prepared; model resource fit and execution not yet validated"
+}

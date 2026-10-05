@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
-if [ "$#" -ne 2 ]; then
-  echo 'Usage: tools/predict-isolated.sh INPUTS_JSONL FRESH_OUTPUT_DIR' >&2
+if [ "$#" -ne 2 ] && [ "$#" -ne 3 ]; then
+  echo 'Usage: tools/predict-isolated.sh INPUTS_JSONL FRESH_OUTPUT_DIR [predict|context]' >&2
   exit 2
 fi
+program=${3:-predict}
+case "$program" in
+  predict|context) ;;
+  *) echo 'Program must be predict or context' >&2; exit 2 ;;
+esac
 project_root=$(cd "$(dirname "$0")/.." && pwd)
 input_file=$(realpath "$1")
 output_dir=$(realpath -m "$2")
@@ -14,7 +19,7 @@ fi
 staging=$(mktemp -d)
 trap 'rm -rf "$staging"' EXIT
 mkdir -p "$staging/code/efficient_agentic_inference" "$staging/input" "$staging/output"
-for module in __init__ inference predict records; do
+for module in __init__ inference "$program" records; do
   cp "$project_root/src/efficient_agentic_inference/$module.py" "$staging/code/efficient_agentic_inference/"
 done
 cp "$input_file" "$staging/input/tasks.jsonl"
@@ -42,9 +47,9 @@ bwrap --unshare-all --die-with-parent --new-session --clearenv \
   /usr/bin/sh -c '
     /usr/bin/python3 /probe.py > /output/isolation.json || exit 1
     unset HIDDEN_PROJECT HOST_NETNS
-    exec /usr/bin/python3 -m efficient_agentic_inference.predict \
+    exec /usr/bin/python3 -m "efficient_agentic_inference.$1" \
       --inputs /inputs/tasks.jsonl --output /output/run
-  '
+  ' isolated-inference "$program"
 cp "$staging/output/isolation.json" "$staging/output/run/isolation.json"
 /usr/bin/python3 - "$staging/output/run" <<'PY'
 import hashlib, json, pathlib, sys

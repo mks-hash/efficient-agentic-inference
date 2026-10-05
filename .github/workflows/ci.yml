@@ -18,6 +18,10 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run python -m unittest discover -s tests -v
       - run: >-
+          uv run eai-context --synthetic
+          --inputs examples/localization-v2/tasks.jsonl
+          --output results/runs/ci-context
+      - run: >-
           uv run eai-predict --synthetic
           --inputs examples/localization-v2/tasks.jsonl
           --output results/runs/ci-fixture

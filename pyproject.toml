@@ -15,6 +15,7 @@ eai = "efficient_agentic_inference.cli:main"
 eai-predict = "efficient_agentic_inference.predict:main"
 eai-evaluate = "efficient_agentic_inference.evaluation:main"
 eai-snapshot = "efficient_agentic_inference.snapshot:main"
+eai-context = "efficient_agentic_inference.context:main"
 
 [project.optional-dependencies]
 data = ["pyarrow>=19,<24"]
