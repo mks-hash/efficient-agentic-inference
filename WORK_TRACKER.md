@@ -15,7 +15,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical 
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | TODO | Freeze a new population before expansion; measure setup/ranking costs before economics claims |
-| EAI-012 | v0.1.0 research milestone release | READY | Version metadata, notes, policy and evidence archive prepared; locked sync, 30 tests, lint/format and evidence checksums PASS; commit/push authorized, release-commit reproduction pending; tag/release publication pending |
+| EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
 
 ## Open decisions before model evaluation
 
@@ -26,6 +26,19 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical 
 
 No models have passed evidence gates. Synthetic/local verification must not
 promote any model gate or research hypothesis to PASS.
+
+## Released milestone
+
+[v0.1.0 — Reproducible SWE-bench Localization Baseline](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.1.0)
+is published at code `392722c34ec0e10a0ba8db01179961cf8f885cf8`. Package version is
+0.1.0; artifact schemas remain v2.0.0. Original pilot result bytes and experiment
+code identities are retained. The release assets add a provenance manifest and
+the audit from fresh second-host reproduction on the release commit.
+
+Release-commit CPU CI passed on Python 3.11/3.14 (run 37381457746). Reproduction
+passed (run 37381481917): snapshot/input/gold hashes, semantic predictions and
+quality match the original reference exactly. The version metadata change in
+`__init__.py` is recorded separately from the original runtime source hashes.
 
 ## Clean-code dev pilot
 
