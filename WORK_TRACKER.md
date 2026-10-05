@@ -1,6 +1,6 @@
 # Work tracker
 
-Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical dev pilot; no model runs.
+Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; no model runs.
 
 | ID | Work | Status | Completion evidence / next gate |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: one frozen lexical 
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
-| EAI-011 | Broader dev baseline and CPU/system cost accounting | IN_PROGRESS | dev-v2 frozen at 60 disjoint new tasks; matched context builder implemented; rebuilding base trees; no priced economics |
+| EAI-011 | Broader dev baseline and CPU/system cost accounting | FOUNDATION_VALIDATED | Clean 0bd7571 audit PASS: 60/60 prepared/labeled, 123 identical artifacts, 88638 file hashes; full Recall@5 0.552265 / ceiling 0.985450 / strict 25/60; matched context 0.228326 / ceiling 0.783487 / strict 8/60; phase accounting explicit, no prices or model results |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
 
 ## Open decisions before model evaluation
@@ -39,6 +39,24 @@ Release-commit CPU CI passed on Python 3.11/3.14 (run 37381457746). Reproduction
 passed (run 37381481917): snapshot/input/gold hashes, semantic predictions and
 quality match the original reference exactly. The version metadata change in
 `__init__.py` is recorded separately from the original runtime source hashes.
+
+## Next campaign preparation
+
+dev-v2 excludes all dev-v1 IDs/normalized equivalent issues before selection and
+reserves Verified. The named split freezer reproduces the original dev-v1 bytes.
+Thirty-eight CPU tests passed, including exposure exclusions and context ceiling
+loss. Context preparation and matched prediction passed physical-isolation probes;
+context inputs and semantic provenance match across two fresh base reconstructions.
+The scored dev-v2 population is now exposed development data.
+
+The [preparation report](results/reports/swebench-dev-v2-preparation/README.md)
+retains both lexical controls and audit/checksum evidence. The simple prefix
+context reduces file coverage and lexical quality; model results must be compared
+against both controls. Source-bearing inputs remain ignored and reproducible.
+The model execution choice is pending: this host has a GTX 1060 but its NVIDIA
+driver is unavailable. Original/GGUF/llama.cpp identities are pinned as a proposal;
+weights, model resource fit, native token provenance and model inference are NOT_RUN.
+No paid resources, training or fallback have been used.
 
 ## Clean-code dev pilot
 

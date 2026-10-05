@@ -1,0 +1,455 @@
+{
+  "candidate_policy": "python-full-corpus-v1",
+  "contract": "localization-v2",
+  "gold_sha256": "c340d01f5f4caf3b27ca87c4821e5cf3ed209c974e339399b90e7d4a1e18758b",
+  "inputs_sha256": "9b633b0ca4e8475aef83825f074486e4cd320033436cd4e72bbc5d13b41e3bf5",
+  "label_policy": "solution-patch-files-v2",
+  "labeled": 60,
+  "population": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1343",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1225",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1033",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1196",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3710",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3411",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1702",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1719",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1365",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2240",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3675",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2907",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-2123",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1606",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-809",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1959",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3750",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2573",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1164",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1852",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-863",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2023",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4311",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1229",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1089",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-997",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1903",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4648",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-4084",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1359",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1395",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1139",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1262",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-432",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-880",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1524",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-763",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1334",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1417",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4853",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-1733",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1213",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1416",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2219",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4225",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3109",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1031",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-793",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1164",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4406",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3220",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1739",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-800",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1962",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4414",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-5074",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1048",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1192",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1616",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    }
+  ],
+  "prepared": 60,
+  "schema_version": "2.0.0",
+  "selected": 60,
+  "sources": {
+    "schema_version": "1.0.0",
+    "sources": [
+      {
+        "dataset": "SWE-bench/SWE-bench",
+        "local_name": "dev.parquet",
+        "path": "data/dev-00000-of-00001.parquet",
+        "revision": "c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2",
+        "sha256": "7812438935be9cbe36049b93c73412d523fb07251bd255813168c38c5fc92454",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench/resolve/c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2/data/dev-00000-of-00001.parquet"
+      },
+      {
+        "dataset": "SWE-bench/SWE-bench_Verified",
+        "local_name": "verified.parquet",
+        "path": "data/test-00000-of-00001.parquet",
+        "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+        "sha256": "030cfd7f2a704c4c0226e7f104c725a3b41230b1d3517f9c915ad7ea5be3fa25",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified/resolve/78f471bf655a3137b2e8a75af1501690ec009ec3/data/test-00000-of-00001.parquet"
+      }
+    ]
+  },
+  "split_sha256": "011e415011b9dc91cfdc6015c1117a8d1fdf9a184d6820b949d825b63fb0a1d8"
+}

@@ -1,0 +1,340 @@
+{
+  "base_patch_applicability": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1343",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1225",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1033",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1196",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3710",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3411",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1702",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1719",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1365",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2240",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3675",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2907",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-2123",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1606",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-809",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1959",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-3750",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2573",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1164",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1852",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-863",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2023",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4311",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1229",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1089",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-997",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1903",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4648",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-4084",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1359",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1395",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1139",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1262",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-432",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-880",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1524",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-763",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1334",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1417",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4853",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-1733",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1213",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1416",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-2219",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4225",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3109",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1031",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-793",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1164",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4406",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3220",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1739",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-800",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1962",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4414",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-5074",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1048",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1192",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1616",
+      "reason": null,
+      "status": "PASS"
+    }
+  ],
+  "code_commit": "0bd75714686b365334936e7faa7e5211816d1540",
+  "code_dirty": false,
+  "dev_final_id_overlap": [],
+  "environment": {
+    "builder_python": "3.12.14",
+    "git": "git version 2.56.0",
+    "predict_python": "3.14.7",
+    "pyarrow": "23.0.1"
+  },
+  "forbidden_fields_inputs_candidates_order_predictions_identical": true,
+  "gold_mutation_metrics_changed": true,
+  "gold_mutation_predictions_identical": true,
+  "gold_sha256": "c340d01f5f4caf3b27ca87c4821e5cf3ed209c974e339399b90e7d4a1e18758b",
+  "hardware_cpu": "Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz",
+  "inputs_sha256": "9b633b0ca4e8475aef83825f074486e4cd320033436cd4e72bbc5d13b41e3bf5",
+  "isolation": {
+    "ipv4_routes": 0,
+    "network_errno": 101,
+    "project_visible": false,
+    "separate_network_namespace": true
+  },
+  "limits": [
+    "Same-host fresh-directory rebuild, not an independently operated second machine",
+    "Exact ID/normalized issue overlap audit; no near-duplicate/pretraining guarantee",
+    "Small development pilot; no final Verified inference or labels generated"
+  ],
+  "rebuild_compared_artifacts": 123,
+  "rebuild_identical": true,
+  "repeated_evaluation_identical": true,
+  "schema_version": "1.0.0",
+  "schemas_valid": true,
+  "selected": 60,
+  "semantic_predictions_sha256": "cfe8a3d2e3fb5dfbbcfe8828436dc2198413534f2a3d4675d9919ca50a2b81b9",
+  "snapshot_sha256": "9083ce1ec14aac2189816600f91cd8c8b2eb5f29159db1ffa3b8e5a16276988d",
+  "status": "PASS",
+  "verified_regular_tree_files_across_both_builds": 88638
+}

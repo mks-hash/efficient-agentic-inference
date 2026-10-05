@@ -1,0 +1,22 @@
+{
+  "config": {
+    "b": 0.75,
+    "k1": 1.2,
+    "limit": 10,
+    "ranker": "lexical-bm25-v1"
+  },
+  "cost_reason": "CPU cost not priced; tokens inapplicable; no accelerator used",
+  "inputs_sha256": "9b633b0ca4e8475aef83825f074486e4cd320033436cd4e72bbc5d13b41e3bf5",
+  "latency_boundary": "ranking, validation and serialization; excludes I/O/evaluation",
+  "platform": "Linux-7.2.8-zen1-2-zen-x86_64-with-glibc2.44",
+  "program": "predict",
+  "python": "3.14.7",
+  "runtime_sources": {
+    "__init__.py": "ea748a3fff4f782e2addefec22e787160de85a6a06743e5f58cdc69cfb0a3f39",
+    "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "predict.py": "e1e0b589c9811376ff7d1aefe1515803e0d0a1156c3b213bb0f7d6f038e08dbc",
+    "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+  },
+  "schema_version": "2.0.0",
+  "synthetic": false
+}

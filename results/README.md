@@ -5,6 +5,11 @@ The first measured development pilot is
 12 tasks across six repositories, with pinned sources and a local leakage audit.
 It is not a final evaluation or a model/specialization claim.
 
+[SWE-bench dev-v2: preparation and lexical controls](reports/swebench-dev-v2-preparation/README.md)
+adds 60 new development issues and matched context packets. Full-corpus and
+context lexical quality/coverage are reported separately. Untuned model execution
+remains NOT_RUN; this is preparation for the next model comparison.
+
 ```
 results/
   README.md

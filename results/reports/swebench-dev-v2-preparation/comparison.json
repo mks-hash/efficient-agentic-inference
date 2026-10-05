@@ -1,0 +1,162 @@
+{
+  "code_commit": "0bd75714686b365334936e7faa7e5211816d1540",
+  "context_physical_isolation": "PASS",
+  "context_profile": "bm25-top20-prefix1200-v1",
+  "context_rebuild_identical": true,
+  "context_schema_validation": "PASS",
+  "context_semantic_provenance_identical": true,
+  "context_tasks_sha256": "880c534924526231362229bb84dd606e3ef35ab9f75f579152f65d7c9b3eb287",
+  "gold_sha256": "c340d01f5f4caf3b27ca87c4821e5cf3ed209c974e339399b90e7d4a1e18758b",
+  "known_limit": "Context ceiling and prefix information loss differ from full-corpus coverage. A model gain over matched lexical alone does not establish advantage over full lexical.",
+  "monetary_economics": "UNKNOWN",
+  "schema_version": "1.0.0",
+  "scope": "60-task same-repository new-issue development preparation; no model results",
+  "selected": 60,
+  "timing_scope": "Separate serial runs; ranking summaries exclude context setup. Context manifests retain preparation CPU/wall time. No total-system efficiency claim.",
+  "treatments": {
+    "lexical-context": {
+      "all_files": {
+        "candidate_recall_ceiling": 0.7834873508557719,
+        "conditional_denominator_tasks": 55,
+        "conditional_recall_at_k": {
+          "1": 0.06987012987012987,
+          "10": 0.5632900432900433,
+          "3": 0.18064935064935064,
+          "5": 0.2914285714285714
+        },
+        "empty_gold_tasks": 0,
+        "known_label_mean_recall_at_k": {
+          "1": 0.06154970760233918,
+          "10": 0.44962582738898527,
+          "3": 0.15226608187134502,
+          "5": 0.2283263714842662
+        },
+        "mean_precision_at_k": {
+          "1": 0.1,
+          "10": 0.085,
+          "3": 0.08888888888888888,
+          "5": 0.09333333333333334
+        },
+        "mean_recall_at_k": {
+          "1": 0.06154970760233918,
+          "10": 0.44962582738898527,
+          "3": 0.15226608187134502,
+          "5": 0.2283263714842662
+        },
+        "mrr": 0.2253835978835979,
+        "nonempty_gold_tasks": 60,
+        "strict_success_rate_at_5": 0.13333333333333333,
+        "strict_successes_at_5": 8,
+        "unknown_label_tasks": 0
+      },
+      "implementation_files": {
+        "candidate_recall_ceiling": 0.7834873508557719,
+        "conditional_denominator_tasks": 55,
+        "conditional_recall_at_k": {
+          "1": 0.06987012987012987,
+          "10": 0.5632900432900433,
+          "3": 0.18064935064935064,
+          "5": 0.2914285714285714
+        },
+        "empty_gold_tasks": 0,
+        "known_label_mean_recall_at_k": {
+          "1": 0.06154970760233918,
+          "10": 0.44962582738898527,
+          "3": 0.15226608187134502,
+          "5": 0.2283263714842662
+        },
+        "mean_precision_at_k": {
+          "1": 0.1,
+          "10": 0.085,
+          "3": 0.08888888888888888,
+          "5": 0.09333333333333334
+        },
+        "mean_recall_at_k": {
+          "1": 0.06154970760233918,
+          "10": 0.44962582738898527,
+          "3": 0.15226608187134502,
+          "5": 0.2283263714842662
+        },
+        "mrr": 0.2253835978835979,
+        "nonempty_gold_tasks": 60,
+        "strict_success_rate_at_5": 0.13333333333333333,
+        "strict_successes_at_5": 8,
+        "unknown_label_tasks": 0
+      }
+    },
+    "lexical-full": {
+      "all_files": {
+        "candidate_recall_ceiling": 0.9854497354497355,
+        "conditional_denominator_tasks": 60,
+        "conditional_recall_at_k": {
+          "1": 0.2435042735042735,
+          "10": 0.6551939946018893,
+          "3": 0.4470524066576698,
+          "5": 0.5568286099865047
+        },
+        "empty_gold_tasks": 0,
+        "known_label_mean_recall_at_k": {
+          "1": 0.23894078144078143,
+          "10": 0.6486133067712015,
+          "3": 0.4424889145941778,
+          "5": 0.5522651179230126
+        },
+        "mean_precision_at_k": {
+          "1": 0.36666666666666664,
+          "10": 0.115,
+          "3": 0.25,
+          "5": 0.19666666666666668
+        },
+        "mean_recall_at_k": {
+          "1": 0.23894078144078143,
+          "10": 0.6486133067712015,
+          "3": 0.4424889145941778,
+          "5": 0.5522651179230126
+        },
+        "mrr": 0.5213888888888889,
+        "nonempty_gold_tasks": 60,
+        "strict_success_rate_at_5": 0.4166666666666667,
+        "strict_successes_at_5": 25,
+        "unknown_label_tasks": 0
+      },
+      "implementation_files": {
+        "candidate_recall_ceiling": 0.9854497354497355,
+        "conditional_denominator_tasks": 60,
+        "conditional_recall_at_k": {
+          "1": 0.2435042735042735,
+          "10": 0.6551939946018893,
+          "3": 0.4470524066576698,
+          "5": 0.5568286099865047
+        },
+        "empty_gold_tasks": 0,
+        "known_label_mean_recall_at_k": {
+          "1": 0.23894078144078143,
+          "10": 0.6486133067712015,
+          "3": 0.4424889145941778,
+          "5": 0.5522651179230126
+        },
+        "mean_precision_at_k": {
+          "1": 0.36666666666666664,
+          "10": 0.115,
+          "3": 0.25,
+          "5": 0.19666666666666668
+        },
+        "mean_recall_at_k": {
+          "1": 0.23894078144078143,
+          "10": 0.6486133067712015,
+          "3": 0.4424889145941778,
+          "5": 0.5522651179230126
+        },
+        "mrr": 0.5213888888888889,
+        "nonempty_gold_tasks": 60,
+        "strict_success_rate_at_5": 0.4166666666666667,
+        "strict_successes_at_5": 25,
+        "unknown_label_tasks": 0
+      }
+    },
+    "untuned-context": {
+      "reason": "Model execution environment not yet selected or validated.",
+      "status": "NOT_RUN"
+    }
+  }
+}
