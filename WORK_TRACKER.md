@@ -8,12 +8,12 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: none.
 | EAI-002 | Local planning sources | DONE | Two original files preserved in ignored .develop/ |
 | EAI-003 | Bootstrap docs, ADR, schema, benchmark contract | DONE | Initial bootstrap commit a3a7157; versioned schemas validated by runner/tests |
 | EAI-004 | CPU lexical runner and synthetic contract fixture | DONE | 14 contract tests, ruff lint/format and locked sync pass; CLI fixture complete |
-| EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | IN_PROGRESS | Pinned 12-task dev pilot prepared; 30 tests and local leakage audit pass; clean-code evidence run pending |
-| EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | IN_PROGRESS | Initial 12-task isolated pilot measured; final report/provenance pending |
+| EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | DONE_LOCAL | Clean commit 0edd9e6, pinned sources/splits, all 12 tasks prepared/labeled, schemas and leakage audit PASS; second-host check pending |
+| EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | DONE_PILOT | Full candidate corpus per each of 12 dev tasks; Recall@5 0.541667, ceiling 1; broader population not measured |
 | EAI-007 | Untuned small/generalist matrix | TODO | Verify primary model sources; freeze config and authorize resources |
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
-| EAI-010 | Independent second-host reproduction | NOT_RUN | Same-host fresh-directory rebuild and isolated predict established; separate host confirmation remains |
+| EAI-010 | Independent second-host reproduction | IN_PROGRESS | Manual CPU workflow compares a fresh GitHub-hosted rebuild with the published local reference |
 
 ## Open decisions before model evaluation
 
@@ -24,6 +24,15 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: none.
 
 No models have passed evidence gates. Synthetic/local verification must not
 promote any model gate or research hypothesis to PASS.
+
+## Clean-code dev pilot
+
+Code 0edd9e6; local audit PASS with 17,698 regular-file hashes verified across two
+fresh-directory exports, 27 matching deterministic artifacts, 12/12 patch applicability,
+forbidden-field and gold mutation invariants, repeated evaluation and physical
+network/filesystem isolation. Thirty local tests pass. GitHub CPU CI is green on
+Python 3.11/3.14: run 37378939520. Full compact evidence is under
+results/reports/swebench-dev-v1/. Monetary cost/CPS are unknown; no efficiency claim.
 
 ## Bootstrap verification
 

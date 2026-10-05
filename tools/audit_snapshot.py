@@ -21,7 +21,12 @@ def semantic(path: Path) -> list[dict]:
     return [{k: v for k, v in record.items() if k != "measurements"} for record in read_jsonl(path)]
 
 
-def audit(snapshot: Path, rebuild: Path, upstream: Path, output: Path) -> dict:
+def audit(
+    snapshot: Path, rebuild: Path, upstream: Path, output: Path, sudo_isolation: bool = False
+) -> dict:
+    launcher = (["sudo", "-n"] if sudo_isolation else []) + [
+        str(ROOT / "tools/predict-isolated.sh")
+    ]
     output.mkdir(parents=True, exist_ok=False)
     first, second = (
         json.loads((snapshot / "snapshot.json").read_text()),
@@ -106,7 +111,7 @@ def audit(snapshot: Path, rebuild: Path, upstream: Path, output: Path) -> dict:
         ("predict-mutated", mutant_path),
     ):
         subprocess.run(
-            [str(ROOT / "tools/predict-isolated.sh"), str(inputs_path), str(output / name)],
+            [*launcher, str(inputs_path), str(output / name)],
             check=True,
         )
         verify_artifacts(output / name)
@@ -138,7 +143,7 @@ def audit(snapshot: Path, rebuild: Path, upstream: Path, output: Path) -> dict:
     gold_path.write_bytes(jsonl(mutant_gold))
     subprocess.run(
         [
-            str(ROOT / "tools/predict-isolated.sh"),
+            *launcher,
             str(snapshot / "inference_inputs/tasks.jsonl"),
             str(output / "predict-gold-mutated"),
         ],
@@ -232,6 +237,9 @@ if __name__ == "__main__":
     parser.add_argument("--rebuild", type=Path, required=True)
     parser.add_argument("--upstream", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--sudo-isolation", action="store_true", help="Use sudo only for bwrap wrapper"
+    )
     args = parser.parse_args()
     print(
         json.dumps(
@@ -240,6 +248,7 @@ if __name__ == "__main__":
                 args.rebuild.resolve(),
                 args.upstream.resolve(),
                 args.output.resolve(),
+                args.sudo_isolation,
             ),
             indent=2,
         )

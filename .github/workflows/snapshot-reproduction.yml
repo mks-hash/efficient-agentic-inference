@@ -1,0 +1,67 @@
+name: SWE-bench CPU reproduction
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --locked --extra data
+      - name: Prepare OS isolation
+        run: |
+          if ! command -v bwrap >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y bubblewrap
+          fi
+      - name: Fetch pinned upstream sources
+        run: >-
+          uv run eai-snapshot fetch --config configs/swebench-sources-v1.json
+          --output data/local/upstream
+      - name: Rebuild base snapshots
+        run: |
+          uv run eai-snapshot build --config configs/swebench-sources-v1.json \
+            --upstream data/local/upstream --split splits/dev-v1.json \
+            --output data/local/snapshots/a --cache data/local/git-cache
+          uv run eai-snapshot build --config configs/swebench-sources-v1.json \
+            --upstream data/local/upstream --split splits/dev-v1.json \
+            --output data/local/snapshots/b --cache data/local/git-cache --offline
+      - name: Isolated prediction and leakage audit
+        run: >-
+          uv run python tools/audit_snapshot.py
+          --snapshot data/local/snapshots/a --rebuild data/local/snapshots/b
+          --upstream data/local/upstream --output results/runs/remote-audit
+          --sudo-isolation
+      - name: Compare with published local reference
+        run: |
+          uv run python - <<'PY'
+          import json
+          from pathlib import Path
+          local = Path('results/reports/swebench-dev-v1')
+          remote = Path('results/runs/remote-audit')
+          a = json.loads((local / 'audit.json').read_text())
+          b = json.loads((remote / 'audit.json').read_text())
+          for field in ('snapshot_sha256', 'inputs_sha256', 'gold_sha256', 'semantic_predictions_sha256'):
+              assert a[field] == b[field], field
+          reference = json.loads((local / 'summary.json').read_text())
+          reproduced = json.loads((remote / 'evaluate-original/summary.json').read_text())
+          for field in ('all_files', 'implementation_files', 'selected', 'prepared', 'failed_preparation'):
+              assert reference[field] == reproduced[field], field
+          assert b['status'] == 'PASS' and not b['code_dirty']
+          print('Independent-host deterministic artifacts, predictions and quality match.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: swebench-dev-v1-reproduction
+          retention-days: 7
+          path: |
+            results/runs/remote-audit/audit.json
+            results/runs/remote-audit/predict-original/*.json*
+            results/runs/remote-audit/predict-original/*.sha256
+            results/runs/remote-audit/evaluate-original/*.json*

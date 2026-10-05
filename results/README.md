@@ -1,16 +1,19 @@
 # Results storage
 
-No research results exist yet.
+The first measured development pilot is
+[SWE-bench dev-v1: lexical localization](reports/swebench-dev-v1/README.md):
+12 tasks across six repositories, with pinned sources and a local leakage audit.
+It is not a final evaluation or a model/specialization claim.
 
 ```
 results/
   README.md
   runs/<unique-run-id>/      # ignored local immutable runs
-    manifest.json
+    manifest.json             # inference provenance; no gold identity
     predictions.jsonl
     summary.json
     checksums.json
-  reports/                  # reviewed compact reports can be tracked
+  reports/                  # reviewed compact derivative outputs and reports
     local/                  # ignored drafts
 ```
 

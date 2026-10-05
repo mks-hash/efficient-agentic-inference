@@ -1,0 +1,119 @@
+{
+  "candidate_policy": "python-full-corpus-v1",
+  "contract": "localization-v2",
+  "gold_sha256": "55e204f896a6715df81ed071211bfdaf9b71145b455106fcc4e219e3517d11b2",
+  "inputs_sha256": "0577b5bf608b061e342cc1f5a1406d1d71c52795d2ca4e23ab440d974f50fc12",
+  "label_policy": "solution-patch-files-v2",
+  "labeled": 12,
+  "population": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1810",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1165",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-811",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1364",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4417",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-2625",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1252",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1033",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pydicom__pydicom-1194",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pylint-dev__astroid-1719",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "pyvista__pyvista-4315",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    },
+    {
+      "instance_id": "sqlfluff__sqlfluff-3435",
+      "label_reason": null,
+      "label_status": "labeled",
+      "preparation_reason": null,
+      "preparation_status": "prepared"
+    }
+  ],
+  "prepared": 12,
+  "schema_version": "2.0.0",
+  "selected": 12,
+  "sources": {
+    "schema_version": "1.0.0",
+    "sources": [
+      {
+        "dataset": "SWE-bench/SWE-bench",
+        "local_name": "dev.parquet",
+        "path": "data/dev-00000-of-00001.parquet",
+        "revision": "c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2",
+        "sha256": "7812438935be9cbe36049b93c73412d523fb07251bd255813168c38c5fc92454",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench/resolve/c6fe717fd7a4c3ac1daa4055a4fd082c6a1d28a2/data/dev-00000-of-00001.parquet"
+      },
+      {
+        "dataset": "SWE-bench/SWE-bench_Verified",
+        "local_name": "verified.parquet",
+        "path": "data/test-00000-of-00001.parquet",
+        "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+        "sha256": "030cfd7f2a704c4c0226e7f104c725a3b41230b1d3517f9c915ad7ea5be3fa25",
+        "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified/resolve/78f471bf655a3137b2e8a75af1501690ec009ec3/data/test-00000-of-00001.parquet"
+      }
+    ]
+  },
+  "split_sha256": "25d618b27bcf1c9f51363cafbef03c446ecc3fe7444a5ec6ef76556c4db0a8f6"
+}

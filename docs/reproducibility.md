@@ -47,6 +47,12 @@ and the project checkout are physically absent. The probe's result is checksumme
 alongside predictions. If this OS boundary is unavailable, report it as NOT_RUN;
 a Python network mock does not establish physical isolation.
 
+The manually dispatched `SWE-bench CPU reproduction` GitHub workflow downloads
+the same pinned sources, reconstructs two fresh trees and compares deterministic
+hashes and quality with the published local reference. On its hosted Linux runner
+it uses sudo only for the bubblewrap wrapper (`--sudo-isolation`), retaining an
+unprivileged builder/evaluator. It is separate from ordinary pull-request CI.
+
 ```bash
 tools/predict-isolated.sh data/local/snapshots/reproduction-a/inference_inputs/tasks.jsonl \
   results/runs/reproduction-predictions
