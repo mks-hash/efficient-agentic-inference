@@ -9,6 +9,17 @@
   "lint_format": "PASS",
   "monetary_economics": "UNKNOWN",
   "paid_authorization": "NOT_AUTHORIZED",
+  "remote_cpu_ci": {
+    "python_versions": [
+      "3.11",
+      "3.14"
+    ],
+    "revision": "de4752d5d1f2ef37a91fc773abc4061ae6678838",
+    "run_id": 37524034350,
+    "scope": "CPU contracts and synthetic accounting fixture only",
+    "status": "PASS",
+    "url": "https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37524034350"
+  },
   "scope": "Preparation/software evidence only; no new model-quality or efficiency result",
   "synthetic_cpu_native_regression": {
     "binary_sha256": "93a542e7d377fb7929cbf83590276b3e9d7d5aacd8e292b921efb7220fe2ba4c",

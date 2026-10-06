@@ -234,3 +234,8 @@ three-hour requested cap, resource gates before research, incremental collection
 and confirmed VM/disk deletion. The old one-session authorization is complete.
 This new paid session is NOT_AUTHORIZED and has not been provisioned. Training,
 prompt changes, retries/fallback and additional hardware are outside this proposal.
+
+Preparation was published at de4752d; [remote CPU contracts](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37524034350)
+passed on Python 3.11/3.14, including the new synthetic accounting CLI. No paid
+resource has been created; explicit authorization of the proposed session remains
+the next gate.
