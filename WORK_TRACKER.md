@@ -16,7 +16,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | FOUNDATION_VALIDATED | Clean 0bd7571 audit PASS: 60/60 prepared/labeled, 123 identical artifacts, 88638 file hashes; full Recall@5 0.552265 / ceiling 0.985450 / strict 25/60; matched context 0.228326 / ceiling 0.783487 / strict 8/60; phase accounting explicit, no prices or model results |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
-| EAI-013 | v0.2.0 report and release preparation | AUTHORIZED_PUBLICATION_PENDING | Report/README published; package 0.2.0, contract/schemas unchanged; 46 CPU tests, saved-prediction re-evaluation and remote CPU CI 37412035383 PASS; assets prepared locally; user explicitly authorized tag/GitHub Release; publication checks pending |
+| EAI-013 | v0.2.0 report and release preparation | DONE | Report/README published; package 0.2.0, contract/schemas unchanged; 46 CPU tests, saved-prediction re-evaluation and remote CPU CI 37412035383 PASS; annotated tag e097c22 and public GitHub Release with verified assets; release-commit CPU CI 37412299183 PASS |
 
 ## Open decisions before generalist/adaptation
 
@@ -182,7 +182,15 @@ inference repetition is NOT_RUN; no paid resources were started. The preparation
 was published at 9b1b109; [remote CPU CI](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37412035383)
 passed on Python 3.11/3.14. A source-free evidence archive, exact-commit provenance
 and SHA256SUMS are prepared under ignored `.develop/releases/v0.2.0/`; asset
-membership and hashes are verified against committed bytes. Publication of the
-annotated tag and GitHub Release was explicitly authorized by the user on
-2026-10-06. Final release-commit CPU CI, asset preparation and publication are
-the remaining execution steps; GPU repetition remains NOT_RUN.
+membership and hashes are verified against committed bytes. The user explicitly authorized tag and GitHub Release publication on 2026-10-06.
+
+[v0.2.0 — Untuned Small-Model Localization Baseline](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.2.0)
+is published as Latest. The annotated tag remains at
+`e097c22f571d4b5b38e8095abfbce9d24fe5f465`;
+[release-commit CPU CI](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37412299183)
+passed on Python 3.11/3.14. Three uploaded assets (evidence archive, provenance,
+SHA256SUMS) were downloaded and verified byte-identical before publication. The
+85-file archive is 318,435 bytes, SHA-256
+`08d59ec2119da6d037d76b7be157c0fbb41feaecdc3875a833488256887bc0a9`.
+The post-publication tracker update does not move the tag or replace assets.
+Independent GPU repetition remains NOT_RUN; no additional paid run occurred.
