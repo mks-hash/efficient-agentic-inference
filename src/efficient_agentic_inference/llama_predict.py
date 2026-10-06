@@ -308,6 +308,8 @@ def run(
         HOST,
         "--port",
         str(PORT),
+        "--log-verbosity",
+        "4",
         "--ctx-size",
         str(config["execution"]["context_tokens"]),
         "--parallel",

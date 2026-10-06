@@ -27,6 +27,10 @@ machine. Binary equality is not required across different hardware/build tools.
 
 ## Freeze and run
 
+Launch long-running campaigns from an immutable run-specific code copy. Do not
+edit an active shell launcher: shells may read its remaining bytes only after a
+child returns, even when the inference modules themselves were staged safely.
+
 Generate the unchanged context profile on dev-v1 first. The same command on
 dev-v2 uses its previously frozen context packet. Use fresh paths everywhere.
 

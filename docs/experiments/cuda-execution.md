@@ -25,7 +25,9 @@ run. The client and backend share the private network namespace for loopback.
 
 The CUDA request asks for all layers offloaded. Startup must confirm a nonzero
 complete `offloaded X/X layers to GPU` message; partial/CPU fallback aborts before
-research generation. Native template/token provenance, no truncation/repair,
+research generation. The pinned backend maps library INFO to trace verbosity;
+`--log-verbosity 4` is required to retain this evidence. A missing log remains a
+failed gate, never implicit proof of GPU execution. Native template/token provenance, no truncation/repair,
 512 output tokens, strict JSON, one attempt and failed-task accounting are shared
 with the CPU treatment. GPU utilization seconds remain null; record reservation
 wall time/billing separately rather than equating it with active GPU compute.

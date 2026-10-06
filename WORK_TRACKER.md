@@ -1,6 +1,6 @@
 # Work tracker
 
-Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; local CPU model smoke in progress.
+Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; CPU smoke ended at its time limit; authorized L4 compilation in progress.
 
 | ID | Work | Status | Completion evidence / next gate |
 | --- | --- | --- | --- |
@@ -10,7 +10,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-004 | CPU lexical runner and synthetic contract fixture | DONE | 14 contract tests, ruff lint/format and locked sync pass; CLI fixture complete |
 | EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | DONE_PILOT | Clean-code local and separate-host audits PASS; pinned sources/splits and all 12 tasks prepared/labeled |
 | EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | DONE_PILOT | Full candidate corpus per each of 12 dev tasks; Recall@5 0.541667, ceiling 1; broader population not measured |
-| EAI-007 | Untuned small/generalist matrix | CPU_SMOKE_IN_PROGRESS | CPU dev-v1 smoke running on ce08620; synthetic native tokens/isolation PASS; dev-v2 model and actual GPU gates NOT_RUN; CUDA preparation tested on CPU only |
+| EAI-007 | Untuned small/generalist matrix | L4_PREPARATION_IN_PROGRESS | CPU ce08620 smoke: 9/12 attempted, 7 valid, 1 invalid, 1 timeout, 3 unattempted; staged-source/native/isolation checks PASS; dev-v2/GPU model gates NOT_RUN |
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
@@ -57,14 +57,26 @@ ADR 0004 selects local CPU capability checks: synthetic API probe followed by th
 old 12 dev-v1 tasks, then conditional full dev-v2 execution. The pinned llama.cpp
 CPU binary has been built; weights match their exact byte length and SHA-256. Forty-six CPU contract tests
 and lint pass. The synthetic native API probe passed physical isolation, exact input/output
-token counter agreement and strict JSON (192 input / 7 output tokens). Full-input
-resource fit and localization quality remain NOT_RUN; this probe is software
-execution evidence only. This host has a GTX 1060 with unavailable
+token counter agreement and strict JSON (192 input / 7 output tokens). The old dev-v1 CPU smoke ended at its one-hour campaign limit: 9/12
+started, seven valid, one unknown-path output, one timeout and three unattempted.
+All twelve remain in evaluation (Recall@5 0.375, strict 4/12); this incomplete
+exposed smoke is not a new research baseline. Eight completed native requests
+fit the context and verify token counters. Native completed-request p50 is
+410.780 seconds; extrapolated 60-request CPU time is about 6.85 hours, not measured
+dev-v2 latency. CPU dev-v2 is NOT_RUN. An active outer launcher was edited during
+its child run, causing post-inference shell parsing to fail; internal result hashes
+and ce08620 staged-module identity passed. The outer checksum manifest was
+recovered once without changing inference files or repeating attempts. The
+immutable transported GPU launcher is unaffected. This host has a GTX 1060 with unavailable
 NVIDIA driver; CPU timing will identify the exact hardware/backend.
-No paid research resources, training or fallback have been used. Google Cloud
+No training or fallback has been used. Google Cloud
 inventory/quotas/prices and a read-only SSH hardware check are authorized and
 completed: existing micro-VMs lack model capacity; one T4/L4 quota is available.
-L4 VM is the proposed accelerator follow-up; provisioning remains unauthorized.
+One L4 session is explicitly authorized up to USD 5 and three hours. The new
+`g2-standard-4` VM is running with automatic DELETE after 10,800 seconds;
+CUDA 12.9 / driver 580.178.04 and NVIDIA L4 23,034 MiB are verified.
+Inference receives a minimal eight-file code archive and source-bearing context
+packets only; no evaluator or benchmark gold is uploaded.
 
 ## Clean-code dev pilot
 
@@ -103,8 +115,10 @@ labels use solution patch only. Candidate policy and edge cases are frozen in AD
 ## CUDA preparation
 
 CUDA device mounts/full-offload rejection and paired repository-block analysis
-are implemented and covered by CPU software checks. Actual GPU execution,
+are implemented and covered by CPU software checks. Actual GPU inference,
 resource fit and quality remain NOT_RUN. L4/A100/H100 price scenarios are recorded
-in docs/experiments/cloud-options-2026-10-06.md; paid provisioning is not authorized.
+in docs/experiments/cloud-options-2026-10-06.md; one L4 session is now authorized
+and allocated. The allocation started 2026-10-06T02:57:54.707Z, with a hard
+three-hour automatic deletion deadline and incremental local artifact collection.
 The active dev-v1 CPU smoke retains its frozen ce08620 code; later preparation
 changes do not alter its staged inference modules or prompt/config.
