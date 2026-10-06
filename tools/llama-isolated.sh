@@ -25,6 +25,19 @@ done
 cp "$input_file" "$staging/input/tasks.jsonl"
 cp "$config_file" "$staging/config/config.json"
 cp "$prompt_file" "$staging/config/system.txt"
+device=$(/usr/bin/python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["execution"].get("device", "cpu"))' "$config_file")
+device_mounts=()
+case "$device" in
+  cpu) ;;
+  cuda)
+    device_mounts+=(--ro-bind /sys /sys --ro-bind /etc/ld.so.cache /etc/ld.so.cache)
+    for node in /dev/nvidia0 /dev/nvidiactl /dev/nvidia-uvm; do
+      if [ ! -e "$node" ]; then echo "Required GPU device absent: $node" >&2; exit 2; fi
+      device_mounts+=(--dev-bind "$node" "$node")
+    done
+    ;;
+  *) echo 'Unsupported execution device' >&2; exit 2 ;;
+esac
 host_netns=$(readlink /proc/self/ns/net)
 cat > "$staging/probe.py" <<'PY'
 import json, os, pathlib, socket
@@ -43,11 +56,13 @@ PY
 bwrap --unshare-all --die-with-parent --new-session --clearenv \
   --ro-bind /usr /usr --ro-bind /lib /lib --ro-bind /lib64 /lib64 \
   --proc /proc --dev /dev --tmpfs /tmp \
+  "${device_mounts[@]}" \
   --ro-bind "$staging/code" /code --ro-bind "$staging/input" /inputs \
   --ro-bind "$staging/config" /config --ro-bind "$model_file" /model/model.gguf \
   --ro-bind "$binary_file" /backend/llama-server \
   --ro-bind "$staging/probe.py" /probe.py --bind "$output_dir" /output \
   --setenv PYTHONPATH /code --setenv PYTHONDONTWRITEBYTECODE 1 \
+  --setenv CUDA_CACHE_PATH /tmp/cuda-cache \
   --setenv HIDDEN_PROJECT "$project_root" --setenv HOST_NETNS "$host_netns" --chdir /tmp \
   /usr/bin/sh -c '
     /usr/bin/python3 /probe.py > /output/isolation.json || exit 1

@@ -9,7 +9,15 @@ from pathlib import Path
 from unittest.mock import patch
 
 from efficient_agentic_inference.inference import PreparedInference
-from efficient_agentic_inference.llama_predict import classify, consume_event, infer, token_ids
+from efficient_agentic_inference.llama_predict import (
+    classify,
+    consume_event,
+    gpu_layers,
+    gpu_seconds,
+    infer,
+    require_full_offload,
+    token_ids,
+)
 from efficient_agentic_inference.records import digest, encoded
 
 CONFIG = {"decoding": {"max_output_tokens": 512}, "execution": {"context_tokens": 16384}}
@@ -31,6 +39,23 @@ def evidence():
 
 
 class ModelEvidenceContracts(unittest.TestCase):
+    def test_gpu_flags_do_not_invent_utilization_or_allow_cpu_fallback(self):
+        self.assertEqual(gpu_layers(CONFIG), "0")
+        self.assertEqual(gpu_seconds(CONFIG), 0)
+        cuda = {"execution": {"device": "cuda"}}
+        self.assertEqual(gpu_layers(cuda), "999")
+        self.assertIsNone(gpu_seconds(cuda))
+        require_full_offload("load_tensors: offloaded 37/37 layers to GPU")
+        for log in (
+            "CPU model loaded",
+            "offloaded 0/37 layers to GPU",
+            "offloaded 20/37 layers to GPU",
+        ):
+            with self.subTest(log=log), self.assertRaises(ValueError):
+                require_full_offload(log)
+        with self.assertRaises(ValueError):
+            gpu_layers({"execution": {"device": "unknown"}})
+
     def test_strict_output_and_token_provenance(self):
         self.assertEqual(classify(evidence(), {"src/a.py"}, CONFIG), ["src/a.py"])
         for raw in (

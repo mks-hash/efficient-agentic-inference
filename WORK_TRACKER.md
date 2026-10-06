@@ -1,6 +1,6 @@
 # Work tracker
 
-Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; local CPU model smoke in preparation.
+Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; local CPU model smoke in progress.
 
 | ID | Work | Status | Completion evidence / next gate |
 | --- | --- | --- | --- |
@@ -10,7 +10,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-004 | CPU lexical runner and synthetic contract fixture | DONE | 14 contract tests, ruff lint/format and locked sync pass; CLI fixture complete |
 | EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | DONE_PILOT | Clean-code local and separate-host audits PASS; pinned sources/splits and all 12 tasks prepared/labeled |
 | EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | DONE_PILOT | Full candidate corpus per each of 12 dev tasks; Recall@5 0.541667, ceiling 1; broader population not measured |
-| EAI-007 | Untuned small/generalist matrix | CPU_SMOKE_IN_PROGRESS | ADR 0003 and untuned-dev-v2 protocol; Qwen3-4B-Instruct-2507 original/GGUF/backend revisions pinned; model execution and physical isolation NOT_RUN; local NVIDIA driver unavailable |
+| EAI-007 | Untuned small/generalist matrix | CPU_SMOKE_IN_PROGRESS | CPU dev-v1 smoke running on ce08620; synthetic native tokens/isolation PASS; dev-v2 model and actual GPU gates NOT_RUN; CUDA preparation tested on CPU only |
 | EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
@@ -55,7 +55,7 @@ context reduces file coverage and lexical quality; model results must be compare
 against both controls. Source-bearing inputs remain ignored and reproducible.
 ADR 0004 selects local CPU capability checks: synthetic API probe followed by the
 old 12 dev-v1 tasks, then conditional full dev-v2 execution. The pinned llama.cpp
-CPU binary has been built; weights match their exact byte length and SHA-256. Forty-five CPU contract tests
+CPU binary has been built; weights match their exact byte length and SHA-256. Forty-six CPU contract tests
 and lint pass. The synthetic native API probe passed physical isolation, exact input/output
 token counter agreement and strict JSON (192 input / 7 output tokens). Full-input
 resource fit and localization quality remain NOT_RUN; this probe is software
@@ -99,3 +99,12 @@ Frozen dev-v1 selects 12 of 225 source tasks, two per each of six repositories,
 without reading patches for selection. All Verified IDs are reserved. Snapshot
 labels use solution patch only. Candidate policy and edge cases are frozen in ADR
 0002 and localization-v2. No model evidence gates have changed.
+
+## CUDA preparation
+
+CUDA device mounts/full-offload rejection and paired repository-block analysis
+are implemented and covered by CPU software checks. Actual GPU execution,
+resource fit and quality remain NOT_RUN. L4/A100/H100 price scenarios are recorded
+in docs/experiments/cloud-options-2026-10-06.md; paid provisioning is not authorized.
+The active dev-v1 CPU smoke retains its frozen ce08620 code; later preparation
+changes do not alter its staged inference modules or prompt/config.

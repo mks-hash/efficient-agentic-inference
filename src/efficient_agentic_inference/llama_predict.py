@@ -1,4 +1,4 @@
-"""CPU llama.cpp inference with native rendering, streamed evidence and no gold imports."""
+"""Isolated llama.cpp inference with native rendering and streamed, gold-free evidence."""
 
 from __future__ import annotations
 
@@ -7,6 +7,7 @@ import hashlib
 import http.client
 import json
 import platform
+import re
 import resource
 import subprocess
 import time
@@ -16,6 +17,23 @@ from .inference import PreparedInference, prediction_error
 from .records import digest, encoded, jsonl, read_jsonl, write_artifacts
 
 HOST, PORT = "127.0.0.1", 8080
+
+
+def gpu_seconds(config: dict) -> int | None:
+    return 0 if config["execution"].get("device", "cpu") == "cpu" else None
+
+
+def gpu_layers(config: dict) -> str:
+    device = config["execution"].get("device", "cpu")
+    if device not in {"cpu", "cuda"}:
+        raise ValueError("unsupported_execution_device")
+    return "0" if device == "cpu" else "999"
+
+
+def require_full_offload(log: str) -> None:
+    matches = re.findall(r"offloaded (\d+)/(\d+) layers to GPU", log)
+    if not matches or any(int(done) == 0 or done != total for done, total in matches):
+        raise ValueError("full_gpu_offload_not_confirmed")
 
 
 def file_digest(path: Path) -> str:
@@ -62,6 +80,8 @@ def token_ids(value: object) -> bool:
 
 
 def consume_event(event: dict, evidence: dict) -> None:
+    if not isinstance(event, dict):
+        raise ValueError("stream_event_must_be_an_object")
     if "error" in event:
         raise RuntimeError(f"backend_error: {event['error']}")
     if event.get("stop") is True:
@@ -121,6 +141,8 @@ def classify(evidence: dict, candidates: set[str], config: dict) -> list[str]:
     if final.get("tokens_predicted") != len(evidence["output_token_ids"]):
         raise ValueError("output_token_provenance_mismatch")
     settings = final.get("generation_settings", {})
+    if not isinstance(settings, dict):
+        raise ValueError("invalid_generation_settings")
     for name, expected in {
         "seed": 0,
         "temperature": 0,
@@ -233,7 +255,7 @@ def infer(prepared: PreparedInference, config: dict, system: str, folder: Path, 
             if evidence["input_token_ids"] is not None
             else None,
             "output_tokens": len(evidence["output_token_ids"]) if evidence.get("request") else None,
-            "gpu_seconds": 0,
+            "gpu_seconds": gpu_seconds(config),
             "monetary_usd": None,
         },
     }
@@ -243,6 +265,7 @@ def run(
     inputs: Path, config_path: Path, model: Path, binary: Path, prompt: Path, output: Path
 ) -> dict:
     config = json.loads(config_path.read_text())
+    layers = gpu_layers(config)
     if config["decoding"] != {
         "attempts": 1,
         "max_output_tokens": 512,
@@ -267,6 +290,16 @@ def run(
     output.mkdir(parents=True, exist_ok=False)
     (output / "attempts").mkdir()
     (output / "execution-config.json").write_bytes(encoded(config))
+    if layers != "0":
+        metadata = subprocess.check_output(
+            [
+                "nvidia-smi",
+                "--query-gpu=index,name,memory.total,driver_version",
+                "--format=csv,noheader,nounits",
+            ],
+            timeout=15,
+        )
+        (output / "gpu-metadata.csv").write_bytes(metadata)
     command = [
         str(binary),
         "--model",
@@ -284,7 +317,7 @@ def run(
         "--threads-batch",
         str(config["execution"]["threads"]),
         "--n-gpu-layers",
-        "0",
+        layers,
         "--no-context-shift",
         "--cache-ram",
         "0",
@@ -312,6 +345,8 @@ def run(
                     remaining(deadline)
                     time.sleep(0.25)
             load_ms = (time.monotonic() - started) * 1000
+            if layers != "0":
+                require_full_offload((output / "server.log").read_text())
             props = post("/props", None, time.monotonic() + 10)
             (output / "backend-props.json").write_bytes(encoded(props))
             if props.get("model_path") != str(model):
@@ -346,7 +381,7 @@ def run(
                             "cpu_ms": None,
                             "input_tokens": 0,
                             "output_tokens": 0,
-                            "gpu_seconds": 0,
+                            "gpu_seconds": gpu_seconds(config),
                             "monetary_usd": None,
                         },
                     }
@@ -392,7 +427,7 @@ def run(
         - usage_before.ru_utime
         - usage_before.ru_stime,
         "backend_peak_rss_kib": usage.ru_maxrss,
-        "gpu_seconds": 0,
+        "gpu_seconds": gpu_seconds(config),
         "monetary_usd": None,
         "command": command,
         "child_exit_code": server.returncode,
@@ -400,7 +435,7 @@ def run(
     (output / "phases.json").write_bytes(encoded(phases))
     manifest = {
         "schema_version": "2.0.0",
-        "program": "llama-predict-cpu",
+        "program": "llama-predict-" + config["execution"].get("device", "cpu"),
         "synthetic": config["execution"]["synthetic"],
         "inputs_sha256": digest(inputs.read_bytes()),
         "execution_config_sha256": digest(config_path.read_bytes()),
@@ -424,7 +459,7 @@ def run(
             "and context preparation; cpu_ms unknown per task, total backend CPU separately "
             "measured; interrupted output token counts are received-token lower bounds"
         ),
-        "cost_reason": "Unpriced local CPU capability run; no general latency/economics claim",
+        "cost_reason": "No price/invoice joined; no general latency/economics claim",
     }
     write_artifacts(
         output / "predictions",
