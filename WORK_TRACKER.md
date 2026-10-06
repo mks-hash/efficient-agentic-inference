@@ -55,13 +55,16 @@ context reduces file coverage and lexical quality; model results must be compare
 against both controls. Source-bearing inputs remain ignored and reproducible.
 ADR 0004 selects local CPU capability checks: synthetic API probe followed by the
 old 12 dev-v1 tasks, then conditional full dev-v2 execution. The pinned llama.cpp
-CPU binary has been built; weights match their exact byte length and SHA-256. Forty-three CPU contract tests
+CPU binary has been built; weights match their exact byte length and SHA-256. Forty-five CPU contract tests
 and lint pass. The synthetic native API probe passed physical isolation, exact input/output
 token counter agreement and strict JSON (192 input / 7 output tokens). Full-input
 resource fit and localization quality remain NOT_RUN; this probe is software
 execution evidence only. This host has a GTX 1060 with unavailable
 NVIDIA driver; CPU timing will identify the exact hardware/backend.
-No paid resources, training or fallback have been used.
+No paid research resources, training or fallback have been used. Google Cloud
+inventory/quotas/prices and a read-only SSH hardware check are authorized and
+completed: existing micro-VMs lack model capacity; one T4/L4 quota is available.
+L4 VM is the proposed accelerator follow-up; provisioning remains unauthorized.
 
 ## Clean-code dev pilot
 
