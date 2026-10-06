@@ -155,5 +155,7 @@ retained separately. The GPU source/launcher remained immutable during execution
 
 Forty-six CPU tests, lint/format and shell syntax pass. Exact baseline artifacts,
 native audit, fixed primary analysis and checksum evidence are retained for review.
-The user authorized commit/push of this completed stage on 2026-10-06. Remote CPU
-CI is separate evidence, recorded in GitHub checks for the published revision.
+The user requested commit/push on 2026-10-06. Local commits and CPU checks
+are complete. Automatic approval review rejected the public push because it
+requires explicit confirmation of publishing the L4 report/metrics; push remains
+pending that confirmation. Remote CPU CI has not run for these local revisions.
