@@ -1,0 +1,35 @@
+{
+  "artifact_schema_version": "2.0.0",
+  "benchmark_contract": "localization-v2",
+  "cpu_tests": 46,
+  "date": "2026-10-06",
+  "experiment_code_revision": "f67e4993aa93c5c05e13e28b0bb4b0bf0ea8dc53",
+  "figure_visual_check": "PASS",
+  "frozen_bundle_checksums": {
+    "swebench-dev-v2-preparation": 24,
+    "untuned-dev-v2-l4": 45
+  },
+  "gpu_repetition": "NOT_RUN",
+  "independent_model_repetition": "NOT_RUN",
+  "lint_format": "PASS",
+  "local_links": "PASS",
+  "monetary_economics": "UNKNOWN",
+  "package_version": "0.2.0",
+  "runtime_sources_match_experiment_except_version_metadata": {
+    "comparison.py": "caff6f5d9060f1400099b88dd637e7e2cfc21363439c1cb7e53ef4a67c028235",
+    "evaluation.py": "056296b947af662f8dde0ae4a67e8a996c280ed3607a396c1744e7731ebf6e0e",
+    "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "labeler.py": "35d1f812c157512ab17a4e91e1b046afc069668c5353e9a730304b3d09c646e8",
+    "llama_predict.py": "f768d42d41a3cd5c45f2931bc72baf2e441db9837f81f9418cc896941d9f59ea",
+    "metrics.py": "f7fbbcc61c4db309036ccc2997358683c77591845debf0c53a1e42def43181f1",
+    "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+  },
+  "saved_reevaluation_byte_identical": true,
+  "scope": "CPU software and saved-artifact validation, no new inference",
+  "version_metadata": {
+    "change": "0.1.0 to 0.2.0 only",
+    "experiment_sha256": "ea748a3fff4f782e2addefec22e787160de85a6a06743e5f58cdc69cfb0a3f39",
+    "file": "src/efficient_agentic_inference/__init__.py",
+    "prepared_sha256": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004"
+  }
+}

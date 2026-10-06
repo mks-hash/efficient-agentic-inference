@@ -27,6 +27,7 @@ Never move a published tag or replace evidence assets in place. Corrections reta
 the original result and identify the superseding run in a new release. Releasing
 a pilot does not turn its development data into an untouched evaluation set.
 
-The first milestone is [v0.1.0](releases/v0.1.0.md). Untuned small-model comparison
-is the next planned research milestone. Training requires a separate evidence-based
+The first milestone is [v0.1.0](releases/v0.1.0.md). The completed untuned
+small-model comparison has [v0.2.0 milestone notes](releases/v0.2.0.md);
+publication of its tag and GitHub Release is a separate step. Training requires a separate evidence-based
 decision and any necessary resource authorization.

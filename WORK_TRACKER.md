@@ -16,6 +16,7 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | FOUNDATION_VALIDATED | Clean 0bd7571 audit PASS: 60/60 prepared/labeled, 123 identical artifacts, 88638 file hashes; full Recall@5 0.552265 / ceiling 0.985450 / strict 25/60; matched context 0.228326 / ceiling 0.783487 / strict 8/60; phase accounting explicit, no prices or model results |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
+| EAI-013 | v0.2.0 report and release preparation | PREPARED_PUBLICATION_PENDING | Technical report, saved-analysis figure and public README; package 0.2.0, contract/schemas unchanged; 46 CPU tests and saved-prediction re-evaluation PASS; push authorized, tag/GitHub Release pending explicit authorization |
 
 ## Open decisions before generalist/adaptation
 
@@ -161,3 +162,22 @@ rejection. All seven prepared commits through b3fe107 were published to main.
 Remote CPU contracts passed on Python 3.11 and 3.14:
 [GitHub Actions run 37411402418](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37411402418).
 This publication-status update does not change the frozen experiment artifacts.
+
+## v0.2.0 preparation
+
+The user authorized push to main on 2026-10-06 after discussing the next milestone.
+The [technical report](docs/technical-reports/untuned-dev-v2.md) explains the matched
+comparison, supplementary full-reference uncertainty, invalid answers and resource
+boundaries. The figure reads saved comparison records only; it adds no new analysis.
+README now places the development results nearer the top and links the report and
+[milestone notes](docs/releases/v0.2.0.md). The results index and research plan now
+describe the completed model campaign rather than its historical NOT_RUN state.
+
+Package/lock/runtime version metadata is 0.2.0; benchmark contract and schema
+versions are unchanged. No runtime behavior changes; the original f67e499 source
+identity and experiment bundle bytes remain intact. All 46 CPU tests, lint and
+format pass; a fresh local re-evaluation of saved predictions reproduces the exact
+original summary and per-task metrics. The figure was visually checked. GPU
+inference repetition is NOT_RUN; no paid resources were started. Release assets
+and exact-commit provenance will be prepared locally after the commit. Publication
+of the annotated tag and GitHub Release awaits explicit authorization.

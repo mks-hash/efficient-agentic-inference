@@ -7,8 +7,13 @@ It is not a final evaluation or a model/specialization claim.
 
 [SWE-bench dev-v2: preparation and lexical controls](reports/swebench-dev-v2-preparation/README.md)
 adds 60 new development issues and matched context packets. Full-corpus and
-context lexical quality/coverage are reported separately. Untuned model execution
-remains NOT_RUN; this is preparation for the next model comparison.
+context lexical quality/coverage are reported separately. Those frozen controls
+are now compared with
+[untuned Qwen3-4B on L4](reports/untuned-dev-v2-l4/README.md): 60 attempts,
+including eight invalid answers scored as failures. The
+[technical report](../docs/technical-reports/untuned-dev-v2.md) explains the
+matched-context finding and its development-only scope. GPU inference has not
+been independently repeated; economic benefit remains unmeasured.
 
 ```
 results/

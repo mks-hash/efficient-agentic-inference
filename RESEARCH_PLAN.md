@@ -95,9 +95,11 @@ tests independently; do not tune routing or prompts against final evaluation.
 6. Fallback and generalization: only after independent core measurements. Broader
    serving/concurrency and ToolGap composition require separate evidence gates.
 
-The released v0.1.0 records a reproducible lexical dev pilot. The next campaign
-is [untuned-dev-v2](docs/experiments/untuned-dev-v2.md): 60 new development issues,
-full-corpus and matched-context lexical controls, followed by one untuned model
-on the identical context packet. Its execution/resource gates remain separate.
-Dates and model choices are planning inputs. Training follows an evidence-based
-decision; paid runs require budget authorization.
+The released v0.1.0 records a reproducible lexical dev pilot. The completed
+[untuned-dev-v2](docs/experiments/untuned-dev-v2.md) campaign compares 60 new
+issues under full-corpus and matched-context lexical controls with one untuned
+model on the identical packet. The [technical report](docs/technical-reports/untuned-dev-v2.md)
+records a positive matched-context development finding. The next comparison is
+a stronger matched generalist with explicit system cost accounting; its execution
+contract and budget remain to be authorized. Training follows an evidence-based
+decision. No future campaign is authorized by these milestone notes.
