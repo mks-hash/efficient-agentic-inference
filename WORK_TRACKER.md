@@ -155,7 +155,9 @@ retained separately. The GPU source/launcher remained immutable during execution
 
 Forty-six CPU tests, lint/format and shell syntax pass. Exact baseline artifacts,
 native audit, fixed primary analysis and checksum evidence are retained for review.
-The user requested commit/push on 2026-10-06. Local commits and CPU checks
-are complete. Automatic approval review rejected the public push because it
-requires explicit confirmation of publishing the L4 report/metrics; push remains
-pending that confirmation. Remote CPU CI has not run for these local revisions.
+The user explicitly authorized push to main and publication of the L4 report
+and its metrics on 2026-10-06, resolving the earlier automatic approval review
+rejection. All seven prepared commits through b3fe107 were published to main.
+Remote CPU contracts passed on Python 3.11 and 3.14:
+[GitHub Actions run 37411402418](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37411402418).
+This publication-status update does not change the frozen experiment artifacts.
