@@ -1,0 +1,23 @@
+[
+  {
+    "details": "cpu-smoke/post-run-collection.json",
+    "inference_rerun": false,
+    "reason": "Active launch script edited during child execution; outer parsing failed after predictions/internal checksums completed. Outer checksum recovered once.",
+    "stage": "CPU smoke outer shell collection",
+    "status": "FAIL"
+  },
+  {
+    "generation_started": false,
+    "reason": "Protected home traversal: Bubblewrap permission denied for model source path. Unchanged workspace moved to /opt; no sandbox exposure widened.",
+    "stage": "GPU synthetic initial sandbox bind",
+    "status": "FAIL",
+    "wrapper_exit_code": 1
+  },
+  {
+    "generation_started": false,
+    "reason": "Default backend logging suppressed library INFO. Required X/X log absent; generation blocked. Explicit trace verbosity added in clean f67e499 before any GPU generation.",
+    "stage": "GPU synthetic full-offload evidence",
+    "status": "FAIL",
+    "wrapper_exit_code": 2
+  }
+]

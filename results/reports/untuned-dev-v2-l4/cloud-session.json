@@ -1,0 +1,23 @@
+{
+  "absence_verified_at_utc": "2026-10-06T03:44:05.911239+00:00",
+  "actual_invoice_usd": null,
+  "allocation_started_at_utc": "2026-10-06T02:57:54.707000+00:00",
+  "authorization_budget_usd": 5,
+  "authorization_max_seconds": 10800,
+  "auto_delete_disk_absent": true,
+  "cleanup_started_at_utc": "2026-10-06T03:42:39.347134+00:00",
+  "cleanup_status": "PASS",
+  "compute_list_price_usd_per_hour": 0.706832276,
+  "compute_only_list_rate_scenario_usd": 0.5441046109758939,
+  "cost_boundary": "Start to control-plane absence confirmation is a wall-time accounting bound, not exact invoice billing duration; setup/probes/campaign/collection are included.",
+  "cost_per_success_usd": null,
+  "new_instance_absent": true,
+  "scenario_exclusions": [
+    "disk",
+    "public IP",
+    "network",
+    "tax",
+    "account currency/discounts"
+  ],
+  "start_to_absence_confirmation_seconds": 2771.204239
+}

@@ -1,0 +1,15 @@
+{
+  "cause": "The outer shell script was edited while its long-running child executed; resuming shell parsing failed. Frozen staged inference modules were unchanged and verified against their original code revision.",
+  "inference_return": {
+    "selected": 12,
+    "valid": 7
+  },
+  "inference_revision": "ce08620d33c51854b87459938e23dcdf8b57e6e0",
+  "inner_checksums_status": "PASS",
+  "internal_file_count": 39,
+  "observed_at_utc": "2026-10-06T03:19:47.315483+00:00",
+  "outer_manifest_recovery": "Created once after the post-inference shell failure; no inference files rewritten, no model attempts repeated.",
+  "prediction_schema_status": "PASS",
+  "wrapper_error": "tools/llama-isolated.sh: line 70: unexpected EOF while looking for matching double quote",
+  "wrapper_exit_code": 2
+}

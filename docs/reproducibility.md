@@ -29,7 +29,11 @@ accepts an optional third argument `context`; its default remains `predict`.
 Context construction mounts only its four inference source modules and canonical
 inputs, with the same filesystem/network boundary. Context tasks still use the
 v2 inference schema; context provenance uses its own v1 records. Model execution
-requires a separate model/backend isolation and resource check.
+uses a separate model/backend isolation and resource check. The
+[untuned L4 comparison](../results/reports/untuned-dev-v2-l4/README.md) retains
+measured identities, all failures, native counters and physical isolation evidence.
+See the [CUDA runbook](experiments/cuda-execution.md) for reproduction; paid
+execution always requires its own budget/authorization.
 
 ## Rebuild the pinned SWE-bench pilot
 

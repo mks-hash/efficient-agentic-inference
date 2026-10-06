@@ -1,0 +1,9 @@
+{
+  "attempts_verified": 60,
+  "native_counts": "PASS",
+  "eos_completion": "PASS",
+  "input_truncation": "known absence",
+  "greedy_sampler": "PASS",
+  "no_grammar_or_adapter": "PASS",
+  "public_outputs_path_only": "PASS"
+}

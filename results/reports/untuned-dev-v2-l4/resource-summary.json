@@ -1,0 +1,17 @@
+{
+  "attempted": 60,
+  "attempted_wall_ms_p50": 3204.633728999852,
+  "attempted_wall_ms_p95": 4214.817594000124,
+  "complete": true,
+  "failure_reasons": {
+    "ValueError: Prediction contains unknown candidate paths": 8
+  },
+  "gpu_utilization_seconds": null,
+  "input_tokens_observed_sum": 477333,
+  "monetary_usd": null,
+  "output_tokens_received_sum": 2190,
+  "request_wall_ms_sum": 196444.99074800205,
+  "selected": 60,
+  "source_bearing_private_run_files_verified": 192,
+  "valid": 52
+}

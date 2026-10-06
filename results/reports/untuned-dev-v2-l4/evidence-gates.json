@@ -1,0 +1,48 @@
+{
+  "cloud_cleanup": {
+    "scope": "New VM and auto-delete boot disk confirmed absent",
+    "status": "PASS"
+  },
+  "development_decision_rule": {
+    "scope": "Matched evidence only; gain >= .05, strict noninferiority, block CI lower >0",
+    "status": "PASS"
+  },
+  "final_verified_evaluation": {
+    "scope": "Reserved Verified remains untouched",
+    "status": "NOT_RUN"
+  },
+  "generalist_comparison": {
+    "status": "NOT_RUN"
+  },
+  "generalization_and_pretraining_contamination": {
+    "scope": "Six exposed development repositories; no repository/time held-out or pretraining contamination audit",
+    "status": "UNKNOWN"
+  },
+  "model_physical_isolation": {
+    "scope": "Gold/evaluator/project/Git/network absent; private loopback only",
+    "status": "PASS"
+  },
+  "monetary_economics": {
+    "scope": "Allocation list-rate scenario only; full system monetary cost/CPS unknown",
+    "status": "UNKNOWN"
+  },
+  "native_render_tokens": {
+    "scope": "Synthetic cross-device parity; all 60 final counters and token IDs match",
+    "status": "PASS"
+  },
+  "output_contract_classification": {
+    "scope": "52 valid and 8 invalid outputs classified/preserved; invalid outputs score zero",
+    "status": "PASS"
+  },
+  "resource_fit": {
+    "scope": "37/37 GPU layers, 16384-token capacity, all 60 completed, no context overflow/truncation",
+    "status": "PASS"
+  },
+  "specialization_or_training": {
+    "status": "NOT_RUN"
+  },
+  "weights_and_code_identity": {
+    "scope": "Pinned bytes, clean minimal archive and actual mounted-module hashes",
+    "status": "PASS"
+  }
+}

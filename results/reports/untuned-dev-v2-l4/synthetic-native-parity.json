@@ -1,0 +1,22 @@
+{
+  "comparisons": {
+    "b": {
+      "input_token_ids_equal": true,
+      "output_token_ids_equal": true,
+      "raw_output_equal": true,
+      "rendered_prompt_equal": true
+    },
+    "c": {
+      "input_token_ids_equal": true,
+      "output_token_ids_equal": true,
+      "raw_output_equal": true,
+      "rendered_prompt_equal": true
+    }
+  },
+  "cuda_binary_sha256": "a8044ff77ca3c17566f9499cd3ab42190dcb689f7bdf3553e951af03413c8079",
+  "exact_input_tokens": 192,
+  "exact_output_tokens": 7,
+  "inference_code": "f67e4993aa93c5c05e13e28b0bb4b0bf0ea8dc53",
+  "synthetic_only": true,
+  "template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18"
+}

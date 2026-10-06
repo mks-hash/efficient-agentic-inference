@@ -1,0 +1,19 @@
+{
+  "bootstrap": {
+    "percentile_method": "nearest-rank",
+    "resamples": 5000,
+    "seed": 20261006,
+    "unit": "repository blocks, preserving paired tasks"
+  },
+  "decision_rule_pass": true,
+  "limitation": "Development decision rule; no population-wide or held-out claim",
+  "paired_repo_bootstrap_95_ci": [
+    0.315904229438064,
+    0.5596862257239615
+  ],
+  "recall_at_5_gain": 0.4286000257052888,
+  "repository_blocks": 6,
+  "selected": 60,
+  "strict_control": 8,
+  "strict_model": 33
+}

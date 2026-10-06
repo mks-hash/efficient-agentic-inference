@@ -1,10 +1,11 @@
 # Research plan — Small Specialist
 
-Status: research design, 2026-10-06; localization contract v2. A small lexical dev
-pilot is recorded with a separate-host reproduction; no model or specialization
-claims exist. This plan is not a
-completed preregistration: numerical decisions below must be frozen in a dated,
-hashed experiment config before model evaluation.
+Status: development baselines, 2026-10-06; localization contract v2. A lexical
+pilot has a separate-host reproduction; a frozen untuned Qwen3-4B development
+comparison is recorded in [the report](results/reports/untuned-dev-v2-l4/README.md).
+Generalist substitution, specialization and full-system economics remain untested.
+The untuned dev protocol freezes its own numerical decision rule; future adaptation
+and fallback targets below require their own dated, hashed preregistration.
 
 ## Objective and boundary
 

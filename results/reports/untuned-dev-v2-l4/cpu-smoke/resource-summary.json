@@ -1,0 +1,18 @@
+{
+  "attempted": 9,
+  "completed_native_request_p50_ms": 410779.57253798377,
+  "completed_native_responses": 8,
+  "cpu_smoke_campaign_status": "INCOMPLETE_BY_TIME_BUDGET",
+  "dev_v2_cpu_status": "NOT_RUN",
+  "failure_reasons": {
+    "TimeoutError: timed out": 1,
+    "ValueError: Prediction contains unknown candidate paths": 1,
+    "run_budget_exhausted_not_attempted": 3
+  },
+  "monetary_usd": null,
+  "projected_60_request_hours_from_completed_p50": 6.8463262089663965,
+  "projection_is_not_a_measured_dev_v2_run": true,
+  "quantile_method": "nearest-rank",
+  "selected": 12,
+  "valid": 7
+}

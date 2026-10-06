@@ -46,16 +46,26 @@ amortization, fallback behavior and generalization.
 
 **A negative result is a result.**
 
-## First result
+## Development results
 
-The frozen SWE-bench development pilot covers **12 tasks across 6 repositories**.
-The CPU lexical baseline achieved **Recall@5 = 0.5417**, **Strict Success@5 = 6/12**
-and **candidate recall ceiling = 1.0**. A separate machine reproduced the
-deterministic artifacts, predictions and quality metrics.
+The frozen SWE-bench dev-v2 comparison covers **60 tasks across 6 repositories**.
 
-These are file-localization results on a small development sample. Model
-comparisons, downstream repair quality and economic gains remain untested.
-See the [report and artifacts](results/reports/swebench-dev-v1/README.md) and
+| Method | Recall@5 | Strict Success@5 | Candidate ceiling |
+| --- | ---: | ---: | ---: |
+| Lexical, full corpus | 0.5523 | 25/60 | 0.9854 |
+| Lexical, matched context | 0.2283 | 8/60 | 0.7835 |
+| Untuned Qwen3-4B-Instruct-2507 Q4_K_M, matched context | **0.6569** | **33/60** | 0.7835 |
+
+All 60 model attempts are included, with eight invalid answers scored as failures.
+The positive development finding concerns matched evidence; the observed advantage
+against full-corpus lexical remains uncertain. These are localization measurements
+on exposed development data. Generalization, issue repair and economic benefit
+remain untested; cost per successful task is unknown.
+See the [model comparison and reproducible artifacts](results/reports/untuned-dev-v2-l4/README.md).
+
+The earlier 12-task lexical pilot achieved Recall@5 0.5417, strict 6/12 and
+candidate ceiling 1.0; a separate machine reproduced its deterministic artifacts
+and quality. See the [pilot report](results/reports/swebench-dev-v1/README.md) and
 [v0.1.0 release](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.1.0).
 
 ## Reproducibility

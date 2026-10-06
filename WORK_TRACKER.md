@@ -1,6 +1,6 @@
 # Work tracker
 
-Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; CPU smoke ended at its time limit; authorized L4 compilation in progress.
+Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus dev-v2 lexical controls; untuned L4 dev-v2 baseline complete; CPU smoke ended at its time limit; cloud resources deleted.
 
 | ID | Work | Status | Completion evidence / next gate |
 | --- | --- | --- | --- |
@@ -10,22 +10,24 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-004 | CPU lexical runner and synthetic contract fixture | DONE | 14 contract tests, ruff lint/format and locked sync pass; CLI fixture complete |
 | EAI-005 | SWE-bench acquisition/reconstruction + patch labeler | DONE_PILOT | Clean-code local and separate-host audits PASS; pinned sources/splits and all 12 tasks prepared/labeled |
 | EAI-006 | Frozen full-corpus lexical baseline + candidate ceiling | DONE_PILOT | Full candidate corpus per each of 12 dev tasks; Recall@5 0.541667, ceiling 1; broader population not measured |
-| EAI-007 | Untuned small/generalist matrix | L4_PREPARATION_IN_PROGRESS | CPU ce08620 smoke: 9/12 attempted, 7 valid, 1 invalid, 1 timeout, 3 unattempted; staged-source/native/isolation checks PASS; dev-v2/GPU model gates NOT_RUN |
-| EAI-008 | Training decision | BLOCKED_BY_EAI-007 | Material gap, preregistered targets and authorized budget |
+| EAI-007 | Untuned small/generalist matrix | SMALL_DONE_GENERALIST_NOT_RUN | clean f67e499 L4: 60/60 attempted, 52 valid / 8 invalid; Recall@5 0.656926 / strict 33/60; native tokens/full offload/isolation PASS; matched development rule PASS; generalist/training/economics not established |
+| EAI-008 | Training decision | BLOCKED_BY_GENERALIST_AND_ACCOUNTING | Untuned dev signal is positive; stronger matched generalist, adaptation justification/targets and separate training budget still required |
 | EAI-009 | Public README positioning and documentation separation | DONE | Research narrative and CPS formula in README; scope/candidates in plan, implementation/check details in reproduction guide |
 | EAI-010 | Independent second-host reproduction | DONE | GitHub run 37379561857, clean 397df23; snapshot/input/gold/semantic prediction hashes and metrics match local 0edd9e6 |
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | FOUNDATION_VALIDATED | Clean 0bd7571 audit PASS: 60/60 prepared/labeled, 123 identical artifacts, 88638 file hashes; full Recall@5 0.552265 / ceiling 0.985450 / strict 25/60; matched context 0.228326 / ceiling 0.783487 / strict 8/60; phase accounting explicit, no prices or model results |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
 
-## Open decisions before model evaluation
+## Open decisions before generalist/adaptation
 
-- Exact model revisions, licenses/access and resource fit.
+- Stronger generalist revision, license/access, resource fit and explicit run budget.
 - Train/validation memberships and broader repository/time controls; dev/final pilot IDs are frozen.
 - SS-H2 margin and SS-H3 quality, fallback and economic targets.
 - Hardware/backend/pricing boundary and approved GPU budget.
 
-No models have passed evidence gates. Synthetic/local verification must not
-promote any model gate or research hypothesis to PASS.
+The pinned Qwen L4 treatment passed actual identity, native tokens, resource and
+physical-isolation gates. Its development decision rule passes. Specialization,
+generalist replacement, held-out generalization and end-to-end economics remain
+unconfirmed. Software fixtures establish implementation behavior only.
 
 ## Released milestone
 
@@ -73,7 +75,7 @@ No training or fallback has been used. Google Cloud
 inventory/quotas/prices and a read-only SSH hardware check are authorized and
 completed: existing micro-VMs lack model capacity; one T4/L4 quota is available.
 One L4 session is explicitly authorized up to USD 5 and three hours. The new
-`g2-standard-4` VM is running with automatic DELETE after 10,800 seconds;
+`g2-standard-4` VM had automatic DELETE after 10,800 seconds and is now deleted;
 CUDA 12.9 / driver 580.178.04 and NVIDIA L4 23,034 MiB are verified.
 Inference receives a minimal eight-file code archive and source-bearing context
 packets only; no evaluator or benchmark gold is uploaded.
@@ -110,15 +112,47 @@ fixtures plus 30 contract tests on Python 3.11 and 3.14.
 Frozen dev-v1 selects 12 of 225 source tasks, two per each of six repositories,
 without reading patches for selection. All Verified IDs are reserved. Snapshot
 labels use solution patch only. Candidate policy and edge cases are frozen in ADR
-0002 and localization-v2. No model evidence gates have changed.
+0002 and localization-v2. The foundation did not alter model evidence thresholds.
 
-## CUDA preparation
+## Untuned L4 development baseline
 
-CUDA device mounts/full-offload rejection and paired repository-block analysis
-are implemented and covered by CPU software checks. Actual GPU inference,
-resource fit and quality remain NOT_RUN. L4/A100/H100 price scenarios are recorded
-in docs/experiments/cloud-options-2026-10-06.md; one L4 session is now authorized
-and allocated. The allocation started 2026-10-06T02:57:54.707Z, with a hard
-three-hour automatic deletion deadline and incremental local artifact collection.
-The active dev-v1 CPU smoke retains its frozen ce08620 code; later preparation
-changes do not alter its staged inference modules or prompt/config.
+[Report and compact evidence](results/reports/untuned-dev-v2-l4/README.md).
+Clean inference code f67e499; pinned CUDA backend 7049ff0; original Qwen and
+Q4_K_M revisions/weights/binary/template/input hashes are retained. Synthetic
+GPU native rendering, input/output IDs and raw response match both earlier CPU
+probes exactly. Three preregistered old tasks passed resource/API checks; then
+the new config was frozen before its first dev-v2 generation. Model-layer offload
+is 37/37; no context truncation/overflow or native-counter mismatches occurred.
+All 60 final prediction records passed schema and checksum checks, and all 192
+private run files verified after local transport.
+
+All 60 tasks completed once: 52 valid and eight unknown-path outputs; every
+invalid output scores zero. Recall@5 0.656926, strict 33/60, matched ceiling
+0.783487. Gain versus matched lexical is 0.428600, repository-block 95% interval
+[0.315904, 0.559686]; the preregistered development rule passes. Full-corpus
+reference gain is 0.104661, with supplementary post-run interval
+[-0.001196, 0.216399]; the advantage over that reference remains uncertain.
+Only six exposed development repositories are represented; Verified is untouched.
+This does not confirm specialization, substitution, repair quality or economics.
+
+Request wall p50/p95 3.205/4.215 seconds; total request wall 196.445 seconds;
+model load 2.009 seconds. Native tokens total 477,333 input / 2,190 output,
+including invalid attempts/EOS. Whole-backend CPU is 198.737 seconds; per-task
+server CPU and active GPU-seconds remain unknown. All monetary cost/CPS fields
+remain null. Start to confirmed VM/disk absence was 46.19 minutes. The list-rate
+compute-only scenario is USD 0.5441; setup/probes/collection are included, but
+additional charges and actual billing are unknown. The new VM and auto-delete
+boot disk are confirmed absent; no paid job remains running from this session.
+
+The initial GPU bind failed through a protected home directory; moving the
+unchanged workspace to /opt resolved access without widening model mounts.
+A second technical start blocked generation because default logging omitted
+full-offload evidence; explicit native trace logging was committed before any
+GPU generation. Both starts and their logs remain in the private final archive,
+with source-free failure descriptions in the compact report. No model output was
+repaired or retried. The old CPU post-inference launcher collection error is also
+retained separately. The GPU source/launcher remained immutable during execution.
+
+Forty-six CPU tests, lint/format and shell syntax pass. Exact baseline artifacts,
+native audit, fixed primary analysis and checksum evidence are local and ready
+for review. No new GitHub publication/release has been authorized for this run.

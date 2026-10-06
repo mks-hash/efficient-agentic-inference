@@ -1,0 +1,122 @@
+[
+  {
+    "invalid_model_outputs": 0,
+    "lexical_context": {
+      "candidate_ceiling": 1.0,
+      "recall_at_5": 0.21428571428571427,
+      "strict_at_5": 1
+    },
+    "lexical_full": {
+      "candidate_ceiling": 1.0,
+      "recall_at_5": 1.0,
+      "strict_at_5": 7
+    },
+    "model": {
+      "candidate_ceiling": 1.0,
+      "recall_at_5": 1.0,
+      "strict_at_5": 7
+    },
+    "repo": "marshmallow-code/marshmallow",
+    "selected": 7
+  },
+  {
+    "invalid_model_outputs": 2,
+    "lexical_context": {
+      "candidate_ceiling": 0.8409090909090909,
+      "recall_at_5": 0.4090909090909091,
+      "strict_at_5": 2
+    },
+    "lexical_full": {
+      "candidate_ceiling": 1.0,
+      "recall_at_5": 0.6136363636363636,
+      "strict_at_5": 4
+    },
+    "model": {
+      "candidate_ceiling": 0.8409090909090909,
+      "recall_at_5": 0.6818181818181818,
+      "strict_at_5": 6
+    },
+    "repo": "pvlib/pvlib-python",
+    "selected": 11
+  },
+  {
+    "invalid_model_outputs": 0,
+    "lexical_context": {
+      "candidate_ceiling": 0.9696969696969696,
+      "recall_at_5": 0.5303030303030303,
+      "strict_at_5": 5
+    },
+    "lexical_full": {
+      "candidate_ceiling": 1.0,
+      "recall_at_5": 0.6060606060606061,
+      "strict_at_5": 6
+    },
+    "model": {
+      "candidate_ceiling": 0.9696969696969696,
+      "recall_at_5": 0.9242424242424242,
+      "strict_at_5": 9
+    },
+    "repo": "pydicom/pydicom",
+    "selected": 11
+  },
+  {
+    "invalid_model_outputs": 1,
+    "lexical_context": {
+      "candidate_ceiling": 0.8252525252525252,
+      "recall_at_5": 0.07373737373737374,
+      "strict_at_5": 0
+    },
+    "lexical_full": {
+      "candidate_ceiling": 0.98989898989899,
+      "recall_at_5": 0.5545454545454546,
+      "strict_at_5": 5
+    },
+    "model": {
+      "candidate_ceiling": 0.8252525252525252,
+      "recall_at_5": 0.6222222222222222,
+      "strict_at_5": 6
+    },
+    "repo": "pylint-dev/astroid",
+    "selected": 11
+  },
+  {
+    "invalid_model_outputs": 0,
+    "lexical_context": {
+      "candidate_ceiling": 0.6247252747252747,
+      "recall_at_5": 0.09761904761904762,
+      "strict_at_5": 0
+    },
+    "lexical_full": {
+      "candidate_ceiling": 0.9571428571428571,
+      "recall_at_5": 0.304029304029304,
+      "strict_at_5": 1
+    },
+    "model": {
+      "candidate_ceiling": 0.6247252747252747,
+      "recall_at_5": 0.5106227106227106,
+      "strict_at_5": 3
+    },
+    "repo": "pyvista/pyvista",
+    "selected": 10
+  },
+  {
+    "invalid_model_outputs": 5,
+    "lexical_context": {
+      "candidate_ceiling": 0.47675438596491226,
+      "recall_at_5": 0.007894736842105263,
+      "strict_at_5": 0
+    },
+    "lexical_full": {
+      "candidate_ceiling": 0.9666666666666666,
+      "recall_at_5": 0.35789473684210527,
+      "strict_at_5": 2
+    },
+    "model": {
+      "candidate_ceiling": 0.47675438596491226,
+      "recall_at_5": 0.27982456140350875,
+      "strict_at_5": 2
+    },
+    "repo": "sqlfluff/sqlfluff",
+    "selected": 10
+  }
+]

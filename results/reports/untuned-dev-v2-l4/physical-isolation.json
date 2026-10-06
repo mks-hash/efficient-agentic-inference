@@ -1,0 +1,7 @@
+{
+  "evaluator_visible": false,
+  "ipv4_routes": 0,
+  "network_errno": 101,
+  "project_visible": false,
+  "separate_network_namespace": true
+}

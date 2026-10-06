@@ -1,0 +1,48 @@
+{
+  "cmake_cache_artifact_sha256": "cd2884ca2810d9c02df51949bfe8866bce7755654838d4281fcf24bcf0f925ae",
+  "context_inputs_sha256": "880c534924526231362229bb84dd606e3ef35ab9f75f579152f65d7c9b3eb287",
+  "cuda_binary_sha256": "a8044ff77ca3c17566f9499cd3ab42190dcb689f7bdf3553e951af03413c8079",
+  "dataset_split_sha256": "011e415011b9dc91cfdc6015c1117a8d1fdf9a184d6820b949d825b63fb0a1d8",
+  "evaluation_code_revision": "f67e4993aa93c5c05e13e28b0bb4b0bf0ea8dc53",
+  "evaluation_runtime_sources": {
+    "__init__.py": "ea748a3fff4f782e2addefec22e787160de85a6a06743e5f58cdc69cfb0a3f39",
+    "comparison.py": "caff6f5d9060f1400099b88dd637e7e2cfc21363439c1cb7e53ef4a67c028235",
+    "evaluation.py": "056296b947af662f8dde0ae4a67e8a996c280ed3607a396c1744e7731ebf6e0e",
+    "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "labeler.py": "35d1f812c157512ab17a4e91e1b046afc069668c5353e9a730304b3d09c646e8",
+    "metrics.py": "f7fbbcc61c4db309036ccc2997358683c77591845debf0c53a1e42def43181f1",
+    "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+  },
+  "immutable_configs_note": "Proposal/freeze-time NOT_RUN statuses in saved configs are historical; completed evidence gates are reported separately.",
+  "inference_code": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "configs/untuned-dev-v2.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh"
+    ],
+    "archive_sha256": "c6d8064fab863db13cc731a391009666760c9ebb95d7e64e0afe5506eef4907e",
+    "dirty": false,
+    "revision": "f67e4993aa93c5c05e13e28b0bb4b0bf0ea8dc53"
+  },
+  "inference_runtime_sources": {
+    "__init__.py": "ea748a3fff4f782e2addefec22e787160de85a6a06743e5f58cdc69cfb0a3f39",
+    "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "llama_predict.py": "f768d42d41a3cd5c45f2931bc72baf2e441db9837f81f9418cc896941d9f59ea",
+    "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+  },
+  "model_artifact_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "private_source_bearing_bundle": {
+    "final_archive_bytes": 3849075,
+    "final_transport_sha256": "fa07b9d00ece59f2a955fb8529b119ea45aca2dead7d6c7f3a863ccaf7dff478",
+    "job_exit": 0,
+    "model_run_files_verified": 192,
+    "predictions_schema_pass": 60
+  },
+  "raw_native_logs_policy": "Ignored local final archive retains every rendered prompt, token ID, SSE trace and failed setup log. Public evidence includes exact hashes/counters/configs/path-only predictions.",
+  "source_bearing_artifacts_in_public_bundle": false
+}
