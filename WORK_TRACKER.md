@@ -154,5 +154,6 @@ repaired or retried. The old CPU post-inference launcher collection error is als
 retained separately. The GPU source/launcher remained immutable during execution.
 
 Forty-six CPU tests, lint/format and shell syntax pass. Exact baseline artifacts,
-native audit, fixed primary analysis and checksum evidence are local and ready
-for review. No new GitHub publication/release has been authorized for this run.
+native audit, fixed primary analysis and checksum evidence are retained for review.
+The user authorized commit/push of this completed stage on 2026-10-06. Remote CPU
+CI is separate evidence, recorded in GitHub checks for the published revision.
