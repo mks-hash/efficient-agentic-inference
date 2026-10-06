@@ -39,6 +39,12 @@ def mean_defined(values: list) -> float | None:
     return sum(values) / len(values) if values else None
 
 
+def observed_sum(values: list[float | None]) -> float | None:
+    """Sum known measurements; no observations is unknown, not measured zero."""
+    known = [v for v in values if v is not None]
+    return sum(known) if known else None
+
+
 def aggregate(records: list[dict], subset: str) -> dict:
     metrics = [r[subset] for r in records]
     unknown = sum(m["gold_file_count"] is None for m in metrics)
@@ -154,11 +160,7 @@ def evaluate_saved(prediction_dir: Path, gold: Path, output: Path) -> dict:
         "wall_ms_p50": wall[math.ceil(0.5 * len(wall)) - 1] if wall else None,
         "wall_ms_p95": wall[math.ceil(0.95 * len(wall)) - 1] if wall else None,
         "latency_tasks": len(wall),
-        "cpu_ms_total_observed": sum(
-            p["measurements"]["cpu_ms"]
-            for p in predictions
-            if p["measurements"]["cpu_ms"] is not None
-        ),
+        "cpu_ms_total_observed": observed_sum([p["measurements"]["cpu_ms"] for p in predictions]),
         "gpu_seconds": sum(p["measurements"]["gpu_seconds"] for p in predictions)
         if all(p["measurements"]["gpu_seconds"] is not None for p in predictions)
         else None,
