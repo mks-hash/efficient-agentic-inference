@@ -162,3 +162,46 @@ class ModelEvidenceContracts(unittest.TestCase):
             generate.assert_not_called()
             self.assertIn("context_overflow", record["failure_reason"])
             self.assertEqual(record["measurements"]["input_tokens"], 2)
+
+    def test_nonthinking_request_is_explicit_and_native_suffix_checked(self):
+        config = copy.deepcopy(CONFIG)
+        suffix = "<|im_start|>assistant\n<think>\n\n</think>\n\n"
+        config["native_template"] = {"enable_thinking": False, "expected_rendered_suffix": suffix}
+        with tempfile.TemporaryDirectory() as temporary:
+            with (
+                patch(
+                    "efficient_agentic_inference.llama_predict.post",
+                    side_effect=[{"prompt": "native\n" + suffix}, {"tokens": [101, 102]}],
+                ) as api,
+                patch("efficient_agentic_inference.llama_predict.stream") as generate,
+            ):
+                infer(self.task(), config, "system", Path(temporary), time.monotonic() + 10)
+            self.assertEqual(
+                api.call_args_list[0].args[1]["chat_template_kwargs"], {"enable_thinking": False}
+            )
+            self.assertEqual(generate.call_count, 1)
+        with tempfile.TemporaryDirectory() as temporary:
+            with (
+                patch(
+                    "efficient_agentic_inference.llama_predict.post",
+                    return_value={"prompt": "native<think>"},
+                ),
+                patch("efficient_agentic_inference.llama_predict.stream") as generate,
+            ):
+                record = infer(
+                    self.task(), config, "system", Path(temporary), time.monotonic() + 10
+                )
+            generate.assert_not_called()
+            self.assertIn("nonthinking_native_suffix_mismatch", record["failure_reason"])
+
+    def test_historical_template_request_stays_unchanged(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            with (
+                patch(
+                    "efficient_agentic_inference.llama_predict.post",
+                    side_effect=[{"prompt": "native"}, {"tokens": [101, 102]}],
+                ) as api,
+                patch("efficient_agentic_inference.llama_predict.stream"),
+            ):
+                infer(self.task(), CONFIG, "system", Path(temporary), time.monotonic() + 10)
+            self.assertEqual(set(api.call_args_list[0].args[1]), {"messages"})

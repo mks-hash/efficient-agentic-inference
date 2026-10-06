@@ -134,3 +134,11 @@ A fixture check does not establish useful model behavior or efficiency.
 
 Lexical results cannot promote any model gate. The dev pilot is not final evaluation.
 Model downloads, paid runs, GPU tests and final evaluation are separate campaigns.
+
+## Matched generalist preparation
+
+The [next protocol](experiments/generalist-dev-v2.md) and
+[preparation checks](experiments/generalist-preparation-checks.json) record an
+opt-in non-thinking renderer and a reserved validation population. Actual 14B
+weights, native API, resource fit and quality remain NOT_RUN. The new cost ledger
+is a separate post-evaluation namespace; never mount it into inference.

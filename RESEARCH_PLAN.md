@@ -78,6 +78,12 @@ with it from training/dev, including equivalent issues/patches. Report remaining
 pretraining contamination as a limitation. Freeze repository-disjoint and temporal
 tests independently; do not tune routing or prompts against final evaluation.
 
+The reserved [validation-v1](splits/validation-v1.json) membership contains 20 new
+same-repository issues excluding both exposed dev populations and Verified, with
+normalized equivalents excluded. Labels/predictions are not produced during
+preparation. It is not a repository/time hold-out; future training must exclude
+this membership and its equivalents.
+
 ## Milestones and stop/go gates
 
 1. Bootstrap: readable contracts, schema, evidence rules, tracker and CPU fixture.
@@ -103,3 +109,9 @@ records a positive matched-context development finding. The next comparison is
 a stronger matched generalist with explicit system cost accounting; its execution
 contract and budget remain to be authorized. Training follows an evidence-based
 decision. No future campaign is authorized by these milestone notes.
+
+[Matched generalist preparation](docs/experiments/generalist-dev-v2.md) selects one
+larger 14B non-thinking candidate and a fresh 4B replication under the existing
+packet contract. [Cost accounting v1](docs/cost-accounting-v1.md) distinguishes
+actual charges from deployment scenarios. CPU implementation evidence is separate
+from model fit/quality and paid run authorization, which remain pending.

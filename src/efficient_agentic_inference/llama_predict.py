@@ -36,6 +36,21 @@ def require_full_offload(log: str) -> None:
         raise ValueError("full_gpu_offload_not_confirmed")
 
 
+def native_template_options(config: dict) -> dict | None:
+    options = config.get("native_template")
+    if options is None:
+        return None
+    if (
+        not isinstance(options, dict)
+        or set(options) != {"enable_thinking", "expected_rendered_suffix"}
+        or options["enable_thinking"] is not False
+        or not isinstance(options["expected_rendered_suffix"], str)
+        or not options["expected_rendered_suffix"]
+    ):
+        raise ValueError("unsupported_native_template_contract")
+    return options
+
+
 def file_digest(path: Path) -> str:
     with path.open("rb") as source:
         return hashlib.file_digest(source, "sha256").hexdigest()
@@ -185,9 +200,18 @@ def infer(prepared: PreparedInference, config: dict, system: str, folder: Path, 
                 {"role": "system", "content": system},
                 {"role": "user", "content": user},
             ]
-            evidence["rendered_prompt"] = post(
-                "/apply-template", {"messages": evidence["messages"]}, deadline
-            )["prompt"]
+            template_payload = {"messages": evidence["messages"]}
+            options = native_template_options(config)
+            if options is not None:
+                template_payload["chat_template_kwargs"] = {"enable_thinking": False}
+                evidence["template_request"] = template_payload
+            evidence["rendered_prompt"] = post("/apply-template", template_payload, deadline)[
+                "prompt"
+            ]
+            if options is not None and not evidence["rendered_prompt"].endswith(
+                options["expected_rendered_suffix"]
+            ):
+                raise ValueError("nonthinking_native_suffix_mismatch")
             ids = post(
                 "/tokenize",
                 {
@@ -265,6 +289,7 @@ def run(
     inputs: Path, config_path: Path, model: Path, binary: Path, prompt: Path, output: Path
 ) -> dict:
     config = json.loads(config_path.read_text())
+    options = native_template_options(config)
     layers = gpu_layers(config)
     if config["decoding"] != {
         "attempts": 1,
@@ -329,6 +354,8 @@ def run(
         "128",
         "--jinja",
     ]
+    if options is not None:
+        command.extend(["--reasoning", "off"])
     started = time.monotonic()
     usage_before = resource.getrusage(resource.RUSAGE_CHILDREN)
     predictions = []

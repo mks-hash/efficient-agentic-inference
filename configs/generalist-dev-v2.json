@@ -1,0 +1,76 @@
+{
+  "artifact": {
+    "bytes": 9001753984,
+    "conversion_upstream_revision": null,
+    "filename": "Qwen3-14B-Q4_K_M.gguf",
+    "id": "unsloth/Qwen3-14B-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "a04a82c4739b3ef5fa6da7d10261db2c67dd1985",
+    "sha256": "5eaa0870bd81ed3b58a630a271234cfa604e43ffb3a19cd68e54a80dd9d52a66",
+    "source_url": "https://huggingface.co/unsloth/Qwen3-14B-GGUF/resolve/a04a82c4739b3ef5fa6da7d10261db2c67dd1985/Qwen3-14B-Q4_K_M.gguf"
+  },
+  "backend": {
+    "binary_identity_status": "NOT_RUN",
+    "binary_sha256": null,
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "revision": "7049ff0cbeb1f5ead231de4522af6b75d8d773c0"
+  },
+  "campaign": "matched-generalist-dev-v2",
+  "context": {
+    "capacity_tokens_proposed": 16384,
+    "profile": "bm25-top20-prefix1200-v1",
+    "resource_fit": "NOT_RUN"
+  },
+  "decoding": {
+    "attempts": 1,
+    "max_output_tokens": 512,
+    "repair": false,
+    "retries": 0,
+    "seed": 0,
+    "temperature": 0
+  },
+  "evidence_gates": {
+    "model_output": "NOT_RUN",
+    "model_physical_isolation": "NOT_RUN",
+    "model_quality": "NOT_RUN",
+    "monetary_economics": "UNKNOWN",
+    "native_render_tokens": "NOT_RUN",
+    "resource_fit": "NOT_RUN",
+    "weights_checksum": "NOT_RUN"
+  },
+  "execution_status": "NOT_RUN",
+  "model": {
+    "id": "Qwen/Qwen3-14B",
+    "license": "apache-2.0",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "role": "larger generalist candidate; localization advantage NOT_RUN"
+  },
+  "native_template": {
+    "enable_thinking": false,
+    "expected_rendered_suffix": "<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  "population": {
+    "sha256": "011e415011b9dc91cfdc6015c1117a8d1fdf9a184d6820b949d825b63fb0a1d8",
+    "split": "splits/dev-v2.json"
+  },
+  "prompt": {
+    "sha256": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "system_file": "configs/prompts/localization-v1.txt",
+    "user_rendering": "canonical JSON {issue,candidates}; path-sorted packet, unchanged excerpts"
+  },
+  "resource_proposal": {
+    "device": "cuda",
+    "gpu_layers": 999,
+    "reason": "One L4 proposed; actual fit NOT_RUN; new paid authorization required.",
+    "threads": 4
+  },
+  "schema_version": "1.0.0",
+  "source_review_date": "2026-10-06",
+  "sources": [
+    "https://huggingface.co/api/models/Qwen/Qwen3-14B?blobs=true",
+    "https://huggingface.co/api/models/unsloth/Qwen3-14B-GGUF?blobs=true",
+    "https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
+    "https://github.com/ggml-org/llama.cpp/blob/7049ff0cbeb1f5ead231de4522af6b75d8d773c0/tools/server/README.md"
+  ],
+  "status": "Prepared; exact execution configuration freezes after old/synthetic resource gates, before new research generation"
+}

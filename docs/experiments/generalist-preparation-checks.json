@@ -1,0 +1,49 @@
+{
+  "cpu_unit_tests": 53,
+  "date": "2026-10-06",
+  "generalist_native_api": "NOT_RUN",
+  "generalist_quality": "NOT_RUN",
+  "generalist_resource_fit": "NOT_RUN",
+  "generalist_weights_checksum": "NOT_RUN",
+  "gpu_replication": "NOT_RUN",
+  "lint_format": "PASS",
+  "monetary_economics": "UNKNOWN",
+  "paid_authorization": "NOT_AUTHORIZED",
+  "scope": "Preparation/software evidence only; no new model-quality or efficiency result",
+  "synthetic_cpu_native_regression": {
+    "binary_sha256": "93a542e7d377fb7929cbf83590276b3e9d7d5aacd8e292b921efb7220fe2ba4c",
+    "input_tokens": 192,
+    "mounted_runtime_sources": {
+      "__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "llama_predict.py": "01b14183b17416156909407723c8e5b4fc44d9b4a6c137cf9cc19624b194f087",
+      "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+    },
+    "native_fields_match_previous_probe": true,
+    "new_evidence_sha256": "d2db78b6fdd5875733e0698e373f559402c838f7a664a81aae10faf61c34ad96",
+    "output_tokens": 7,
+    "physical_isolation": {
+      "evaluator_visible": false,
+      "ipv4_routes": 0,
+      "network_errno": 101,
+      "project_visible": false,
+      "separate_network_namespace": true
+    },
+    "previous_evidence_sha256": "26c347515d5b2bce5c3811e99ba021adaf58c4af1028e02b39085cea021911b0",
+    "probe_code_identity": {
+      "dirty": true,
+      "revision": "e8ed4e93756c114405ff4271dd3ae091979c9d3b"
+    },
+    "status": "PASS",
+    "synthetic": true,
+    "template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18"
+  },
+  "validation_membership": {
+    "byte_identical_rebuild": true,
+    "labels": "NOT_RUN",
+    "predictions": "NOT_RUN",
+    "selected": 20,
+    "sha256": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121",
+    "status": "RESERVED"
+  }
+}

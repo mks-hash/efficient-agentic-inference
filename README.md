@@ -98,4 +98,5 @@ SWE-bench performance result. Choose a fresh output directory for each run.
 - [Benchmark contract](docs/benchmark-localization-v2.md)
 - [Reproducibility](docs/reproducibility.md)
 - [Artifact schemas](schemas/v2/README.md)
+- [Cost accounting](docs/cost-accounting-v1.md)
 - [Results and artifacts](results/README.md)

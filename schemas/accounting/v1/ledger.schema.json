@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Localization batch cost ledger v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "synthetic", "boundary", "treatment", "selected", "currency", "allocation_policy", "components"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "synthetic": {"type": "boolean"},
+    "boundary": {"const": "localization-batch-v1"},
+    "treatment": {"type": "string", "minLength": 1},
+    "selected": {"type": "integer", "minimum": 1},
+    "currency": {"const": "USD"},
+    "allocation_policy": {"type": "string", "minLength": 1},
+    "components": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "actual_usd", "actual_evidence", "scenario_usd", "scenario_basis"],
+        "properties": {
+          "name": {"enum": ["compute", "storage", "external_ip", "network", "external_preparation", "other"]},
+          "actual_usd": {"type": ["number", "null"], "minimum": 0},
+          "actual_evidence": {"type": ["string", "null"], "minLength": 1},
+          "scenario_usd": {"type": ["number", "null"], "minimum": 0},
+          "scenario_basis": {"type": ["string", "null"], "minLength": 1}
+        },
+        "allOf": [
+          {"if": {"properties": {"actual_usd": {"type": "number"}}}, "then": {"properties": {"actual_evidence": {"type": "string", "minLength": 1}}}},
+          {"if": {"properties": {"scenario_usd": {"type": "number"}}}, "then": {"properties": {"scenario_basis": {"type": "string", "minLength": 1}}}}
+        ]
+      }
+    }
+  }
+}

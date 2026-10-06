@@ -1,0 +1,53 @@
+{
+  "allocation_policy": "Synthetic four-task standalone batch; includes two failures",
+  "boundary": "localization-batch-v1",
+  "components": [
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0.8,
+      "name": "compute",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0.8
+    },
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0.2,
+      "name": "storage",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0.2
+    },
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0,
+      "name": "external_ip",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0
+    },
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0,
+      "name": "network",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0
+    },
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0.2,
+      "name": "external_preparation",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0.2
+    },
+    {
+      "actual_evidence": "Synthetic independently specified charge/absence",
+      "actual_usd": 0,
+      "name": "other",
+      "scenario_basis": "Synthetic assumption",
+      "scenario_usd": 0
+    }
+  ],
+  "currency": "USD",
+  "schema_version": "1.0.0",
+  "selected": 4,
+  "synthetic": true,
+  "treatment": "synthetic"
+}

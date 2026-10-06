@@ -1,0 +1,69 @@
+{
+  "actual_resource_fit": "NOT_RUN",
+  "candidate": {
+    "files": [
+      {
+        "blobId": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+        "rfilename": "LICENSE",
+        "size": 11343
+      },
+      {
+        "blobId": "3f1eaf4222cee3d84fdb3c6611afd7ff3a11dd8c",
+        "rfilename": "README.md",
+        "size": 16670
+      },
+      {
+        "blobId": "37e7491082573462e8545299cdf6938e8b684e31",
+        "rfilename": "config.json",
+        "size": 728
+      },
+      {
+        "blobId": "417d038a63fa3de29cfde265caedae14d1a58d92",
+        "rfilename": "tokenizer_config.json",
+        "size": 9732
+      }
+    ],
+    "id": "Qwen/Qwen3-14B",
+    "license": "apache-2.0",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "source_body_sha256": "40df46ea258ea228d2aa574d7cc5b8e11b0d722c5b25a6bde32300350c5f83a7",
+    "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-14B?blobs=true"
+  },
+  "conversion_upstream_revision": null,
+  "expected_weights_hash_status": "API_METADATA_ONLY",
+  "gguf": {
+    "files": [
+      {
+        "blobId": "5a892ab91b01fac062ba09c82badc4ce1c121410",
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "5eaa0870bd81ed3b58a630a271234cfa604e43ffb3a19cd68e54a80dd9d52a66",
+          "size": 9001753984
+        },
+        "rfilename": "Qwen3-14B-Q4_K_M.gguf",
+        "size": 9001753984
+      },
+      {
+        "blobId": "a01eb41c2a9057a69c224e730a1be736751f9ed5",
+        "rfilename": "README.md",
+        "size": 19970
+      },
+      {
+        "blobId": "1efa1e3597a0b912f5c2d3af97316ddec1374748",
+        "rfilename": "config.json",
+        "size": 754
+      }
+    ],
+    "id": "unsloth/Qwen3-14B-GGUF",
+    "license": "apache-2.0",
+    "revision": "a04a82c4739b3ef5fa6da7d10261db2c67dd1985",
+    "source_body_sha256": "55eb6e1243e91000c53d27b14e60bbda7dfc93e4fe7977aaf84ca9011a3e5995",
+    "source_url": "https://huggingface.co/api/models/unsloth/Qwen3-14B-GGUF?blobs=true"
+  },
+  "official_config_sha256": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a",
+  "official_config_url": "https://huggingface.co/Qwen/Qwen3-14B/resolve/40c069824f4251a91eefaf281ebe4c544efd3e18/config.json",
+  "official_tokenizer_config_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+  "quality_advantage": "NOT_RUN",
+  "review_date": "2026-10-06",
+  "weights_downloaded": false
+}

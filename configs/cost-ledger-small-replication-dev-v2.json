@@ -1,0 +1,53 @@
+{
+  "allocation_policy": "Standalone cold 60-task deployment: common preparation replayed once per treatment; model-specific phases charged to that model. Shared research invoice is not independently measured treatment cost. Human labor excluded; all unknown charges remain null.",
+  "boundary": "localization-batch-v1",
+  "components": [
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "compute",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "storage",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_ip",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "network",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_preparation",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "other",
+      "scenario_basis": null,
+      "scenario_usd": null
+    }
+  ],
+  "currency": "USD",
+  "schema_version": "1.0.0",
+  "selected": 60,
+  "synthetic": false,
+  "treatment": "small-replication-dev-v2"
+}

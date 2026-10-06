@@ -17,11 +17,13 @@ Updated: 2026-10-06. Track: Small Specialist. Research runs: dev-v1 pilot plus d
 | EAI-011 | Broader dev baseline and CPU/system cost accounting | FOUNDATION_VALIDATED | Clean 0bd7571 audit PASS: 60/60 prepared/labeled, 123 identical artifacts, 88638 file hashes; full Recall@5 0.552265 / ceiling 0.985450 / strict 25/60; matched context 0.228326 / ceiling 0.783487 / strict 8/60; phase accounting explicit, no prices or model results |
 | EAI-012 | v0.1.0 research milestone release | DONE | Annotated tag at 392722c; public release with evidence, provenance, release-commit audit and checksums; CPU CI 37381457746 and second-host reproduction 37381481917 PASS |
 | EAI-013 | v0.2.0 report and release preparation | DONE | Report/README published; package 0.2.0, contract/schemas unchanged; 46 CPU tests, saved-prediction re-evaluation and remote CPU CI 37412035383 PASS; annotated tag e097c22 and public GitHub Release with verified assets; release-commit CPU CI 37412299183 PASS |
+| EAI-014 | Matched generalist and cost accounting preparation | PREPARED_PAID_AUTHORIZATION_PENDING | Pinned 14B candidate, ADR 0006, matched protocol, opt-in non-thinking/native suffix gate, separate cost ledger/CLI; 53 CPU tests and native 4B synthetic parity PASS; actual generalist/GPU/CPS NOT_RUN/UNKNOWN |
+| EAI-015 | New validation membership | RESERVED | 20 deterministic same-repository issues; dev-v1/dev-v2/Verified overlaps and normalized equivalents excluded; byte-identical freezer rebuild; labels/predictions NOT_RUN |
 
 ## Open decisions before generalist/adaptation
 
 - Stronger generalist revision, license/access, resource fit and explicit run budget.
-- Train/validation memberships and broader repository/time controls; dev/final pilot IDs are frozen.
+- Train memberships and broader repository/time controls; dev/final and new validation memberships are frozen.
 - SS-H2 margin and SS-H3 quality, fallback and economic targets.
 - Hardware/backend/pricing boundary and approved GPU budget.
 
@@ -194,3 +196,41 @@ SHA256SUMS) were downloaded and verified byte-identical before publication. The
 `08d59ec2119da6d037d76b7be157c0fbb41feaecdc3875a833488256887bc0a9`.
 The post-publication tracker update does not move the tag or replace assets.
 Independent GPU repetition remains NOT_RUN; no additional paid run occurred.
+
+## Matched generalist preparation
+
+The user asked to continue with a bounded generalist/accounting milestone.
+[ADR 0006](decisions/0006-matched-generalist-and-cost-accounting.md) and
+[protocol](docs/experiments/generalist-dev-v2.md) select one Qwen3-14B Q4_K_M
+non-thinking candidate plus a fresh 4B replication. No claim that the larger model
+is better is made. API metadata pins the official/quantized revisions, Apache-2.0
+license and expected 9,001,753,984-byte weight hash; actual download/hash/fit/output
+gates remain NOT_RUN. The quantizer's exact upstream conversion revision is UNKNOWN.
+
+The runner adds opt-in template kwargs, server reasoning off and a verified native
+closed-think suffix; the historical default request is unchanged. The config
+freezer accepts an explicit base config. Fifty-three CPU tests and lint/format pass.
+An actual isolated 4B CPU synthetic probe matches historical rendered prompt,
+192 input / 7 output token IDs and raw output. It is implementation evidence only.
+The [preparation audit](docs/experiments/generalist-preparation-checks.json) retains
+hashes/isolation and explicitly separates unrun model gates.
+
+[Cost accounting v1](docs/cost-accounting-v1.md) separates joint research spending
+from standalone deployment scenarios and preserves missing charges, unknown labels,
+zero successes and failed-task denominators. Its schema/CLI and examples are CPU
+software fixtures. Real ledgers start with every charge null; billing evidence is
+not invented from wall time or pooled VM invoices. Inference v2 schemas, gold,
+old result bytes and published tags are unchanged.
+
+`validation-v1` reserves 20 new issues under the existing gold-blind selection
+policy, with an identical fresh-directory rebuild. It is same-repository validation,
+not repository/time generalization. No labels or predictions were produced; Verified
+remains reserved. Future training must exclude these reserved instances/equivalents.
+
+Read-only cloud checks find one unused regional L4 quota and the pinned image READY;
+capacity is not guaranteed. The concrete ignored proposal is
+`.develop/gcp-generalist-l4-proposal.md`: one new L4 VM, two 60-task arms, USD 5 /
+three-hour requested cap, resource gates before research, incremental collection
+and confirmed VM/disk deletion. The old one-session authorization is complete.
+This new paid session is NOT_AUTHORIZED and has not been provisioned. Training,
+prompt changes, retries/fallback and additional hardware are outside this proposal.

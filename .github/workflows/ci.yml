@@ -30,6 +30,11 @@ jobs:
           --predictions results/runs/ci-fixture
           --gold examples/localization-v2/gold.jsonl
           --output results/runs/ci-evaluation
+      - run: >-
+          uv run python -m efficient_agentic_inference.accounting
+          --ledger examples/accounting-v1/ledger.json
+          --evaluation examples/accounting-v1/evaluation.json
+          --output results/runs/ci-cost-fixture
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -9,6 +9,7 @@ import subprocess
 from pathlib import Path
 
 parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--base-config", type=Path, default=Path("configs/untuned-dev-v2.json"))
 parser.add_argument("--binary", type=Path, required=True)
 parser.add_argument("--build-dir", type=Path, required=True)
 parser.add_argument("--inputs", type=Path, required=True)
@@ -22,7 +23,7 @@ parser.add_argument("--output", type=Path, required=True)
 args = parser.parse_args()
 if args.run_budget_s <= 0 or args.task_timeout_s <= 0:
     parser.error("Budgets must be positive")
-config = json.loads(Path("configs/untuned-dev-v2.json").read_text())
+config = json.loads(args.base_config.read_text())
 config["backend"]["binary_sha256"] = hashlib.sha256(args.binary.read_bytes()).hexdigest()
 config["backend"]["binary_identity_status"] = "PASS"
 if args.binary.resolve() != (args.build_dir / "bin/llama-server").resolve():
