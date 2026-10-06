@@ -29,7 +29,7 @@ on exposed development data. Generalization, issue repair and economic benefit
 remain untested; cost per successful task is unknown.
 Read the [technical report](docs/technical-reports/untuned-dev-v2.md),
 [experiment artifacts](results/reports/untuned-dev-v2-l4/README.md) and
-[v0.2.0 milestone notes](docs/releases/v0.2.0.md).
+[v0.2.0 release](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.2.0).
 
 The earlier 12-task lexical pilot achieved Recall@5 0.5417, strict 6/12 and
 candidate ceiling 1.0; a separate machine reproduced its deterministic artifacts
