@@ -54,6 +54,7 @@ reject scoring methods generally. See the
 
 The [cross-report synthesis](docs/technical-reports/localization-synthesis-2026-10-08.md)
 connects these findings, candidate-coverage limits and the remaining economic questions.
+See [v0.3.0 milestone notes](docs/releases/v0.3.0.md) for the comparison and validation summary.
 
 The earlier 12-task lexical pilot achieved Recall@5 0.5417, strict 6/12 and
 candidate ceiling 1.0; a separate machine reproduced its deterministic artifacts

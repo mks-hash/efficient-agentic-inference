@@ -1,0 +1,116 @@
+{
+  "actual_full_system_cost_per_success": "UNKNOWN",
+  "artifact_schema_version": "2.0.0",
+  "benchmark_contract": "localization-v2",
+  "cpu_tests": 67,
+  "date": "2026-10-08",
+  "experimental_source_commit": "f167abc90ceac2ab93b9b79076244fa34c316dda",
+  "experimental_source_commit_matches_all_frozen_files": true,
+  "frozen_report_checksum_sets": {
+    "generalist-dev-v2-l4": 49,
+    "reliability-validation-v1-l4": 103,
+    "score-ranking-validation-v2-l4": 99,
+    "swebench-dev-v2-preparation": 24,
+    "untuned-dev-v2-l4": 45
+  },
+  "independent_gpu_validation_campaign_repetition": "NOT_RUN",
+  "lint_format": "PASS",
+  "local_links": {
+    "count": 24,
+    "status": "PASS"
+  },
+  "locked_offline_sync": "PASS",
+  "new_gpu_inference": "NOT_RUN",
+  "package_lock_runtime_installed_versions_match": true,
+  "package_version": "0.3.0",
+  "pending_files_scan": {
+    "count": 7,
+    "max_bytes": 2000000,
+    "status": "PASS"
+  },
+  "precommit_pending_files_scan": {
+    "count": 303,
+    "max_bytes": 2000000,
+    "status": "PASS"
+  },
+  "saved_attempts_reevaluated": 380,
+  "saved_reevaluation": [
+    {
+      "arm": "",
+      "attempts": 60,
+      "byte_identical": true,
+      "report": "untuned-dev-v2-l4"
+    },
+    {
+      "arm": "small-replication-dev-v2",
+      "attempts": 60,
+      "byte_identical": true,
+      "report": "generalist-dev-v2-l4"
+    },
+    {
+      "arm": "generalist-dev-v2",
+      "attempts": 60,
+      "byte_identical": true,
+      "report": "generalist-dev-v2-l4"
+    },
+    {
+      "arm": "S-free",
+      "attempts": 20,
+      "byte_identical": true,
+      "report": "reliability-validation-v1-l4"
+    },
+    {
+      "arm": "S-constrained",
+      "attempts": 20,
+      "byte_identical": true,
+      "report": "reliability-validation-v1-l4"
+    },
+    {
+      "arm": "G-free",
+      "attempts": 20,
+      "byte_identical": true,
+      "report": "reliability-validation-v1-l4"
+    },
+    {
+      "arm": "G-constrained",
+      "attempts": 20,
+      "byte_identical": true,
+      "report": "reliability-validation-v1-l4"
+    },
+    {
+      "arm": "S-paths",
+      "attempts": 30,
+      "byte_identical": true,
+      "report": "score-ranking-validation-v2-l4"
+    },
+    {
+      "arm": "S-scores",
+      "attempts": 30,
+      "byte_identical": true,
+      "report": "score-ranking-validation-v2-l4"
+    },
+    {
+      "arm": "G-paths",
+      "attempts": 30,
+      "byte_identical": true,
+      "report": "score-ranking-validation-v2-l4"
+    },
+    {
+      "arm": "G-scores",
+      "attempts": 30,
+      "byte_identical": true,
+      "report": "score-ranking-validation-v2-l4"
+    }
+  ],
+  "scope": "CPU software, original source identity and saved-artifact verification; no new model inference",
+  "score_research_freeze_files": 29,
+  "score_research_source_differences": {
+    "src/efficient_agentic_inference/__init__.py": {
+      "change": "0.2.0 to 0.3.0 version metadata only",
+      "experiment_sha256": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "release_sha256": "57f2127b67803026d1faa6516f13cd07ebcb96a34117fef25f4b07994bfc5dbf"
+    }
+  },
+  "status": "PASS",
+  "synthesis_source_hashes": 17
+}

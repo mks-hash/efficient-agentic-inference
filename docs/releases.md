@@ -27,7 +27,11 @@ Never move a published tag or replace evidence assets in place. Corrections reta
 the original result and identify the superseding run in a new release. Releasing
 a pilot does not turn its development data into an untouched evaluation set.
 
-The first milestone is [v0.1.0](releases/v0.1.0.md). The second released milestone is
-[v0.2.0 — Untuned Small-Model Localization Baseline](releases/v0.2.0.md).
+Milestone notes:
+
+- [v0.1.0 — Reproducible SWE-bench Localization Baseline](releases/v0.1.0.md)
+- [v0.2.0 — Untuned Small-Model Localization Baseline](releases/v0.2.0.md)
+- [v0.3.0 — Localization Baselines and Negative Results](releases/v0.3.0.md)
+
 Training requires a separate evidence-based decision and any necessary resource
 authorization.

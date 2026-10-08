@@ -22,7 +22,7 @@ Updated: 2026-10-08 (Moscow). Track: Small Specialist. Development baselines, ma
 | EAI-016 | Constrained output on fresh validation | DONE_PRIMARY_RULE_FAIL | 80 research / 32 technical requests; 4B gain 0, strict 9/20 in both arms; 14B gain +0.05 exploratory; all attempts retained, VM/disk absent |
 | EAI-017 | Complete candidate-score recipe | DONE_PRIMARY_RULE_FAIL | 30 fresh issues / 4 seen repositories; 120 research / 24 technical requests; S gain −0.330556, G exploratory −0.536111; all score vectors valid; VM/disk absent |
 | EAI-018 | Cross-report synthesis | DONE | Source-hashed post-hoc diagnostics; 296 model-report checksum entries verified; no new inference or confirmatory rule |
-| EAI-019 | v0.3.0 milestone | IN_PREPARATION | Local commits and release assets being prepared; no v0.3.0 publication yet |
+| EAI-019 | v0.3.0 milestone | LOCAL_READY_PUBLICATION_PENDING | Experimental sources preserved at f167abc; package/lock/runtime 0.3.0, release notes and validation record prepared; 67 CPU tests and 380 saved-attempt re-evaluations PASS; no v0.3.0 publication yet |
 
 ## Open decisions before further reference/adaptation work
 
@@ -648,3 +648,15 @@ package metadata to 0.3.0 and record that difference explicitly. Contract v2,
 artifact schemas 2.0.0, historical measurements and acceptance rules remain
 unchanged. Release preparation runs no new inference or cloud resources.
 Push, tag publication and GitHub Release are pending; no v0.3.0 is published.
+
+Experimental sources are now preserved at
+`f167abc90ceac2ab93b9b79076244fa34c316dda`; every frozen file matches the
+score preparation snapshot at that commit. Release metadata is 0.3.0 and
+locked offline installation passes. The only source difference from that snapshot
+is the explicitly recorded `__init__.py` version string. All 67 tests and the
+380-attempt byte-identical evaluation check pass again after this change.
+See [milestone notes](docs/releases/v0.3.0.md) and
+[validation record](docs/releases/v0.3.0-validation.json). Exact release-commit
+provenance and an evidence archive with member checksums are prepared separately
+under ignored `.develop/releases/v0.3.0/`; publication state is tracked outside
+the immutable historical research report envelopes.
