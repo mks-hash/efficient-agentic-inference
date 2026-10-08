@@ -22,7 +22,7 @@ Updated: 2026-10-08 (Moscow). Track: Small Specialist. Development baselines, ma
 | EAI-016 | Constrained output on fresh validation | DONE_PRIMARY_RULE_FAIL | 80 research / 32 technical requests; 4B gain 0, strict 9/20 in both arms; 14B gain +0.05 exploratory; all attempts retained, VM/disk absent |
 | EAI-017 | Complete candidate-score recipe | DONE_PRIMARY_RULE_FAIL | 30 fresh issues / 4 seen repositories; 120 research / 24 technical requests; S gain −0.330556, G exploratory −0.536111; all score vectors valid; VM/disk absent |
 | EAI-018 | Cross-report synthesis | DONE | Source-hashed post-hoc diagnostics; 296 model-report checksum entries verified; no new inference or confirmatory rule |
-| EAI-019 | v0.3.0 milestone | LOCAL_READY_PUBLICATION_PENDING | Experimental sources preserved at f167abc; package/lock/runtime 0.3.0, release notes and validation record prepared; 67 CPU tests and 380 saved-attempt re-evaluations PASS; no v0.3.0 publication yet |
+| EAI-019 | v0.3.0 milestone | DONE | Public GitHub Release and annotated tag at 0d419eb; experimental source snapshot f167abc preserved; final CPU CI 37829183126 PASS on Python 3.11/3.14; all three downloaded assets byte-identical, 501 member hashes verified |
 
 ## Open decisions before further reference/adaptation work
 
@@ -667,3 +667,14 @@ passes at `d7d4c826dec68e70837b9653df50215b47f918af`, including both supported
 CI Python versions. Changelog now indexes the v0.2.0 and v0.3.0 milestones.
 Final release-commit CI, annotated tag, asset publication and download verification
 follow before marking the release published.
+
+Published [v0.3.0 — Localization Baselines and Negative Results](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.3.0)
+at 2026-10-08 22:05:36 Moscow (19:05:36 UTC). The annotated tag resolves to
+`0d419eb9feaf0545696ec22501b7d90f64a69732`; final
+[release-commit CPU CI](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37829183126)
+passes on Python 3.11 and 3.14. The release contains the evidence archive,
+release/experiment provenance and SHA256SUMS. Downloaded copies of all three
+assets match local bytes; all 501 archived member hashes verify. Evidence archive
+SHA-256: `684682ad9bad2a07eed64f9491897146ddd16d67cb63b0bc165dfb97240c596f`.
+The tag and assets are immutable; this subsequent documentation update records
+publication and does not replace research evidence or attribute timings to new code.
