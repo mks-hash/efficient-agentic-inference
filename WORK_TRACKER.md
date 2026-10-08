@@ -660,3 +660,10 @@ See [milestone notes](docs/releases/v0.3.0.md) and
 provenance and an evidence archive with member checksums are prepared separately
 under ignored `.develop/releases/v0.3.0/`; publication state is tracked outside
 the immutable historical research report envelopes.
+
+The two prepared commits were pushed to main. GitHub
+[CPU CI 37829046763](https://github.com/mks-hash/efficient-agentic-inference/actions/runs/37829046763)
+passes at `d7d4c826dec68e70837b9653df50215b47f918af`, including both supported
+CI Python versions. Changelog now indexes the v0.2.0 and v0.3.0 milestones.
+Final release-commit CI, annotated tag, asset publication and download verification
+follow before marking the release published.
