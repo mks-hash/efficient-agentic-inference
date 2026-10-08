@@ -1,0 +1,7 @@
+{
+  "candidate_paths_and_hashes_identical": true,
+  "gold_sha256": "c340d01f5f4caf3b27ca87c4821e5cf3ed209c974e339399b90e7d4a1e18758b",
+  "input_sha256": "880c534924526231362229bb84dd606e3ef35ab9f75f579152f65d7c9b3eb287",
+  "selected": 60,
+  "status": "PASS"
+}

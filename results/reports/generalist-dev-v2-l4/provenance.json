@@ -1,0 +1,28 @@
+{
+  "experiment_code_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "configs/untuned-dev-v2.json",
+      "configs/generalist-dev-v2.json",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "7d8c088a9d03a8cd6efee243ff04595e2f0d8ed1582a70bed21c8ae5c867d3ff",
+    "dirty": false,
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728"
+  },
+  "gold_sha256": "c340d01f5f4caf3b27ca87c4821e5cf3ed209c974e339399b90e7d4a1e18758b",
+  "image": "common-cu129-ubuntu-2404-nvidia-580-v20261001",
+  "image_id": "1749640761673227869",
+  "input_sha256": "880c534924526231362229bb84dd606e3ef35ab9f75f579152f65d7c9b3eb287",
+  "location_reason": "Capacity exhaustion in us-central1-a/b/c and us-east4-a; one successful allocation only",
+  "model_conversion_limitation": "14B official reference revision is not verified as exact GGUF conversion source",
+  "private_raw_archive_sha256": "05ee9d882296c294a156a5c780458aaf3afc23f7a40a2e03983155fd7139816e",
+  "protocol_at_freeze": "f0a654ca81a8a7a17151ea37e3ec3855377ac728:docs/experiments/generalist-dev-v2.md",
+  "public_export_policy": "Raw output redacted in derived predictions; original raw traces/output/predictions remain unchanged in ignored private archive. Re-evaluation confirms identical metrics; per-task trace hashes published without source text.",
+  "runtime_location": "us-east4-c"
+}

@@ -1,0 +1,34 @@
+{
+  "archive_members": [
+    "configs/prompts/localization-v1.txt",
+    "configs/prompts/candidate-scores-v1.txt",
+    "tools/configure-cpu-run.py",
+    "tools/llama-isolated.sh",
+    "configs/score-ranking-validation-v2/S-paths.json",
+    "configs/score-ranking-validation-v2/S-scores.json",
+    "configs/score-ranking-validation-v2/G-paths.json",
+    "configs/score-ranking-validation-v2/G-scores.json",
+    "src/efficient_agentic_inference/__init__.py",
+    "src/efficient_agentic_inference/inference.py",
+    "src/efficient_agentic_inference/llama_predict.py",
+    "src/efficient_agentic_inference/records.py"
+  ],
+  "archive_sha256": "3c5c47ec18fdba8ef3f4711f9d5ce70de89776ec871b143ea0b6bf1c33701478",
+  "dirty": true,
+  "kind": "immutable archive of selected inference sources; base revision alone is insufficient",
+  "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+  "source_sha256": {
+    "configs/prompts/candidate-scores-v1.txt": "9eff8d7f7c9532603cf19a86d142445de7a94b2de0039abba304c19c0ec3b431",
+    "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "configs/score-ranking-validation-v2/G-paths.json": "67bd9543703f59758dde5bdea6baa04540ad9cd7be33fac37adb59ec8bcb67aa",
+    "configs/score-ranking-validation-v2/G-scores.json": "3d011e357bd209fb01c2fa9c866d83cdd99a8c74cb3649b8cc319881cb1d9008",
+    "configs/score-ranking-validation-v2/S-paths.json": "648b49d8043fadea834db57fe478fb5ebb1db4955ac4278b8c1ae0a796d9996c",
+    "configs/score-ranking-validation-v2/S-scores.json": "2421912cb00991c32a16d7c3e6f4e5c9d38f3f855fbd64f498a326bb4c991294",
+    "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+    "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "src/efficient_agentic_inference/llama_predict.py": "9cbec90ec7676e20b691af5f3bfb873da387f2246693248a6af8de507e418dcc",
+    "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+    "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+    "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+  }
+}

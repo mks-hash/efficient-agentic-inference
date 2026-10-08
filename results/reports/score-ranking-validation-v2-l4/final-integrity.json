@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "stage": "final",
+  "archive_sha256": "c9bd93a43b3ed9071fda3140335afb5d653fc40b78a01b059461a158c4d85207",
+  "bytes": 7645912,
+  "verified_checksum_entries": 1128,
+  "transfer_start_utc": "2026-10-07T22:17:44.195895+00:00",
+  "transfer_end_utc": "2026-10-07T22:17:57.906239+00:00"
+}

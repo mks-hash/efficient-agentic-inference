@@ -1,0 +1,12 @@
+{
+  "accounting_recalculation": 4,
+  "cleanup": "PASS",
+  "credential_pattern_scan": "PASS",
+  "local_links": "PASS",
+  "metrics_byte_identity": 120,
+  "native_trace_identity": 120,
+  "older_report_checksum_sets": 3,
+  "publication": "NOT_AUTHORIZED for this report; local review only",
+  "source_free_prediction_schema_and_original_fields": 120,
+  "status": "PASS"
+}

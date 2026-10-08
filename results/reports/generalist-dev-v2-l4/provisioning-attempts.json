@@ -1,0 +1,49 @@
+{
+  "attempts": [
+    {
+      "phase": "create",
+      "raw_log_sha256": "b3f9a6a09e837073e1532dba43bd5c578bca1c3bc3925a8d87f13c5ac0464ec5",
+      "reason": "capacity_unavailable",
+      "status": "FAIL",
+      "zone": "us-central1-a"
+    },
+    {
+      "phase": "create-retry",
+      "raw_log_sha256": "df7c9c80a0bfc8f69fabd4df352cc2a7bf8d87fdce79bd9b2ca7c8b347968f8f",
+      "reason": "capacity_unavailable",
+      "status": "FAIL",
+      "zone": "us-central1-a"
+    },
+    {
+      "phase": "create-zone-b",
+      "raw_log_sha256": "1377f95e91980005a6e971486615c93aabf3abd0da8e6d168a7f91a92c290fb4",
+      "reason": "capacity_unavailable",
+      "status": "FAIL",
+      "zone": "us-central1-b"
+    },
+    {
+      "phase": "create-zone-c",
+      "raw_log_sha256": "749861651e57782a9818adb99b7c3902838e8d8932ad6770b8a642304affa360",
+      "reason": "capacity_unavailable",
+      "status": "FAIL",
+      "zone": "us-central1-c"
+    },
+    {
+      "phase": "create-east4-a",
+      "raw_log_sha256": "29a5252c63e1127f6a9b536fbfb475e59657037d1d998df60be7f12d1173ea78",
+      "reason": "capacity_unavailable",
+      "status": "FAIL",
+      "zone": "us-east4-a"
+    },
+    {
+      "phase": "create-east4-c",
+      "raw_log_sha256": "b2788befa3394423c6c5e30a1bd1ee3bd9fe3b7cf8dcccd8911f6137ddb839be",
+      "reason": null,
+      "status": "PASS",
+      "zone": "us-east4-c"
+    }
+  ],
+  "raw_provider_responses": "retained in ignored session directory; only newly named resources queried for absence between attempts",
+  "successful_allocations": 1,
+  "vm_id": "690047964406146351"
+}

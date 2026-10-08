@@ -1,0 +1,20 @@
+{
+  "region": "us-west1",
+  "machine": "g2-standard-4",
+  "pricing_model": "on-demand",
+  "review_utc": "2026-10-07T18:37:42.480840+00:00",
+  "compute_usd_per_hour": "0.706832276",
+  "storage_usd_per_gib_hour": "0.000136986",
+  "external_ip_usd_per_hour": "0.005",
+  "actual_charge_usd": null,
+  "compute_source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+  "disk_source": "https://cloud.google.com/compute/disks-image-pricing",
+  "ip_source": "https://cloud.google.com/vpc/network-pricing",
+  "disk_source_html_sha256": "84ec9979c1099912d1f5e1d96fe57ff5f2987989fe30b579f2e7605d9b1d4729",
+  "disk_region_table_sha256": "a46e70ce612f38131c7be3bff1f29110b69fe4e457527b5cc9b1bd834894269f",
+  "disk_excerpts": [
+    "Balanced provisioned space</p>']]], [1, 1, None, [None, [None, '$0.000136986 / 1 gibibyte hour']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned space</p>']]], [1, 1, None, [None, [None, '$0.000171233 / 1 gibibyte hour']], 1]]], [[[1, 1,",
+    "Balanced provisioned space</p>']]], [1, 1, None, [None, [None, '$0.10 / 1 gibibyte month']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned space</p>']]], [1, 1, None, [None, [None, '$0.125 / 1 gibibyte month']], 1]]], [[[1, 1, None, [Non"
+  ],
+  "compute_table_record_sha256": "a7e5ab307e147c186213d2645dd9f7bda1ab3f2eb12c7b7ec15732e329fee10c"
+}

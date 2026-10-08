@@ -1,0 +1,18 @@
+{
+  "vm_name": "eai-reliability-l4-20261007",
+  "zone": "us-west1-a",
+  "vm_id": "2006722488811859971",
+  "disk_id": "1082945216092778499",
+  "vm_absent": true,
+  "disk_absent": true,
+  "delete_requested_utc": "2026-10-07T19:21:27.128752+00:00",
+  "absence_confirmed_utc": "2026-10-07T19:22:39.443641+00:00",
+  "delete_and_absence_check_elapsed_s": 72.31488933600485,
+  "existing_instance_identities_preserved": true,
+  "existing_disk_identities_preserved": true,
+  "terminal_archive_sha256": "2a648ab09a90a64af7ded8a04664d8757299849c7fd8d1ec03d364c63f584728",
+  "actual_monetary_usd": null,
+  "billing_status": "UNKNOWN; no invoice joined",
+  "max_authorized_usd": 5,
+  "max_authorized_allocation_s": 10800
+}

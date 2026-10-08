@@ -1,0 +1,17 @@
+{
+  "vm_name": "eai-generalist-l4-20261006",
+  "zone": "us-east4-c",
+  "vm_id": "690047964406146351",
+  "disk_id": "1388359610366747951",
+  "vm_absent": true,
+  "disk_absent": true,
+  "delete_requested_utc": "2026-10-06T21:26:51.730111+00:00",
+  "absence_confirmed_utc": "2026-10-06T21:27:58.460987+00:00",
+  "delete_and_absence_check_elapsed_s": 66.73087663500337,
+  "existing_instance_identities_preserved": true,
+  "final_archive_sha256": "05ee9d882296c294a156a5c780458aaf3afc23f7a40a2e03983155fd7139816e",
+  "actual_monetary_usd": null,
+  "billing_status": "UNKNOWN; no invoice joined",
+  "max_authorized_usd": 5,
+  "max_authorized_allocation_s": 10800
+}

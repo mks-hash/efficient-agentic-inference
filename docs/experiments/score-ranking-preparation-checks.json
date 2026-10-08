@@ -1,0 +1,90 @@
+{
+  "actual_cost": "UNKNOWN",
+  "checked_at_utc": "2026-10-07T19:56:47.453077+00:00",
+  "code_identity": {
+    "dirty": true,
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728"
+  },
+  "contract": "score-ranking-validation-v2",
+  "cpu_contracts": {
+    "status": "PASS",
+    "tests": 67
+  },
+  "dataset": {
+    "compared_snapshot_artifacts": 63,
+    "context_semantic_sha256": "300fa9312376f14651dcb27c8150d9354e8340afbdd03780492b4553a416a0d6",
+    "contract": "score-ranking-validation-v2",
+    "full_inputs_sha256": "83fac765ecca0d05db46003a1bd5153980c8b87280feeda3b6d9b6e30bdc6b7f",
+    "gold_sha256": "8b09e564700700d918d9aa3656ca06fdfa58da65ef79911f3b428275f236a6c8",
+    "independent_machine_rebuild": "NOT_RUN",
+    "labeled": 30,
+    "matched_inputs_sha256": "efc0b4f8620558087103242e66d3314a142b32fdf17737b1c8837cbe45a84b91",
+    "observation_identity": "cpu_ms/wall_ms differ as measured; both immutable journals retained",
+    "paid_execution": "NOT_AUTHORIZED",
+    "prepared": 30,
+    "repository_counts": {
+      "pvlib/pvlib-python": 8,
+      "pydicom/pydicom": 8,
+      "pylint-dev/astroid": 7,
+      "sqlfluff/sqlfluff": 7
+    },
+    "role": "reconstruction and gold-blind packets; no validation quality computed",
+    "same_host_fresh_directory_rebuild": true,
+    "selected": 30,
+    "split_sha256": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635",
+    "status": "PASS",
+    "validation_inference": "NOT_RUN",
+    "validation_quality": "NOT_RUN",
+    "verified_exported_regular_files": 52106
+  },
+  "diff_whitespace": "PASS",
+  "freeze": {
+    "earlier_snapshot": "retained; superseded before reconstruction",
+    "files": 29,
+    "overwrite_refusal": "PASS",
+    "sha256": "d7f048f4f33f17d6a928d63404389781ec127b058c9f2e725b747bbd3c3fbee6",
+    "unchanged": "PASS"
+  },
+  "generalist_score_native": "NOT_RUN",
+  "gpu_score_native": "NOT_RUN",
+  "lint_format": {
+    "python_files": 35,
+    "status": "PASS"
+  },
+  "local_document_links": {
+    "checked_links": 52,
+    "status": "PASS"
+  },
+  "native_cpu": {
+    "all_attempts_retained": true,
+    "audit_sha256": "b0b3f11a3c73e85dce9dd0570feed76dba7492a20325a44425e11f9cbc4d88bd",
+    "backend_clean_exit": "PASS",
+    "binding_schema_eager_grammar_counters_eos": "PASS",
+    "candidate_boundaries": [
+      0,
+      2,
+      20
+    ],
+    "expected_system_prompt_token_difference": "PASS",
+    "historical_path_request_and_native_ids": "PASS",
+    "isolation": "PASS",
+    "same_user_message_across_recipes": "PASS",
+    "status": "PASS",
+    "synthetic_attempts": 7,
+    "synthetic_inputs": {
+      "historical_tasks_sha256": "c1c592c2417cb175d0b8f3521cc6f8b08d698fd8c3ce857f6727e8eb98b6c20e",
+      "role": "exact probe inputs copied to public synthetic examples; no labels",
+      "tasks_sha256": "8e30533f0831fc31df2e9972538fa59ff6657d0494be7312a17309122108ce1f"
+    },
+    "synthetic_semantic_accuracy": "NOT_ASSESSED"
+  },
+  "paid_execution": "NOT_AUTHORIZED",
+  "prior_report_checksums": {
+    "files": 197,
+    "status": "PASS"
+  },
+  "publication": "NOT_AUTHORIZED",
+  "role": "preparation/software evidence only; not research model performance",
+  "validation_model_attempts": 0,
+  "validation_quality": "NOT_RUN"
+}

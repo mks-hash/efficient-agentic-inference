@@ -1,6 +1,11 @@
 # Matched generalist and cost accounting — preparation contract
 
-Date: 2026-10-06. Status: PREPARED; model execution NOT_RUN; paid run NOT_AUTHORIZED.
+Prepared: 2026-10-06. The preparation contract below froze at `f0a654c`; its
+NOT_RUN/NOT_AUTHORIZED statements describe that preparation state. The user later
+authorized execution, completed 2026-10-06 UTC. See the
+[matched report](../../results/reports/generalist-dev-v2-l4/README.md): technical
+gates PASS, positive generalist-gap rule FAIL, actual/full CPS UNKNOWN.
+Preparation rules, model selection and numerical thresholds below are unchanged.
 [ADR 0006](../../decisions/0006-matched-generalist-and-cost-accounting.md).
 
 ## Question and treatments

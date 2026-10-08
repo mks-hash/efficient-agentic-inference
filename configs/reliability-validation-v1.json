@@ -1,0 +1,69 @@
+{
+  "arm_order": [
+    "S-free",
+    "S-constrained",
+    "G-constrained",
+    "G-free"
+  ],
+  "arms": {
+    "G-constrained": "configs/reliability-validation-v1/G-constrained.json",
+    "G-free": "configs/reliability-validation-v1/G-free.json",
+    "S-constrained": "configs/reliability-validation-v1/S-constrained.json",
+    "S-free": "configs/reliability-validation-v1/S-free.json"
+  },
+  "artifact_schema": "2.0.0",
+  "bootstrap": {
+    "percentile_method": "nearest-rank",
+    "resamples": 5000,
+    "seed": 20261006,
+    "unit": "repository blocks, preserving paired tasks"
+  },
+  "campaign": "reliability-validation-v1",
+  "context_profile": "bm25-top20-prefix1200-v1",
+  "contract": "reliability-validation-v1",
+  "evidence_gates": {
+    "actual_cost": "UNKNOWN",
+    "cpu_contracts": "NOT_RUN",
+    "generalist_constrained_native": "NOT_RUN",
+    "gpu_native_isolation": "NOT_RUN",
+    "synthetic_small_native": "NOT_RUN",
+    "validation_quality": "NOT_RUN"
+  },
+  "execution": {
+    "context_tokens": 16384,
+    "per_task_timeout_s": 120,
+    "run_budget_s": 1800,
+    "startup_timeout_s": 180,
+    "threads": 4
+  },
+  "localization_contract": "localization-v2",
+  "paid_execution": "NOT_AUTHORIZED",
+  "population": {
+    "selected": 20,
+    "sha256": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121",
+    "split": "splits/validation-v1.json"
+  },
+  "primary": {
+    "contrast": [
+      "S-constrained",
+      "S-free"
+    ],
+    "recall_at_5_min_gain": 0.05,
+    "repo_bootstrap_ci_lower_above": 0,
+    "strict_noninferiority": true,
+    "valid_noninferiority": true
+  },
+  "prompt_sha256": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+  "schema_version": "1.0.0",
+  "secondary": {
+    "contrasts": [
+      [
+        "G-constrained",
+        "G-free"
+      ]
+    ],
+    "interaction": "G within-model gain minus S within-model gain",
+    "status": "exploratory"
+  },
+  "status": "PREPARED_NOT_RUN"
+}

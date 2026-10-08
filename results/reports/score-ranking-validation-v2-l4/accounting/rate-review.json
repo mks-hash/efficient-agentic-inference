@@ -1,0 +1,37 @@
+{
+  "actual_charge_usd": null,
+  "boundary": "list-rate scenario only; network, tax, credits and actual spending unknown",
+  "compute": {
+    "html_sha256": "e6cd1c74b928d941001613f31537e4107298faf9e54a99822ac2c45dce707601",
+    "region_table_sha256": "f8285edc9e50eb38fa5496456d31dc58857a075a1d80fbb29b34d8e248b1ea38",
+    "selected_excerpts": [
+      "g2-standard-4</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 4</p><p>Memory: 16GiB</p>']]], [1, 1, None, [None, [None, '<p>N/A</p><p><br /></p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]]]], [[[1, 1, None, [None, [None, '<p>g2-standard-8</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 8</p><p>Memory: 32GiB</p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]], [1, 1, N",
+      "g2-standard-4</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 4</p><p>Memory: 16GiB</p>']]], [1, 1, None, [None, [None, '<p>N/A</p><p><br /></p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]]]], [[[1, 1, None, [None, [None, '<p>g2-standard-8</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 8</p><p>Memory: 32GiB</p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]], [1, 1, N",
+      "g2-standard-4</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 4</p><p>Memory: 16GiB</p>']]], [1, 1, None, [None, [None, '$0.706832276 / 1 hour']], 1], [1, 1, None, [None, [None, '$0.558397485 / 1 hour']], 1], [1, 1, None, [None, [None, '$0.402894397 / 1 hour']], 1], [1, 1, None, [None, [None, '<p>N/A</p><p><br /></p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]], [1, 1, None, [None, [None, '$0.402848 / 1 hour']], 1], [1, 1, None, [",
+      "g2-standard-4</p>']]], [1, 1, None, [None, [None, '<p>NVIDIA L4</p>']]], [1, 1, None, [None, [None, '<p>GPUs: 1</p><p>vCPUs: 4</p><p>Memory: 16GiB</p>']]], [1, 1, None, [None, [None, '$515.98756148 / 1 month']], 1], [1, 1, None, [None, [None, '$407.63016405 / 1 month']], 1], [1, 1, None, [None, [None, '$294.11290981 / 1 month']], 1], [1, 1, None, [None, [None, '<p>N/A</p><p><br /></p>']]], [1, 1, None, [None, [None, '<p>N/A</p>']]], [1, 1, None, [None, [None, '$294.07904 / 1 month']], 1], [1, 1,"
+    ],
+    "source_url": "https://cloud.google.com/products/compute/pricing/accelerator-optimized"
+  },
+  "compute_usd_per_hour": "0.706832276",
+  "disk": {
+    "html_sha256": "137436092df06fee68b341e7d98bc20166073037410a102ffe1f5cadb50435cc",
+    "region_table_sha256": "f7564e73fc7fc679f0f4e41bacb430e17453605235d9e530ded2f4bbf2e3021d",
+    "selected_excerpts": [
+      "Balanced provisioned space</p>']]], [1, 1, None, [None, [None, '$0.000136986 / 1 gibibyte hour']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned space</p>']]], [1, 1, None, [None, [None, '$0.000171233 / 1 gibibyte hour']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned IOPS</p>']]], [1, 1, None, [None, [None, '$0.000089041 / 1 hour']], 1]]], [[[1, 1, None, [None, [None, '<p>Regional standard provisioned space</p>']]], [1, 1, None, [None, [None, '$0.000109589 / 1 gibibyte",
+      "Balanced provisioned space</p>']]], [1, 1, None, [None, [None, '$0.10 / 1 gibibyte month']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned space</p>']]], [1, 1, None, [None, [None, '$0.125 / 1 gibibyte month']], 1]]], [[[1, 1, None, [None, [None, '<p>Extreme provisioned IOPS</p>']]], [1, 1, None, [None, [None, '$0.065 / 1 month']], 1]]], [[[1, 1, None, [None, [None, '<p>Regional standard provisioned space</p>']]], [1, 1, None, [None, [None, '$0.08 / 1 gibibyte month']], 1]]], [[[1, "
+    ],
+    "source_url": "https://cloud.google.com/compute/disks-image-pricing"
+  },
+  "external_ip": {
+    "html_sha256": "953d5cdff2e7eb091d51f685bdc559c3b1cddbcc3886f559aea5c1b0dfaa563c",
+    "source_url": "https://cloud.google.com/vpc/network-pricing",
+    "usd_per_hour": "0.005"
+  },
+  "known_compute_disk_ip_subtotal_usd_per_hour": "0.725530876",
+  "known_three_hour_subtotal_usd": "2.176592628",
+  "machine": "g2-standard-4",
+  "pricing_model": "on-demand",
+  "region": "us-west1",
+  "review_utc": "2026-10-07T20:56:06.861266+00:00",
+  "storage_usd_per_gib_hour": "0.000136986"
+}

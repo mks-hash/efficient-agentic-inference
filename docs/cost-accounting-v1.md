@@ -1,7 +1,9 @@
 # Cost accounting v1 — measured charges and explicit scenarios
 
-Status: implementation/contract validated on synthetic CPU fixtures only.
-No new cost or efficiency measurement is established by this document.
+Status: implementation/contract validated on synthetic CPU fixtures; the
+[matched campaign](../results/reports/generalist-dev-v2-l4/README.md) records
+real phase times and partial list-rate scenarios. Actual/full-system CPS remains
+unknown; no economic savings claim is established.
 
 ## Boundary and denominator
 
@@ -45,7 +47,12 @@ scenarios are not additive components of the actual shared experiment invoice.
 Keep research probes/technical-debug overhead separate and publish an inclusive
 session scenario alongside the deployment view. Unknown charges remain null.
 
-Publish cold one-batch (60 tasks) scenarios first. Warm resident/request-only
+Publish one-batch lifecycle scenarios for the frozen population (60 tasks in the
+matched development comparison; 20 in the
+[reliability validation](../results/reports/reliability-validation-v1-l4/README.md)).
+Observed post-probe load/request timings do not measure an independently cold
+cache; explicitly distinguish lifecycle replay from measured cold-cache startup.
+Warm resident/request-only
 scenarios may be supplementary, with explicit exclusions and no assumed
 concurrency. Training amortization is NOT_APPLICABLE: no training occurred.
 For allocation assumptions that cannot be measured, label the component scenario;

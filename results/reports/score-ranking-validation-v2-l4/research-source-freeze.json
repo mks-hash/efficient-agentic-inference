@@ -1,0 +1,42 @@
+{
+  "code_identity": {
+    "dirty": true,
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728"
+  },
+  "contract": "score-ranking-validation-v2",
+  "files": {
+    "configs/prompts/candidate-scores-v1.txt": "9eff8d7f7c9532603cf19a86d142445de7a94b2de0039abba304c19c0ec3b431",
+    "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "configs/score-ranking-validation-v2.json": "c533c5294d43a407fefcbba03c701c98483032d338566dc978b5b52461c4ca3a",
+    "configs/score-ranking-validation-v2/G-paths.json": "67bd9543703f59758dde5bdea6baa04540ad9cd7be33fac37adb59ec8bcb67aa",
+    "configs/score-ranking-validation-v2/G-scores.json": "3d011e357bd209fb01c2fa9c866d83cdd99a8c74cb3649b8cc319881cb1d9008",
+    "configs/score-ranking-validation-v2/S-paths.json": "648b49d8043fadea834db57fe478fb5ebb1db4955ac4278b8c1ae0a796d9996c",
+    "configs/score-ranking-validation-v2/S-scores.json": "2421912cb00991c32a16d7c3e6f4e5c9d38f3f855fbd64f498a326bb4c991294",
+    "decisions/0009-score-vector-ranking.md": "cc98013a7409b722e45b103f552b42b7ada948c91f460f28af7816333b8afe3d",
+    "docs/benchmark-localization-v2.md": "67c80ae86358b5ad50dcf8b5c651b8a5ebc3bd49923c792acdc87efda1eb8ef6",
+    "docs/cost-accounting-v1.md": "93cbdac58850367f8737baf07f55028ed06ef11ffc7c1984cb8a1bc56aa56acf",
+    "docs/experiments/score-ranking-validation-v2.md": "eb22cd12eec8f678142ef4a1cc5ecf7166e414a2832f369189b2e7484316e9ad",
+    "splits/validation-v2.json": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635",
+    "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+    "src/efficient_agentic_inference/comparison.py": "caff6f5d9060f1400099b88dd637e7e2cfc21363439c1cb7e53ef4a67c028235",
+    "src/efficient_agentic_inference/context.py": "0cdb12da7499d8f9f42a043a77091690eeb685430b5a961e27e3a8efc149f053",
+    "src/efficient_agentic_inference/evaluation.py": "056296b947af662f8dde0ae4a67e8a996c280ed3607a396c1744e7731ebf6e0e",
+    "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "src/efficient_agentic_inference/labeler.py": "35d1f812c157512ab17a4e91e1b046afc069668c5353e9a730304b3d09c646e8",
+    "src/efficient_agentic_inference/llama_predict.py": "9cbec90ec7676e20b691af5f3bfb873da387f2246693248a6af8de507e418dcc",
+    "src/efficient_agentic_inference/localization.py": "f339c926565a6d89a435e2f7cf713f523f530eef04f53b3d25e23f699ba8a917",
+    "src/efficient_agentic_inference/metrics.py": "f7fbbcc61c4db309036ccc2997358683c77591845debf0c53a1e42def43181f1",
+    "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+    "src/efficient_agentic_inference/reliability.py": "4c3e6bb27bdaac9409ed80b5c02798bb36ef4750ae2576554a0f359995f23235",
+    "src/efficient_agentic_inference/score_analysis.py": "8f1e20427a7b11754fd2ff43abd6f360545b1fe450c426d5ac8a4fd687536f44",
+    "src/efficient_agentic_inference/snapshot.py": "a687235c5d713341da4e29cffdccf424ae0ce0e16e66224e69e3174856f161f8",
+    "tools/analyze-score-ranking.py": "bc0797ef929d457ba71d706568c20c2592e0c33ec9be1163d202a034c27b9383",
+    "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+    "tools/freeze-score-ranking.py": "53fdf501524a89a18c5bcb46fa2efa78503aa902b5f7042bc4af4a448dff84b3",
+    "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+  },
+  "frozen_at_utc": "2026-10-07T19:42:04.914751+00:00",
+  "paid_execution": "NOT_AUTHORIZED",
+  "role": "Preparation snapshot before reconstruction; not execution freeze",
+  "validation_inference": "NOT_RUN"
+}

@@ -1,0 +1,31 @@
+{
+  "actual_cost_per_success": "UNKNOWN",
+  "arms": {
+    "G": {
+      "all_selected_attempted": "PASS",
+      "cost_per_success": "UNKNOWN",
+      "eos_and_no_truncation": "PASS",
+      "full_gpu_offload": "PASS",
+      "known_labels": "PASS",
+      "native_tokens_and_decoding": "PASS",
+      "nonthinking_suffix": "PASS",
+      "physical_isolation": "PASS",
+      "weights_hash": "PASS"
+    },
+    "S": {
+      "all_selected_attempted": "PASS",
+      "cost_per_success": "UNKNOWN",
+      "eos_and_no_truncation": "PASS",
+      "full_gpu_offload": "PASS",
+      "known_labels": "PASS",
+      "native_tokens_and_decoding": "PASS",
+      "nonthinking_suffix": "NOT_APPLICABLE",
+      "physical_isolation": "PASS",
+      "weights_hash": "PASS"
+    }
+  },
+  "held_out_generalization": "NOT_RUN",
+  "paired_candidates": "PASS",
+  "paired_generalist_material_gain": "FAIL",
+  "training": "NOT_RUN"
+}

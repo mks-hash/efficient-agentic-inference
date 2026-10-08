@@ -1,0 +1,54 @@
+{
+  "dispositions": {
+    "invalid_output": 8,
+    "valid": 52
+  },
+  "failure_reasons": {
+    "ValueError: Prediction contains unknown candidate paths": 8
+  },
+  "input_token_tasks_observed": 60,
+  "input_tokens_observed": 477333,
+  "interrupted_token_counts": "received-token lower bounds; unobserved tokens remain unknown",
+  "original_predictions_sha256": "730efd149e6f33ab43f5c0296019834bd5a459f576b5889ab8efd537a2c78966",
+  "output_token_tasks_observed": 60,
+  "output_tokens_observed": 2190,
+  "phases": {
+    "backend_cpu_seconds": 198.84592500000002,
+    "backend_lifetime_wall_ms": 199052.07616599978,
+    "backend_load_warmup_ms": 1758.0357800000002,
+    "backend_peak_rss_kib": 2759196,
+    "child_exit_code": 0,
+    "command": [
+      "/backend/llama-server",
+      "--model",
+      "/model/model.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8080",
+      "--log-verbosity",
+      "4",
+      "--ctx-size",
+      "16384",
+      "--parallel",
+      "1",
+      "--threads",
+      "4",
+      "--threads-batch",
+      "4",
+      "--n-gpu-layers",
+      "999",
+      "--no-context-shift",
+      "--cache-ram",
+      "0",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--jinja"
+    ],
+    "gpu_seconds": null,
+    "monetary_usd": null
+  },
+  "selected": 60
+}

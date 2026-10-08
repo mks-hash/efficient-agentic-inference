@@ -1,0 +1,79 @@
+{
+  "active_gpu_seconds": null,
+  "actual_monetary_usd": null,
+  "backend_phases": {
+    "backend_cpu_seconds": 74.79547500000001,
+    "backend_lifetime_wall_ms": 74943.17359500019,
+    "backend_load_warmup_ms": 3263.1856590001007,
+    "backend_peak_rss_kib": 9111232,
+    "child_exit_code": 0,
+    "command": [
+      "/backend/llama-server",
+      "--model",
+      "/model/model.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8080",
+      "--log-verbosity",
+      "4",
+      "--ctx-size",
+      "16384",
+      "--parallel",
+      "1",
+      "--threads",
+      "4",
+      "--threads-batch",
+      "4",
+      "--n-gpu-layers",
+      "999",
+      "--no-context-shift",
+      "--cache-ram",
+      "0",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--jinja",
+      "--reasoning",
+      "off"
+    ],
+    "gpu_seconds": null,
+    "monetary_usd": null
+  },
+  "dispositions": {
+    "valid": 6
+  },
+  "failure_reasons": {},
+  "native_input_tokens_observed": 51360,
+  "output_tokens_received_observed": 570,
+  "repeat_request_pairs": [
+    {
+      "first_instance_id": "marshmallow-code__marshmallow-1810-technical-r1",
+      "first_wall_ms": 10997.58447899967,
+      "repeat_instance_id": "marshmallow-code__marshmallow-1810-technical-r2",
+      "repeat_wall_ms": 11283.760901999813
+    },
+    {
+      "first_instance_id": "pvlib__pvlib-python-1165-technical-r1",
+      "first_wall_ms": 12883.304835999752,
+      "repeat_instance_id": "pvlib__pvlib-python-1165-technical-r2",
+      "repeat_wall_ms": 13201.5566580003
+    },
+    {
+      "first_instance_id": "pydicom__pydicom-811-technical-r1",
+      "first_wall_ms": 11454.192711999895,
+      "repeat_instance_id": "pydicom__pydicom-811-technical-r2",
+      "repeat_wall_ms": 11541.212833999907
+    }
+  ],
+  "request_wall_ms_observed_sum": 71361.61242099933,
+  "request_wall_ms_p50": 11454.192711999895,
+  "request_wall_ms_p95": 13201.5566580003,
+  "sampled_max_gpu_memory_mib": 11006.0,
+  "selected": 6,
+  "telemetry_limitation": "One-second external samples may miss peaks; active GPU-seconds and per-task GPU attribution unknown.",
+  "telemetry_sample_count": 101,
+  "telemetry_sha256": "908bb2f971f8589394197b543f67b674b601751dcf9b1f8cd37a15c08f6ae3b6",
+  "token_complete_attempts": 6
+}

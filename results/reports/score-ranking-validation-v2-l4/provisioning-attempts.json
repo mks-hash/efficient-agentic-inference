@@ -1,0 +1,22 @@
+[
+  {
+    "zone": "us-west1-a",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T21:18:55.399326+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-west1-b",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T21:19:11.636949+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-west1-a",
+    "result": "CREATED",
+    "instance_id": "8728510203003864785",
+    "start_utc": "2026-10-07T21:23:08.289388+00:00"
+  }
+]

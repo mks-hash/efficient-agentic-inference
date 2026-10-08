@@ -1,0 +1,50 @@
+{
+  "all_eos_no_truncation": "PASS",
+  "findings": [],
+  "identity_status": "PASS",
+  "offload": [
+    [
+      "37",
+      "37"
+    ]
+  ],
+  "raw_server_log_sha256": "10239adb4556d77bb8c35e47f24565e72c5b58127be0b70ed21ca4a708aba3fe",
+  "traces": [
+    {
+      "eager_grammar": true,
+      "effective_grammar_sha256": "43d5f290aedaf8057d7d00f05c94c2195f6f88acf25962f702e4c872d6d59035",
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "e2d0b7c46203ec28524a9403fdac95e075bb7ccfc3a16e41e93032a83c3ab16e",
+      "input_tokens": 113,
+      "instance_id": "synthetic-constraint-empty",
+      "native_status": "PASS",
+      "output_ids_sha256": "7fab7bdd19048c2143d505fa973e91466761e8a9eba27de89ce693b7383bdfda",
+      "output_schema_sha256": "1cdb1c05fe9d842f975028d05fdfe3de2322ab1cd7160877ed1e87eb26ddaaa5",
+      "output_tokens_received": 2,
+      "raw_evidence_sha256": "61dc6cd8e4d25bf5d9102171d51a4f37cbe526bdd521aafa5c0700d8bb8efd77",
+      "rendered_prompt_sha256": "0cc30f0d112f4896286d479d658e89a7868ecb59aae23ef7f67c3e1e2855b5b7",
+      "stop_type": "eos",
+      "truncated": false
+    },
+    {
+      "eager_grammar": true,
+      "effective_grammar_sha256": "7c668d27459706451317c0d012248c10476715c6b1825d819a3cb97cefbafced",
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "c2b0b284b0bef9893a56d478668bbb75ad5f3e8d6d2c151a50f0490d2c60f659",
+      "input_tokens": 188,
+      "instance_id": "synthetic-constraint-escaped",
+      "native_status": "PASS",
+      "output_ids_sha256": "d67c0b138bf8f1f3b6bf34c8f4d6b41f28704790a3e77243ed5db0cb4edc9d54",
+      "output_schema_sha256": "8dbcc555c53e7b1ea912c4a3956f2042cee4e9fd328c4503f2b57037a74e2504",
+      "output_tokens_received": 9,
+      "raw_evidence_sha256": "3733bb2662f44269137a1a5d1eeb57409811cc6ae88c7993f1367602649b0120",
+      "rendered_prompt_sha256": "ecf063a2355e313792fcff9f1b44367b5f4269d26dce8caa1d04ee4ba6fd17cf",
+      "stop_type": "eos",
+      "truncated": false
+    }
+  ]
+}

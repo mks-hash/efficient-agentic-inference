@@ -1,0 +1,33 @@
+{
+  "actual_total_usd": null,
+  "allocated_wall_s": 3335.807641,
+  "allocation_policy": "Shared campaign is counted once. Standalone 20-task lifecycle scenarios replay all remaining common seconds, one model download and one arm. These four scenarios are not additive parts of the shared invoice. All otherwise unpartitioned gaps, including transfer and cleanup, remain in common. Exclude explicitly timed technical phases, incremental archives and observed last-parity-to-technical-archive interval only.",
+  "billing_status": "UNKNOWN; no attributable invoice/export joined",
+  "boundary": "Provider lastStartTimestamp to confirmed VM and boot disk absence; conservative wall boundary, not billed stop time.",
+  "cache_limitation": "Observed loads/requests follow probes. Lifecycle replay is not an independently measured cold-cache experiment.",
+  "compute_only_usd": 0.6549601408850614,
+  "excluded_technical_and_incremental_archive_s": 388.38194061500053,
+  "external_ip_scenario_usd": 0.0046330661680555555,
+  "full_system_cost_per_success_usd": null,
+  "human_research_labor": "EXCLUDED",
+  "known_components_subtotal_usd": 0.6722865110950621,
+  "model_download_verification_s": {
+    "G": 95.41247525000017,
+    "S": 30.95290785599991
+  },
+  "research_arm_s": {
+    "G-constrained": 278.1591282300001,
+    "G-free": 276.196954559,
+    "S-constrained": 78.12247594600012,
+    "S-free": 77.11789247699971
+  },
+  "standalone_common_s": 2111.4638660669993,
+  "storage_scenario_usd": 0.012693304041945167,
+  "technical_archive_interval_s": 0.32447415599972373,
+  "training": "NOT_APPLICABLE; no training performed",
+  "unknown_components": [
+    "network",
+    "external_preparation",
+    "other"
+  ]
+}

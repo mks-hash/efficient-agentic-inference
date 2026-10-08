@@ -1,0 +1,24 @@
+{"event": "start", "phase": "create", "utc": "2026-10-06T20:30:56.563964+00:00", "monotonic_s": 273589.45156726}
+{"event": "end", "phase": "create", "utc": "2026-10-06T20:31:10.494044+00:00", "monotonic_s": 273603.381664269, "elapsed_s": 13.930097376985941, "exit_code": 1}
+{"event": "start", "phase": "create-retry", "utc": "2026-10-06T20:31:50.184184+00:00", "monotonic_s": 273643.071784743}
+{"event": "end", "phase": "create-retry", "utc": "2026-10-06T20:32:07.242211+00:00", "monotonic_s": 273660.129832476, "elapsed_s": 17.058048703009263, "exit_code": 1}
+{"event": "start", "phase": "create-zone-b", "utc": "2026-10-06T20:32:44.441235+00:00", "monotonic_s": 273697.328837577}
+{"event": "end", "phase": "create-zone-b", "utc": "2026-10-06T20:32:57.041217+00:00", "monotonic_s": 273709.928837713, "elapsed_s": 12.6000004739617, "exit_code": 1}
+{"event": "start", "phase": "create-zone-c", "utc": "2026-10-06T20:33:20.330724+00:00", "monotonic_s": 273733.21832607}
+{"event": "end", "phase": "create-zone-c", "utc": "2026-10-06T20:33:30.588766+00:00", "monotonic_s": 273743.476386829, "elapsed_s": 10.258061070984695, "exit_code": 1}
+{"event": "start", "phase": "create-east4-a", "utc": "2026-10-06T20:35:28.736549+00:00", "monotonic_s": 273861.624152384}
+{"event": "end", "phase": "create-east4-a", "utc": "2026-10-06T20:35:44.052534+00:00", "monotonic_s": 273876.940153185, "elapsed_s": 15.316001143015455, "exit_code": 1}
+{"event": "start", "phase": "create-east4-c", "utc": "2026-10-06T20:36:13.166614+00:00", "monotonic_s": 273906.054215606}
+{"event": "end", "phase": "create-east4-c", "utc": "2026-10-06T20:36:26.329898+00:00", "monotonic_s": 273919.217518305, "elapsed_s": 13.163303049979731, "exit_code": 0}
+{"event": "start", "phase": "upload", "utc": "2026-10-06T20:36:46.263455+00:00", "monotonic_s": 273939.151058428}
+{"event": "end", "phase": "upload", "utc": "2026-10-06T20:37:03.975519+00:00", "monotonic_s": 273956.863140307, "elapsed_s": 17.712082186015323, "exit_code": 0}
+{"event": "start", "phase": "upload-starter", "utc": "2026-10-06T20:37:36.734531+00:00", "monotonic_s": 273989.622133367}
+{"event": "end", "phase": "upload-starter", "utc": "2026-10-06T20:37:42.016853+00:00", "monotonic_s": 273994.904475788, "elapsed_s": 5.28234280803008, "exit_code": 0}
+{"event": "start", "phase": "start-job", "utc": "2026-10-06T20:37:42.058838+00:00", "monotonic_s": 273994.946441186}
+{"event": "end", "phase": "start-job", "utc": "2026-10-06T20:37:46.123622+00:00", "monotonic_s": 273999.011245601, "elapsed_s": 4.0648048460134305, "exit_code": 0}
+{"event": "start", "phase": "collect-small", "utc": "2026-10-06T21:14:14.133414+00:00", "monotonic_s": 276187.021017869}
+{"event": "end", "phase": "collect-small", "utc": "2026-10-06T21:14:25.405250+00:00", "monotonic_s": 276198.292869999, "elapsed_s": 11.271852442005184, "exit_code": 0}
+{"event": "start", "phase": "collect-final", "utc": "2026-10-06T21:26:38.204701+00:00", "monotonic_s": 276931.092304749}
+{"event": "end", "phase": "collect-final", "utc": "2026-10-06T21:26:50.389426+00:00", "monotonic_s": 276943.277046736, "elapsed_s": 12.184742318000644, "exit_code": 0}
+{"event": "start", "phase": "delete-vm", "utc": "2026-10-06T21:26:50.425095+00:00", "monotonic_s": 276943.312698127}
+{"event": "end", "phase": "delete-vm", "utc": "2026-10-06T21:27:58.467095+00:00", "monotonic_s": 277011.354715277, "elapsed_s": 68.04201745497994, "exit_code": 0}

@@ -51,6 +51,52 @@ def native_template_options(config: dict) -> dict | None:
     return options
 
 
+def output_constraint(config: dict) -> dict | None:
+    options = config.get("output_constraint")
+    if options is not None and options not in (
+        {"policy": "candidate-json-array-v1"},
+        {"policy": "candidate-score-vector-v1"},
+    ):
+        raise ValueError("unsupported_output_constraint")
+    return options
+
+
+def candidate_output_schema(paths: list[str]) -> dict:
+    """Sampling constraint derived only from inference paths; uniqueness is graded."""
+    if prediction_error(paths, set(paths)):
+        raise ValueError("invalid_constraint_candidate_paths")
+    schema = {"type": "array", "minItems": 0, "maxItems": 10}
+    if paths:
+        schema["items"] = {"type": "string", "enum": sorted(paths)}
+    else:
+        schema["maxItems"] = 0
+        schema["items"] = {"type": "string"}
+    return schema
+
+
+def candidate_score_schema(paths: list[str]) -> dict:
+    """Fixed-length ordinal scores; positions bind to the canonical input order."""
+    if prediction_error(paths, set(paths)) or paths != sorted(paths) or len(paths) > 20:
+        raise ValueError("invalid_score_candidate_binding")
+    return {
+        "type": "array",
+        "minItems": len(paths),
+        "maxItems": len(paths),
+        "items": {"type": "integer", "enum": list(range(101))},
+    }
+
+
+def candidate_score_ranking(scores: object, paths: list[str]) -> list[str]:
+    """Versioned inference representation, never a repair of a path-array answer."""
+    candidate_score_schema(paths)
+    if not isinstance(scores, list) or len(scores) != len(paths):
+        raise ValueError("score_vector_length_mismatch")
+    if any(type(score) is not int or not 0 <= score <= 100 for score in scores):
+        raise ValueError("score_vector_requires_integers_0_to_100")
+    positive = [(score, path) for score, path in zip(scores, paths, strict=True) if score > 0]
+    return [path for score, path in sorted(positive, key=lambda item: (-item[0], item[1]))[:10]]
+
+
 def file_digest(path: Path) -> str:
     with path.open("rb") as source:
         return hashlib.file_digest(source, "sha256").hexdigest()
@@ -165,7 +211,24 @@ def classify(evidence: dict, candidates: set[str], config: dict) -> list[str]:
     }.items():
         if settings.get(name) != expected:
             raise ValueError(f"effective_decoding_mismatch_{name}")
+    if output_constraint(config) is not None:
+        grammar = settings.get("grammar")
+        if not isinstance(grammar, str) or not grammar.strip():
+            raise ValueError("effective_constraint_grammar_missing")
+        if settings.get("grammar_lazy") is not False:
+            raise ValueError("effective_constraint_not_eager")
+    elif settings.get("grammar"):
+        raise ValueError("unexpected_constraint_in_free_arm")
     ranked = json.loads(evidence["raw_output"])
+    if output_constraint(config) == {"policy": "candidate-score-vector-v1"}:
+        paths = sorted(candidates)
+        if (
+            evidence.get("score_binding") != paths
+            or evidence.get("score_binding_sha256") != digest(encoded(paths))
+            or evidence.get("request", {}).get("json_schema") != candidate_score_schema(paths)
+        ):
+            raise ValueError("score_binding_or_schema_mismatch")
+        ranked = candidate_score_ranking(ranked, paths)
     error = prediction_error(ranked, candidates)
     if error:
         raise ValueError(error)
@@ -190,6 +253,11 @@ def infer(prepared: PreparedInference, config: dict, system: str, folder: Path, 
     if prepared.preparation_status == "prepared":
         disposition = "runtime_error"
         try:
+            paths = [c.path for c in task.candidates]
+            if output_constraint(config) == {"policy": "candidate-score-vector-v1"}:
+                candidate_score_schema(paths)
+                evidence["score_binding"] = paths
+                evidence["score_binding_sha256"] = digest(encoded(paths))
             user = encoded(
                 {
                     "issue": task.issue,
@@ -244,6 +312,13 @@ def infer(prepared: PreparedInference, config: dict, system: str, folder: Path, 
                 "frequency_penalty": 0,
                 "presence_penalty": 0,
             }
+            if output_constraint(config) is not None:
+                payload["json_schema"] = (
+                    candidate_score_schema(paths)
+                    if output_constraint(config) == {"policy": "candidate-score-vector-v1"}
+                    else candidate_output_schema(paths)
+                )
+                evidence["output_schema_sha256"] = digest(encoded(payload["json_schema"]))
             evidence["request"] = payload
             stream(payload, deadline, evidence, folder / "stream.sse")
             disposition = "invalid_output"
@@ -290,6 +365,7 @@ def run(
 ) -> dict:
     config = json.loads(config_path.read_text())
     options = native_template_options(config)
+    constraint = output_constraint(config)
     layers = gpu_layers(config)
     if config["decoding"] != {
         "attempts": 1,
@@ -490,6 +566,14 @@ def run(
         ),
         "cost_reason": "No price/invoice joined; no general latency/economics claim",
     }
+    if constraint is not None:
+        manifest["output_constraint"] = constraint
+    if constraint == {"policy": "candidate-score-vector-v1"}:
+        manifest["score_mapping"] = {
+            "policy": "positive-score-desc-path-asc-top10-v1",
+            "binding": "canonical path-sorted candidate array positions",
+            "score_semantics": "ordinal relevance; not calibrated probabilities",
+        }
     write_artifacts(
         output / "predictions",
         {

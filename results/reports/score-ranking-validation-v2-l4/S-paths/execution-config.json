@@ -1,0 +1,142 @@
+{
+  "artifact": {
+    "bytes": 2497281120,
+    "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "id": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "source_url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+  },
+  "backend": {
+    "binary_identity_status": "PASS",
+    "binary_sha256": "f13e98a832b181644e21f9e11c9d1af634cb8f0c309d098ffa5210210cc4754e",
+    "build": {
+      "cache_sha256": "e9feeffdaf47e9f0abc3565066563beec055870c40d335449b5861ea2a6d92fe",
+      "cmake": "4.1.2",
+      "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "cuda_architectures": "native",
+      "cuda_compiler_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Apr__9_19:24:57_PDT_2025\nCuda compilation tools, release 12.9, V12.9.41\nBuild cuda_12.9.r12.9/compiler.35813241_0\n",
+      "flags": {
+        "BUILD_SHARED_LIBS": "OFF",
+        "CMAKE_BUILD_TYPE": "Release",
+        "GGML_BLAS": "OFF",
+        "GGML_CUDA": "ON",
+        "GGML_NATIVE": "ON",
+        "LLAMA_BUILD_SERVER": "ON",
+        "LLAMA_BUILD_TESTS": "OFF",
+        "LLAMA_OPENSSL": "OFF"
+      }
+    },
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "revision": "7049ff0cbeb1f5ead231de4522af6b75d8d773c0"
+  },
+  "campaign": "S-paths",
+  "code_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "configs/prompts/candidate-scores-v1.txt",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "configs/score-ranking-validation-v2/S-paths.json",
+      "configs/score-ranking-validation-v2/S-scores.json",
+      "configs/score-ranking-validation-v2/G-paths.json",
+      "configs/score-ranking-validation-v2/G-scores.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "3c5c47ec18fdba8ef3f4711f9d5ce70de89776ec871b143ea0b6bf1c33701478",
+    "dirty": true,
+    "kind": "immutable archive of selected inference sources; base revision alone is insufficient",
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+    "source_sha256": {
+      "configs/prompts/candidate-scores-v1.txt": "9eff8d7f7c9532603cf19a86d142445de7a94b2de0039abba304c19c0ec3b431",
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/score-ranking-validation-v2/G-paths.json": "67bd9543703f59758dde5bdea6baa04540ad9cd7be33fac37adb59ec8bcb67aa",
+      "configs/score-ranking-validation-v2/G-scores.json": "3d011e357bd209fb01c2fa9c866d83cdd99a8c74cb3649b8cc319881cb1d9008",
+      "configs/score-ranking-validation-v2/S-paths.json": "648b49d8043fadea834db57fe478fb5ebb1db4955ac4278b8c1ae0a796d9996c",
+      "configs/score-ranking-validation-v2/S-scores.json": "2421912cb00991c32a16d7c3e6f4e5c9d38f3f855fbd64f498a326bb4c991294",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/llama_predict.py": "9cbec90ec7676e20b691af5f3bfb873da387f2246693248a6af8de507e418dcc",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    }
+  },
+  "context": {
+    "capacity_tokens_proposed": 16384,
+    "profile": "bm25-top20-prefix1200-v1",
+    "resource_fit": "NOT_RUN"
+  },
+  "decoding": {
+    "attempts": 1,
+    "max_output_tokens": 512,
+    "repair": false,
+    "retries": 0,
+    "seed": 0,
+    "temperature": 0
+  },
+  "evidence_gates": {
+    "model_output": "NOT_RUN",
+    "model_physical_isolation": "NOT_RUN",
+    "model_quality": "NOT_RUN",
+    "monetary_economics": "UNKNOWN",
+    "native_render_tokens": "NOT_RUN",
+    "resource_fit": "NOT_RUN",
+    "weights_checksum": "NOT_RUN"
+  },
+  "execution": {
+    "context_tokens": 16384,
+    "device": "cuda",
+    "per_task_timeout_s": 120,
+    "run_budget_s": 1800,
+    "startup_timeout_s": 180,
+    "synthetic": false,
+    "threads": 4
+  },
+  "execution_status": "FROZEN_NOT_RUN",
+  "hardware": {
+    "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               GenuineIntel\nBIOS Vendor ID:                          Google\nModel name:                              Intel(R) Xeon(R) CPU @ 2.20GHz\nBIOS Model name:                           CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              6\nModel:                                   85\nThread(s) per core:                      2\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                7\nBogoMIPS:                                4400.49\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat avx512_vnni md_clear arch_capabilities\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               64 KiB (2 instances)\nL1i cache:                               64 KiB (2 instances)\nL2 cache:                                2 MiB (2 instances)\nL3 cache:                                38.5 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Mitigation; Aligned branch/return thunks\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Vmscape:                   Not affected\n",
+    "gpu_layers": 999,
+    "kernel": "7.0.0-1013-gcp",
+    "ram": "MemTotal:       16369296 kB"
+  },
+  "input_identity": {
+    "sha256": "efc0b4f8620558087103242e66d3314a142b32fdf17737b1c8837cbe45a84b91"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "license": "apache-2.0",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "output_constraint": {
+    "policy": "candidate-json-array-v1"
+  },
+  "population": {
+    "instance_ids_sha256": "67e1dc798b2cb7722d1ba2480873cccac5703dfeedbb3c067c428664db080a54",
+    "role": "S-paths",
+    "selected": 30
+  },
+  "prompt": {
+    "sha256": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "system_file": "configs/prompts/localization-v1.txt",
+    "user_rendering": "canonical JSON {issue,candidates}; path-sorted packet, unchanged excerpts"
+  },
+  "resource_proposal": {
+    "device": "cuda",
+    "gpu_layers": 999,
+    "reason": "Preparation only; new explicit paid session authorization required.",
+    "threads": 4
+  },
+  "schema_version": "1.0.0",
+  "source_review_date": "2026-10-06",
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "https://github.com/ggml-org/llama.cpp/blob/7049ff0cbeb1f5ead231de4522af6b75d8d773c0/tools/server/README.md"
+  ],
+  "status": "Frozen local execution configuration; evidence gates require run artifacts"
+}

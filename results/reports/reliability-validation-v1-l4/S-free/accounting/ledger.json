@@ -1,0 +1,53 @@
+{
+  "allocation_policy": "Shared campaign is counted once. Standalone 20-task lifecycle scenarios replay all remaining common seconds, one model download and one arm. These four scenarios are not additive parts of the shared invoice. All otherwise unpartitioned gaps, including transfer and cleanup, remain in common. Exclude explicitly timed technical phases, incremental archives and observed last-parity-to-technical-archive interval only. Post-probe timings; no actual treatment attribution. Human labor excluded; network/external preparation/other unknown.",
+  "boundary": "localization-batch-v1",
+  "components": [
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "compute",
+      "scenario_basis": "2219.534666399999 replay seconds at 0.706832276 USD/hour; accounting/session-scenario.json and rate-review.json. List-rate assumption, not billed charge.",
+      "scenario_usd": 0.4357885388645589
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "storage",
+      "scenario_basis": "2219.534666399999 replay seconds at 0.013698600 USD/hour; accounting/session-scenario.json and rate-review.json. List-rate assumption, not billed charge.",
+      "scenario_usd": 0.008445699328096396
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_ip",
+      "scenario_basis": "2219.534666399999 replay seconds at 0.005 USD/hour; accounting/session-scenario.json and rate-review.json. List-rate assumption, not billed charge.",
+      "scenario_usd": 0.0030826870366666656
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "network",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_preparation",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "other",
+      "scenario_basis": null,
+      "scenario_usd": null
+    }
+  ],
+  "currency": "USD",
+  "schema_version": "1.0.0",
+  "selected": 20,
+  "synthetic": false,
+  "treatment": "S-free"
+}

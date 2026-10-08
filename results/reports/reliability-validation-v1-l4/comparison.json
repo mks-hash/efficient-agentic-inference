@@ -1,0 +1,77 @@
+{
+  "campaign_config_sha256": "1b80a592de19368341e0bda73fb50f9812c44879f5c0a91f2a11a56aae391e4d",
+  "contract": "reliability-validation-v1",
+  "contrasts": {
+    "G": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "paired_repo_bootstrap_95_ci": [
+        0.0,
+        0.15
+      ],
+      "recall_at_5_gain": 0.05,
+      "repository_blocks": 5,
+      "role": "secondary_exploratory",
+      "selected": 20,
+      "strict_control": 8,
+      "strict_model": 9,
+      "valid_constrained": 17,
+      "valid_free": 16,
+      "validity_discordance": {
+        "free_invalid_constrained_valid": 1,
+        "free_valid_constrained_invalid": 0
+      }
+    },
+    "S": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "numerical_signal_rule_pass": false,
+      "paired_repo_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "recall_at_5_gain": 0.0,
+      "repository_blocks": 5,
+      "role": "primary",
+      "selected": 20,
+      "strict_control": 9,
+      "strict_model": 9,
+      "valid_constrained": 19,
+      "valid_free": 19,
+      "validity_discordance": {
+        "free_invalid_constrained_valid": 0,
+        "free_valid_constrained_invalid": 0
+      }
+    }
+  },
+  "identities": {
+    "G-constrained": {
+      "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+      "predictions_sha256": "935707f330ee7f361e86a6a18eaec5065f92b509de5e986874bdd7bc1a334734"
+    },
+    "G-free": {
+      "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+      "predictions_sha256": "50eb08e00a0260f069bb275361392f6a3ea2df32dc531d02d9ed270f10cac795"
+    },
+    "S-constrained": {
+      "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+      "predictions_sha256": "2efc7836c12ebff4f94433d4f65532c00a980d90a4d6d3d5ee3a5e40793fa758"
+    },
+    "S-free": {
+      "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+      "predictions_sha256": "8e3d0c17015ffcdfe144808f4b82e149a2bad35e507d9bf3f47c8d3e58dc4f31"
+    }
+  },
+  "interaction_recall_at_5_point_estimate": 0.05,
+  "interaction_role": "secondary_exploratory",
+  "limitation": "Small same-repository validation; numerical signal requires independent technical and provenance gates. No equivalence, training or economic claim follows.",
+  "technical_gates": "NOT_ASSESSED_BY_METRICS"
+}

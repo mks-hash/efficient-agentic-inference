@@ -1,0 +1,228 @@
+{
+  "analysis_script_sha256": "4968506f2c7d177be86886855a7f6a656bed09d83da7721ee87deffc74c2d3ac",
+  "cross_model_pairs": {
+    "dev-v2_unconstrained": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "candidate_bounds": {
+        "candidate_recall_ceiling": 0.7834873508557719,
+        "ideal_candidate_top5_recall": 0.7813281065912645,
+        "ideal_candidate_top5_strict": 39,
+        "scope": "Evaluator-only upper bound; does not establish sufficient excerpts or an achievable ranker",
+        "selected": 60
+      },
+      "limitation": "POST_HOC descriptive contrast; not a new preregistered finding or equivalence test",
+      "oracle_scope": "Perfect evaluator-aware choice between saved outputs; not an implemented fallback/router, merged ranking or measured economics",
+      "paired_repo_bootstrap_95_ci": [
+        -0.0790356394129979,
+        -0.028107047779178926
+      ],
+      "perfect_output_choice_recall": 0.686897907161065,
+      "perfect_output_choice_strict": 34,
+      "recall_at_5_gain": -0.04780626780626781,
+      "repository_blocks": 6,
+      "selected": 60,
+      "small_gap_to_ideal_candidate_top5": 0.12440170940170947,
+      "small_mean_recall5": 0.656926397189555,
+      "strict_complementarity": {
+        "both_strict_success": 29,
+        "large_only": 1,
+        "neither": 26,
+        "small_only": 4
+      },
+      "strict_control": 33,
+      "strict_model": 30
+    },
+    "validation-v1_constrained": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "candidate_bounds": {
+        "candidate_recall_ceiling": 0.8791666666666667,
+        "ideal_candidate_top5_recall": 0.8791666666666667,
+        "ideal_candidate_top5_strict": 14,
+        "scope": "Evaluator-only upper bound; does not establish sufficient excerpts or an achievable ranker",
+        "selected": 20
+      },
+      "limitation": "POST_HOC descriptive contrast; not a new preregistered finding or equivalence test",
+      "oracle_scope": "Perfect evaluator-aware choice between saved outputs; not an implemented fallback/router, merged ranking or measured economics",
+      "paired_repo_bootstrap_95_ci": [
+        -0.15,
+        0.16666666666666669
+      ],
+      "perfect_output_choice_recall": 0.7958333333333333,
+      "perfect_output_choice_strict": 12,
+      "recall_at_5_gain": 0.0125,
+      "repository_blocks": 5,
+      "selected": 20,
+      "small_gap_to_ideal_candidate_top5": 0.24583333333333335,
+      "small_mean_recall5": 0.6333333333333333,
+      "strict_complementarity": {
+        "both_strict_success": 6,
+        "large_only": 3,
+        "neither": 8,
+        "small_only": 3
+      },
+      "strict_control": 9,
+      "strict_model": 9
+    },
+    "validation-v2_paths": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "candidate_bounds": {
+        "candidate_recall_ceiling": 0.8027777777777777,
+        "ideal_candidate_top5_recall": 0.8027777777777777,
+        "ideal_candidate_top5_strict": 21,
+        "scope": "Evaluator-only upper bound; does not establish sufficient excerpts or an achievable ranker",
+        "selected": 30
+      },
+      "limitation": "POST_HOC descriptive contrast; not a new preregistered finding or equivalence test",
+      "oracle_scope": "Perfect evaluator-aware choice between saved outputs; not an implemented fallback/router, merged ranking or measured economics",
+      "paired_repo_bootstrap_95_ci": [
+        -0.08333333333333333,
+        0.15476190476190474
+      ],
+      "perfect_output_choice_recall": 0.7305555555555556,
+      "perfect_output_choice_strict": 18,
+      "recall_at_5_gain": 0.022222222222222223,
+      "repository_blocks": 4,
+      "selected": 30,
+      "small_gap_to_ideal_candidate_top5": 0.1499999999999999,
+      "small_mean_recall5": 0.6527777777777778,
+      "strict_complementarity": {
+        "both_strict_success": 14,
+        "large_only": 3,
+        "neither": 12,
+        "small_only": 1
+      },
+      "strict_control": 15,
+      "strict_model": 17
+    }
+  },
+  "date": "2026-10-08",
+  "report_checksums_verified": {
+    "generalist-dev-v2-l4": 49,
+    "reliability-validation-v1-l4": 103,
+    "score-ranking-validation-v2-l4": 99,
+    "untuned-dev-v2-l4": 45
+  },
+  "score_loss_decomposition": {
+    "G": {
+      "by_empty_ranking": {
+        "empty_score_ranking": {
+          "contribution_to_all_task_difference": -0.3388888888888889,
+          "mean_within_group_difference": -0.6777777777777778,
+          "sum_recall5_difference": -10.166666666666668,
+          "tasks": 15
+        },
+        "nonempty_score_ranking": {
+          "contribution_to_all_task_difference": -0.19722222222222222,
+          "mean_within_group_difference": -0.39444444444444443,
+          "sum_recall5_difference": -5.916666666666666,
+          "tasks": 15
+        }
+      },
+      "by_repository": {
+        "pvlib/pvlib-python": {
+          "contribution_to_all_task_difference": -0.18333333333333332,
+          "mean_within_group_difference": -0.6875,
+          "sum_recall5_difference": -5.5,
+          "tasks": 8
+        },
+        "pydicom/pydicom": {
+          "contribution_to_all_task_difference": -0.13055555555555556,
+          "mean_within_group_difference": -0.4895833333333333,
+          "sum_recall5_difference": -3.9166666666666665,
+          "tasks": 8
+        },
+        "pylint-dev/astroid": {
+          "contribution_to_all_task_difference": -0.08888888888888888,
+          "mean_within_group_difference": -0.38095238095238093,
+          "sum_recall5_difference": -2.6666666666666665,
+          "tasks": 7
+        },
+        "sqlfluff/sqlfluff": {
+          "contribution_to_all_task_difference": -0.13333333333333333,
+          "mean_within_group_difference": -0.5714285714285714,
+          "sum_recall5_difference": -4.0,
+          "tasks": 7
+        }
+      },
+      "status": "POST_HOC_DESCRIPTIVE; selected output groups are not causal evidence"
+    },
+    "S": {
+      "by_empty_ranking": {
+        "empty_score_ranking": {
+          "contribution_to_all_task_difference": -0.01111111111111111,
+          "mean_within_group_difference": -0.3333333333333333,
+          "sum_recall5_difference": -0.3333333333333333,
+          "tasks": 1
+        },
+        "nonempty_score_ranking": {
+          "contribution_to_all_task_difference": -0.3194444444444444,
+          "mean_within_group_difference": -0.3304597701149425,
+          "sum_recall5_difference": -9.583333333333332,
+          "tasks": 29
+        }
+      },
+      "by_repository": {
+        "pvlib/pvlib-python": {
+          "contribution_to_all_task_difference": -0.18333333333333332,
+          "mean_within_group_difference": -0.6875,
+          "sum_recall5_difference": -5.5,
+          "tasks": 8
+        },
+        "pydicom/pydicom": {
+          "contribution_to_all_task_difference": -0.06944444444444443,
+          "mean_within_group_difference": -0.26041666666666663,
+          "sum_recall5_difference": -2.083333333333333,
+          "tasks": 8
+        },
+        "pylint-dev/astroid": {
+          "contribution_to_all_task_difference": -0.04444444444444444,
+          "mean_within_group_difference": -0.19047619047619047,
+          "sum_recall5_difference": -1.3333333333333333,
+          "tasks": 7
+        },
+        "sqlfluff/sqlfluff": {
+          "contribution_to_all_task_difference": -0.03333333333333333,
+          "mean_within_group_difference": -0.14285714285714285,
+          "sum_recall5_difference": -1.0,
+          "tasks": 7
+        }
+      },
+      "status": "POST_HOC_DESCRIPTIVE; selected output groups are not causal evidence"
+    }
+  },
+  "source_sha256": {
+    "results/reports/generalist-dev-v2-l4/SHA256SUMS": "ffad4c02572d36febd8a5101040171816cc2cf55f1e605653114a3f3003dc1d7",
+    "results/reports/generalist-dev-v2-l4/generalist-dev-v2/evaluation/metrics.jsonl": "9e856cb916884b767c2bd3a2da20631da48dcaf5118d1fc4535a40583339c544",
+    "results/reports/generalist-dev-v2-l4/small-replication-dev-v2/evaluation/metrics.jsonl": "6f469c44374e4c232ca1af161df51ac23194aeacbe1fb34a5e47351c64a024f5",
+    "results/reports/reliability-validation-v1-l4/G-constrained/evaluation/metrics.jsonl": "fc6fa8c460d7789a1a4c78f084996e0a0bee9284664889bdb4e2433ea7903a95",
+    "results/reports/reliability-validation-v1-l4/S-constrained/evaluation/metrics.jsonl": "acb50ffa05766a4b117dbebfc2420db15fae586df29dec75afb97b91483b9991",
+    "results/reports/reliability-validation-v1-l4/SHA256SUMS": "dd13775281bc22a5f9cfae0e361018f00078d553d29a4cde9b55195765f548af",
+    "results/reports/score-ranking-validation-v2-l4/G-paths/evaluation/metrics.jsonl": "8daaac5cac0bc4eb68a810916140713f18dad2d3b92a09ada5a6b81236575571",
+    "results/reports/score-ranking-validation-v2-l4/G-scores/evaluation/metrics.jsonl": "8cad472a062f674cd00740766f88096ec3c4950198cd5b0d1843f2b4f08af264",
+    "results/reports/score-ranking-validation-v2-l4/G-scores/predictions/predictions.jsonl": "a2c156eb1ceede96ed7fe76a13d3f42e497a70c1b19769fc65e6de104e1ba9e3",
+    "results/reports/score-ranking-validation-v2-l4/S-paths/evaluation/metrics.jsonl": "1e497ef5b66f1ede7b4765836cb52c8e85429fa4ca8f4d18e4d3a58031ac7c44",
+    "results/reports/score-ranking-validation-v2-l4/S-scores/evaluation/metrics.jsonl": "f2e8c1041e07791966d011e064153f9175a5d4f8d3c22da27239a201f072ed04",
+    "results/reports/score-ranking-validation-v2-l4/S-scores/predictions/predictions.jsonl": "97c2472600023422edec0f5295779626939404946ebed5f6278379cb5074223f",
+    "results/reports/score-ranking-validation-v2-l4/SHA256SUMS": "4df4018338c0e525a869fa74427274c2ab985f87dc3acac748eb81297c8062dc",
+    "results/reports/untuned-dev-v2-l4/SHA256SUMS": "484ab1b2faf0d481950400b3a1a9de7b02b4422b9a409fdb98615ec42e104199",
+    "splits/dev-v2.json": "011e415011b9dc91cfdc6015c1117a8d1fdf9a184d6820b949d825b63fb0a1d8",
+    "splits/validation-v1.json": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121",
+    "splits/validation-v2.json": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635"
+  },
+  "status": "POST_HOC_DESCRIPTIVE; not preregistration, inference, training or an economic result"
+}

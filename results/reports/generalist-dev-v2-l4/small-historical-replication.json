@@ -1,0 +1,8 @@
+{
+  "changed_instance_ids": [],
+  "historical_predictions_sha256": "83cb7dae7f53bdb0692648ae7ee1360a8835f2eb45715436be16994caa5e5cd8",
+  "new_predictions_sha256": "730efd149e6f33ab43f5c0296019834bd5a459f576b5889ab8efd537a2c78966",
+  "raw_output_and_latency_excluded_from_semantic_comparison": true,
+  "same_ranked_paths_disposition_and_reason": 60,
+  "selected": 60
+}

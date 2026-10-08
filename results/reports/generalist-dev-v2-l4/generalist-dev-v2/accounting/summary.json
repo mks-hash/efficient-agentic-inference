@@ -1,0 +1,37 @@
+{
+  "actual": {
+    "cost_per_success_usd": null,
+    "cps_status": "UNKNOWN_COST",
+    "total_usd": null,
+    "unknown_components": [
+      "compute",
+      "storage",
+      "external_ip",
+      "network",
+      "external_preparation",
+      "other"
+    ]
+  },
+  "allocation_policy": "Standalone cold 60-task replay scenario on same L4. Shared host setup/build/freeze, idle, final collection and cleanup are replayed once per treatment; model download/verification and its own research request batch are charged once. Explicit research probes/incremental archives are excluded. Common seconds = whole confirmed-absence allocation minus both model-specific phases minus recorded research-only intervals; all remaining gaps included. Two standalone scenarios are not additive components of the shared session. External preparation/network/other costs unknown, human labor excluded; actual treatment costs unknown. Cold lifecycle is a replay scenario using observed post-probe load/request timings, not a measured clean-cache cold-start benchmark.",
+  "boundary": "localization-batch-v1",
+  "currency": "USD",
+  "failed_or_unsuccessful_tasks": 30,
+  "known_strict_successes_at_5": 30,
+  "scenario": {
+    "cost_per_success_usd": null,
+    "cps_status": "UNKNOWN_COST",
+    "total_usd": null,
+    "unknown_components": [
+      "network",
+      "external_preparation",
+      "other"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "scope": "File localization only; scenario values are assumptions, not measured savings",
+  "selected": 60,
+  "success_denominator_status": "KNOWN",
+  "synthetic": false,
+  "treatment": "generalist-dev-v2",
+  "unknown_label_tasks": 0
+}

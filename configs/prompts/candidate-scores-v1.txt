@@ -1,0 +1,9 @@
+Localize the repository issue using only the supplied issue and candidate excerpts.
+Return one JSON array of integer relevance scores, one score per candidate in the
+exact candidate array order. Each score is between 0 and 100 inclusive. Higher
+scores mean the file is more likely to require modification. Zero excludes a file
+from your proposed ranking. These are relevance scores, not calibrated probabilities.
+Score every candidate, even when several candidates receive the same score.
+Return [] when there are no candidates. Do not return file paths or explanations.
+The caller selects up to ten positive-score candidates by descending score,
+breaking ties by lexicographic path order.

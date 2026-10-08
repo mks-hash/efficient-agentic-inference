@@ -1,0 +1,71 @@
+{
+  "contract": "score-ranking-validation-v2 + score-ranking-session-checks-v1",
+  "controller_max_seconds": 9000,
+  "files": {
+    ".develop/gcp-score-ranking-l4-proposal.md": "7c0a48bf3dd27e1cda1a5c25292ee609c138412d94727e900bc57506a0e86285",
+    ".develop/score-ranking-l4-session/collect.py": "29c84b110aa38cab77f43066bafd67e6da08dbdd7afbff8674ae305b1bcf0467",
+    ".develop/score-ranking-l4-session/test_launcher.py": "2497d3cfb59a46f8a2dd69c5e0df64ab966cb90036ffcc826a536f77a81c7a56",
+    "configs/score-ranking-validation-v2.json": "c533c5294d43a407fefcbba03c701c98483032d338566dc978b5b52461c4ca3a",
+    "decisions/0009-score-vector-ranking.md": "cc98013a7409b722e45b103f552b42b7ada948c91f460f28af7816333b8afe3d",
+    "decisions/0010-score-session-preflight.md": "5ca55d8321d7fb77007f450e3c86b2efddec278346c555585c5c534bc39a2c7b",
+    "docs/experiments/score-ranking-session-checks-v1.md": "2e744925c5eeb800195e83d9dcb33978eb70f115b420dae6457ac098c3c6667a",
+    "docs/experiments/score-ranking-validation-v2.md": "eb22cd12eec8f678142ef4a1cc5ecf7166e414a2832f369189b2e7484316e9ad",
+    "splits/validation-v2.json": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635"
+  },
+  "frozen_at_utc": "2026-10-07T21:02:04.694028+00:00",
+  "launcher_sha256": "38f41b603ec60962f1ad2f1d0e3af4f4158338bc20af999f1e76290f87fd03ff",
+  "original_research_freeze_sha256": "d7f048f4f33f17d6a928d63404389781ec127b058c9f2e725b747bbd3c3fbee6",
+  "paid_execution": "NOT_AUTHORIZED",
+  "requested_budget_usd": 5,
+  "requested_vm_max_seconds": 10800,
+  "source_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "configs/prompts/candidate-scores-v1.txt",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "configs/score-ranking-validation-v2/S-paths.json",
+      "configs/score-ranking-validation-v2/S-scores.json",
+      "configs/score-ranking-validation-v2/G-paths.json",
+      "configs/score-ranking-validation-v2/G-scores.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "3c5c47ec18fdba8ef3f4711f9d5ce70de89776ec871b143ea0b6bf1c33701478",
+    "dirty": true,
+    "kind": "immutable archive of selected inference sources; base revision alone is insufficient",
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+    "source_sha256": {
+      "configs/prompts/candidate-scores-v1.txt": "9eff8d7f7c9532603cf19a86d142445de7a94b2de0039abba304c19c0ec3b431",
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/score-ranking-validation-v2/G-paths.json": "67bd9543703f59758dde5bdea6baa04540ad9cd7be33fac37adb59ec8bcb67aa",
+      "configs/score-ranking-validation-v2/G-scores.json": "3d011e357bd209fb01c2fa9c866d83cdd99a8c74cb3649b8cc319881cb1d9008",
+      "configs/score-ranking-validation-v2/S-paths.json": "648b49d8043fadea834db57fe478fb5ebb1db4955ac4278b8c1ae0a796d9996c",
+      "configs/score-ranking-validation-v2/S-scores.json": "2421912cb00991c32a16d7c3e6f4e5c9d38f3f855fbd64f498a326bb4c991294",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/llama_predict.py": "9cbec90ec7676e20b691af5f3bfb873da387f2246693248a6af8de507e418dcc",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    }
+  },
+  "technical_requests": 24,
+  "transport_data": {
+    "old-task.jsonl": {
+      "selected": 1,
+      "sha256": "d09df763dc156f1c3d139b66fc689d47dd343b0e4fa85368e8846c3caf1e4a2b"
+    },
+    "synthetic.jsonl": {
+      "selected": 5,
+      "sha256": "9cd56d089d9705b58b46f87d18b4bbb111cc8386b2c23d3c82ea71eba7e69c92"
+    },
+    "validation-v2.jsonl": {
+      "selected": 30,
+      "sha256": "efc0b4f8620558087103242e66d3314a142b32fdf17737b1c8837cbe45a84b91"
+    }
+  },
+  "validation_slots": 120
+}

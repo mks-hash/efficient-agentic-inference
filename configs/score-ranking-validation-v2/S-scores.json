@@ -1,0 +1,72 @@
+{
+  "artifact": {
+    "bytes": 2497281120,
+    "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "id": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "source_url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+  },
+  "backend": {
+    "binary_identity_status": "NOT_RUN",
+    "binary_sha256": null,
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "revision": "7049ff0cbeb1f5ead231de4522af6b75d8d773c0"
+  },
+  "campaign": "score-ranking-validation-v2-S-scores",
+  "context": {
+    "capacity_tokens_proposed": 16384,
+    "profile": "bm25-top20-prefix1200-v1",
+    "resource_fit": "NOT_RUN"
+  },
+  "decoding": {
+    "attempts": 1,
+    "max_output_tokens": 512,
+    "repair": false,
+    "retries": 0,
+    "seed": 0,
+    "temperature": 0
+  },
+  "evidence_gates": {
+    "model_output": "NOT_RUN",
+    "model_physical_isolation": "NOT_RUN",
+    "model_quality": "NOT_RUN",
+    "monetary_economics": "UNKNOWN",
+    "native_render_tokens": "NOT_RUN",
+    "resource_fit": "NOT_RUN",
+    "weights_checksum": "NOT_RUN"
+  },
+  "execution_status": "NOT_RUN",
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "license": "apache-2.0",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "output_constraint": {
+    "policy": "candidate-score-vector-v1"
+  },
+  "population": {
+    "sha256": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635",
+    "split": "splits/validation-v2.json"
+  },
+  "prompt": {
+    "sha256": "9eff8d7f7c9532603cf19a86d142445de7a94b2de0039abba304c19c0ec3b431",
+    "system_file": "configs/prompts/candidate-scores-v1.txt",
+    "user_rendering": "canonical JSON {issue,candidates}; path-sorted packet, unchanged excerpts"
+  },
+  "resource_proposal": {
+    "device": "cuda",
+    "gpu_layers": 999,
+    "reason": "Preparation only; new explicit paid session authorization required.",
+    "threads": 4
+  },
+  "schema_version": "1.0.0",
+  "source_review_date": "2026-10-06",
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "https://github.com/ggml-org/llama.cpp/blob/7049ff0cbeb1f5ead231de4522af6b75d8d773c0/tools/server/README.md"
+  ],
+  "status": "Prepared; freeze exact execution identity after technical gates, before validation inference"
+}

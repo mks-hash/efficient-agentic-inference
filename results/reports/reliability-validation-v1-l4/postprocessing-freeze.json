@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-10-07T18:48:05.132122+00:00",
+  "scope": "Local collection, independent native audit, evaluator invocation and source-free report/accounting; primary statistical rule/evaluator were frozen separately before dataset reconstruction. No validation quality read yet.",
+  "files": {
+    "collect.py": "1dd0d44cd959533e625dcf067d270d08a9b19100e39dbd4aeee9290822bbccf6",
+    "cleanup.py": "413c86ca18a230079887cce33c01a816fc5ef1996a8698292e1ecf66a64cc602",
+    "audit.py": "66f5acfba9582e35429f5eda3b56e3d7c3b9bc2cb626205f871b05bd94db1c38",
+    "analyze.py": "3ca73f91b1b3ed9a16fc7933d93d3d45e25a2c3697b33f6e8b8b26744f2eb8d3",
+    "export_report.py": "3f627a378eee3e979fe81b66e21061f50793efffcdc511250e4cd6fdd8b38f5c",
+    "verify_report.py": "609a2e65828d8a5e51565bcbde07a78b64f087907d1cab1ce4e2c28ba2e09b9e"
+  },
+  "remote_launcher_sha256": "e2dbdfcb5450106db820f3ed9c90b9568e2426ca233d12dc1c52cc125a2a2441"
+}

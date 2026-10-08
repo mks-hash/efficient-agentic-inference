@@ -1,0 +1,88 @@
+{
+  "all_files": {
+    "candidate_recall_ceiling": 0.8791666666666667,
+    "conditional_denominator_tasks": 20,
+    "conditional_recall_at_k": {
+      "1": 0.4208333333333333,
+      "10": 0.7541666666666667,
+      "3": 0.6416666666666667,
+      "5": 0.6958333333333333
+    },
+    "empty_gold_tasks": 0,
+    "known_label_mean_recall_at_k": {
+      "1": 0.3875,
+      "10": 0.6333333333333333,
+      "3": 0.5416666666666667,
+      "5": 0.5958333333333333
+    },
+    "mean_precision_at_k": {
+      "1": 0.65,
+      "10": 0.135,
+      "3": 0.35,
+      "5": 0.24
+    },
+    "mean_recall_at_k": {
+      "1": 0.3875,
+      "10": 0.6333333333333333,
+      "3": 0.5416666666666667,
+      "5": 0.5958333333333333
+    },
+    "mrr": 0.7166666666666667,
+    "nonempty_gold_tasks": 20,
+    "strict_success_rate_at_5": 0.4,
+    "strict_successes_at_5": 8,
+    "unknown_label_tasks": 0
+  },
+  "contract": "localization-v2",
+  "cost_per_success_usd": null,
+  "cost_reason": "unknown_cost",
+  "cpu_ms_total_observed": null,
+  "failed_prediction": 4,
+  "failed_preparation": 0,
+  "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+  "gpu_seconds": null,
+  "implementation_files": {
+    "candidate_recall_ceiling": 0.8791666666666667,
+    "conditional_denominator_tasks": 20,
+    "conditional_recall_at_k": {
+      "1": 0.4208333333333333,
+      "10": 0.7541666666666667,
+      "3": 0.6416666666666667,
+      "5": 0.6958333333333333
+    },
+    "empty_gold_tasks": 0,
+    "known_label_mean_recall_at_k": {
+      "1": 0.3875,
+      "10": 0.6333333333333333,
+      "3": 0.5416666666666667,
+      "5": 0.5958333333333333
+    },
+    "mean_precision_at_k": {
+      "1": 0.65,
+      "10": 0.135,
+      "3": 0.35,
+      "5": 0.24
+    },
+    "mean_recall_at_k": {
+      "1": 0.3875,
+      "10": 0.6333333333333333,
+      "3": 0.5416666666666667,
+      "5": 0.5958333333333333
+    },
+    "mrr": 0.7166666666666667,
+    "nonempty_gold_tasks": 20,
+    "strict_success_rate_at_5": 0.4,
+    "strict_successes_at_5": 8,
+    "unknown_label_tasks": 0
+  },
+  "latency_tasks": 20,
+  "predictions_sha256": "3f67723514f16c35ea67d5183992ee9af7d9b88c731d7990bac5e3328189ccdf",
+  "prepared": 20,
+  "quantile_method": "nearest-rank",
+  "schema_version": "2.0.0",
+  "selected": 20,
+  "synthetic": false,
+  "total_monetary_usd": null,
+  "wall_ms_p50": 12146.367756000018,
+  "wall_ms_p95": 14448.064662999968
+}

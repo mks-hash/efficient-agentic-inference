@@ -1,0 +1,32 @@
+{
+  "all_eos_no_truncation": "PASS",
+  "findings": [],
+  "identity_status": "PASS",
+  "offload": [
+    [
+      "41",
+      "41"
+    ]
+  ],
+  "raw_server_log_sha256": "430aa4daf04b0012db309f6be2b784f26429d087321270146abf42f992edb5b2",
+  "traces": [
+    {
+      "eager_grammar": false,
+      "effective_grammar_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "30e17f77551edcfb93e74247bc43a5b308e480ea53eaac55ff50abde41651c6f",
+      "input_tokens": 196,
+      "instance_id": "synthetic-temperature",
+      "native_status": "PASS",
+      "output_ids_sha256": "d28b00d107bd78425353ef60a90dc39cbd751fcb91c383530a69e6468821a2bc",
+      "output_schema_sha256": null,
+      "output_tokens_received": 7,
+      "raw_evidence_sha256": "e2546467d7c1342ae9469ae16b604d916435bf19e2b40d2cc5afb5c24dcf040d",
+      "rendered_prompt_sha256": "620ef5f615743d15ef253398c100ac2ffe9bc568ba13f14c551127f7170062bf",
+      "stop_type": "eos",
+      "truncated": false
+    }
+  ]
+}

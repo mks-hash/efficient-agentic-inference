@@ -1,0 +1,60 @@
+{
+  "active_gpu_seconds": null,
+  "actual_monetary_usd": null,
+  "backend_phases": {
+    "backend_cpu_seconds": 68.957849,
+    "backend_lifetime_wall_ms": 69070.55469199986,
+    "backend_load_warmup_ms": 1757.9299809999611,
+    "backend_peak_rss_kib": 2759212,
+    "child_exit_code": 0,
+    "command": [
+      "/backend/llama-server",
+      "--model",
+      "/model/model.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8080",
+      "--log-verbosity",
+      "4",
+      "--ctx-size",
+      "16384",
+      "--parallel",
+      "1",
+      "--threads",
+      "4",
+      "--threads-batch",
+      "4",
+      "--n-gpu-layers",
+      "999",
+      "--no-context-shift",
+      "--cache-ram",
+      "0",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--jinja"
+    ],
+    "gpu_seconds": null,
+    "monetary_usd": null
+  },
+  "dispositions": {
+    "invalid_output": 1,
+    "valid": 19
+  },
+  "failure_reasons": {
+    "ValueError: Prediction contains unknown candidate paths": 1
+  },
+  "native_input_tokens_observed": 166338,
+  "output_tokens_received_observed": 581,
+  "request_wall_ms_observed_sum": 66939.77082399897,
+  "request_wall_ms_p50": 3067.900864999956,
+  "request_wall_ms_p95": 4484.8076230000515,
+  "sampled_max_gpu_memory_mib": 4942.0,
+  "selected": 20,
+  "telemetry_limitation": "One-second external samples may miss peaks; active GPU-seconds and per-task GPU attribution unknown.",
+  "telemetry_sample_count": 77,
+  "telemetry_sha256": "2982c472b7f110c8b6af4065b2e1888fb43be835c7ea966665889c66f9d5d0b8",
+  "token_complete_attempts": 20
+}

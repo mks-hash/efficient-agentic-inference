@@ -1,0 +1,18 @@
+{
+  "vm_name": "eai-score-ranking-l4-20261007",
+  "zone": "us-west1-a",
+  "vm_id": "8728510203003864785",
+  "disk_id": "6323082686200743632",
+  "vm_absent": true,
+  "disk_absent": true,
+  "delete_requested_utc": "2026-10-07T22:18:10.190764+00:00",
+  "absence_confirmed_utc": "2026-10-07T22:19:11.119263+00:00",
+  "delete_and_absence_check_elapsed_s": 60.92849934299011,
+  "existing_instance_identities_preserved": true,
+  "existing_disk_identities_preserved": true,
+  "terminal_archive_sha256": "c9bd93a43b3ed9071fda3140335afb5d653fc40b78a01b059461a158c4d85207",
+  "actual_monetary_usd": null,
+  "billing_status": "UNKNOWN; no invoice joined",
+  "max_authorized_usd": 5,
+  "max_authorized_allocation_s": 10800
+}

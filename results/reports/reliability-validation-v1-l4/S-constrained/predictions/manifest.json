@@ -1,0 +1,123 @@
+{
+  "artifact": {
+    "bytes": 2497281120,
+    "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "id": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "source_url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+  },
+  "backend": {
+    "binary_identity_status": "PASS",
+    "binary_sha256": "0ea6af613b3c3807465afd88443f78f3a8137d3911a6200f1f0b0496f5b0d2c7",
+    "build": {
+      "cache_sha256": "c65d27abbc3172167b8b80a99086ce6e5d58f07bbd732b68aafba04f7aa151d0",
+      "cmake": "4.1.2",
+      "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "cuda_architectures": "native",
+      "cuda_compiler_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Apr__9_19:24:57_PDT_2025\nCuda compilation tools, release 12.9, V12.9.41\nBuild cuda_12.9.r12.9/compiler.35813241_0\n",
+      "flags": {
+        "BUILD_SHARED_LIBS": "OFF",
+        "CMAKE_BUILD_TYPE": "Release",
+        "GGML_BLAS": "OFF",
+        "GGML_CUDA": "ON",
+        "GGML_NATIVE": "ON",
+        "LLAMA_BUILD_SERVER": "ON",
+        "LLAMA_BUILD_TESTS": "OFF",
+        "LLAMA_OPENSSL": "OFF"
+      }
+    },
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "revision": "7049ff0cbeb1f5ead231de4522af6b75d8d773c0"
+  },
+  "chat_template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18",
+  "code_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "configs/reliability-validation-v1/S-free.json",
+      "configs/reliability-validation-v1/S-constrained.json",
+      "configs/reliability-validation-v1/G-free.json",
+      "configs/reliability-validation-v1/G-constrained.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "a613a029790b4eba78cd51b90d878604225c2a678f628125f30dc64fa7f7b0f4",
+    "dirty": true,
+    "kind": "immutable archive of selected uncommitted inference sources; base Git revision is not their complete identity",
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+    "source_sha256": {
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/reliability-validation-v1/G-constrained.json": "776be5054691549ee79eda58bdd4c720c82e39c4992aea111dc958f3548e2fc4",
+      "configs/reliability-validation-v1/G-free.json": "3d9f4e1b65acad1b48fbc2dab5ad8c8c1855f27c11abb7b3f3b61d1c42bc95f7",
+      "configs/reliability-validation-v1/S-constrained.json": "63e9672e21f2d1cd25c20ebc5b5bac1d96ef0a4a5610b3e775f9c3f1f6c294d8",
+      "configs/reliability-validation-v1/S-free.json": "ae6d78e95826714efbf35745032b630abfe506c8b0a0fb1cb76699679daedba8",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/llama_predict.py": "ec582e4749cfd513ad620299587a3c55b22f73feff7a48e7f20a85ab3747842f",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    }
+  },
+  "cost_reason": "No price/invoice joined; no general latency/economics claim",
+  "decoding": {
+    "attempts": 1,
+    "max_output_tokens": 512,
+    "repair": false,
+    "retries": 0,
+    "seed": 0,
+    "temperature": 0
+  },
+  "execution": {
+    "context_tokens": 16384,
+    "device": "cuda",
+    "per_task_timeout_s": 120,
+    "run_budget_s": 1800,
+    "startup_timeout_s": 180,
+    "synthetic": false,
+    "threads": 4
+  },
+  "execution_config_sha256": "c2510ce9bab0d72b475dbd33338f65595512799e67cc30384f3f66c3d7eca34a",
+  "hardware": {
+    "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               GenuineIntel\nBIOS Vendor ID:                          Google\nModel name:                              Intel(R) Xeon(R) CPU @ 2.20GHz\nBIOS Model name:                           CPU @ 2.0GHz\nBIOS CPU family:                         1\nCPU family:                              6\nModel:                                   85\nThread(s) per core:                      2\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                7\nBogoMIPS:                                4400.31\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat avx512_vnni md_clear arch_capabilities\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               64 KiB (2 instances)\nL1i cache:                               64 KiB (2 instances)\nL2 cache:                                2 MiB (2 instances)\nL3 cache:                                38.5 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Mitigation; Aligned branch/return thunks\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\nVulnerability Vmscape:                   Not affected\n",
+    "gpu_layers": 999,
+    "kernel": "7.0.0-1013-gcp",
+    "ram": "MemTotal:       16369292 kB"
+  },
+  "inputs_sha256": "03ddfcbecd265350e6edc31a0536efa56cf5530bf8ed86a515bce81df82d9b7e",
+  "measurement_boundary": "request rendering/tokenization/prefill/decode/validation; excludes model load and context preparation; cpu_ms unknown per task, total backend CPU separately measured; interrupted output token counts are received-token lower bounds",
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "license": "apache-2.0",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "output_constraint": {
+    "policy": "candidate-json-array-v1"
+  },
+  "platform": "Linux-7.0.0-1013-gcp-x86_64-with-glibc2.39",
+  "program": "llama-predict-cuda",
+  "prompt": {
+    "sha256": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+    "system_file": "configs/prompts/localization-v1.txt",
+    "user_rendering": "canonical JSON {issue,candidates}; path-sorted packet, unchanged excerpts"
+  },
+  "public_export": {
+    "original_predictions_sha256": "2efc7836c12ebff4f94433d4f65532c00a980d90a4d6d3d5ee3a5e40793fa758",
+    "private_archive_sha256": "2a648ab09a90a64af7ded8a04664d8757299849c7fd8d1ec03d364c63f584728",
+    "raw_output": "Redacted in this review derivative; original unchanged in ignored archive."
+  },
+  "python": "3.12.3",
+  "runtime_sources": {
+    "__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+    "inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+    "llama_predict.py": "ec582e4749cfd513ad620299587a3c55b22f73feff7a48e7f20a85ab3747842f",
+    "records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340"
+  },
+  "schema_version": "2.0.0",
+  "synthetic": false
+}

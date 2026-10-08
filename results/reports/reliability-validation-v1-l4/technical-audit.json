@@ -1,0 +1,59 @@
+{
+  "billing": "UNKNOWN",
+  "mode_prompt_and_input_id_parity": {
+    "G": {
+      "pairs_verified": 20,
+      "status": "PASS"
+    },
+    "G-constrained-old-replay": {
+      "pairs_verified": 3,
+      "scope": "Same-backend greedy repeats, not fresh quality samples",
+      "status": "PASS"
+    },
+    "G-free-old-replay": {
+      "pairs_verified": 3,
+      "scope": "Same-backend greedy repeats, not fresh quality samples",
+      "status": "PASS"
+    },
+    "G-old-replay": {
+      "pairs_verified": 6,
+      "status": "PASS"
+    },
+    "G-synthetic": {
+      "pairs_verified": 1,
+      "status": "PASS"
+    },
+    "S": {
+      "pairs_verified": 20,
+      "status": "PASS"
+    },
+    "S-constrained-old-replay": {
+      "pairs_verified": 3,
+      "scope": "Same-backend greedy repeats, not fresh quality samples",
+      "status": "PASS"
+    },
+    "S-free-old-replay": {
+      "pairs_verified": 3,
+      "scope": "Same-backend greedy repeats, not fresh quality samples",
+      "status": "PASS"
+    },
+    "S-old-replay": {
+      "pairs_verified": 6,
+      "status": "PASS"
+    },
+    "S-synthetic": {
+      "pairs_verified": 1,
+      "status": "PASS"
+    }
+  },
+  "native_requests": 112,
+  "research_arms": {
+    "G-constrained": "PASS",
+    "G-free": "PASS",
+    "S-constrained": "PASS",
+    "S-free": "PASS"
+  },
+  "research_selected": 80,
+  "source_transport_preregistration": "PASS",
+  "technical_requests": 32
+}

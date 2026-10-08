@@ -1,0 +1,132 @@
+{
+  "attempts": {
+    "initial_offline_snapshot": {
+      "missing_base_commits": 19,
+      "prepared": 1,
+      "resolution": "Fetched exact pinned commits; online and then offline fresh-directory builds each prepared all 20 unchanged IDs",
+      "retained": true,
+      "status": "FAIL"
+    },
+    "sandbox_launcher": {
+      "reason": "bwrap network namespace creation denied before backend/inference; succeeded with approved isolated local invocation",
+      "status": "FAIL"
+    }
+  },
+  "billing_reconciliation": {
+    "actual_cost_per_success_usd": null,
+    "limitation": "No invoice/usage attribution obtained; exports may exist elsewhere; absence of visible datasets proves no monetary charge value",
+    "read_only_project_dataset_listing": "exit 0; no visible datasets returned",
+    "status": "UNKNOWN"
+  },
+  "campaign": "reliability-validation-v1",
+  "cpu_checks": {
+    "evidence_kind": "synthetic software contracts",
+    "tests": 60
+  },
+  "dataset": {
+    "context_semantic_records_identical": 20,
+    "context_sha256": "03ddfcbecd265350e6edc31a0536efa56cf5530bf8ed86a515bce81df82d9b7e",
+    "gold_sha256": "1f9419691c93806d1c290b1b8ff733a669e955cda86d277263c3e737d98d1001",
+    "issues_per_repository": 4,
+    "labels_namespace": "local-only evaluator; no validation scoring or model generation",
+    "prepared": 20,
+    "repository_count": 5,
+    "selected": 20,
+    "snapshot_files_byte_identical": 18934,
+    "split_sha256": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121",
+    "validation_model_attempts": 0,
+    "verified_labels_and_predictions": "NOT_RUN"
+  },
+  "gates": {
+    "actual_cost": "UNKNOWN",
+    "context_rebuild": "PASS",
+    "cpu_contracts": "PASS",
+    "generalist_constrained_native": "NOT_RUN",
+    "gpu_native_and_isolation": "NOT_RUN",
+    "paid_execution": "NOT_AUTHORIZED",
+    "same_prompt_and_input_tokens": "PASS",
+    "small_effective_eager_grammar": "PASS",
+    "small_synthetic_native": "PASS",
+    "snapshot_rebuild": "PASS",
+    "validation_quality": "NOT_RUN"
+  },
+  "preparation_freeze": {
+    "code_identity": {
+      "dirty": true,
+      "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728"
+    },
+    "current_sha256": "de0031f856296d6c82955b25da27e7781bb6eef5d277f623c0d3ff67e3b9f07f",
+    "erratum": "Corrected repository count from six to five after inspecting unchanged split membership; no treatment, membership, threshold or analysis rule changed; both preparation bundles retained",
+    "files": {
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/reliability-validation-v1.json": "1b80a592de19368341e0bda73fb50f9812c44879f5c0a91f2a11a56aae391e4d",
+      "configs/reliability-validation-v1/G-constrained.json": "776be5054691549ee79eda58bdd4c720c82e39c4992aea111dc958f3548e2fc4",
+      "configs/reliability-validation-v1/G-free.json": "3d9f4e1b65acad1b48fbc2dab5ad8c8c1855f27c11abb7b3f3b61d1c42bc95f7",
+      "configs/reliability-validation-v1/S-constrained.json": "63e9672e21f2d1cd25c20ebc5b5bac1d96ef0a4a5610b3e775f9c3f1f6c294d8",
+      "configs/reliability-validation-v1/S-free.json": "ae6d78e95826714efbf35745032b630abfe506c8b0a0fb1cb76699679daedba8",
+      "decisions/0007-constrained-output-validation.md": "70b43d68c5f055ddc006b32eb8c1efc0057738a5fe66c8ce96737c814cc2180f",
+      "docs/experiments/reliability-validation-v1.md": "b4c7ca23392afce521cf5d4c8405bc983b1566e9a373986c324cdc749b9353a2",
+      "splits/validation-v1.json": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/comparison.py": "caff6f5d9060f1400099b88dd637e7e2cfc21363439c1cb7e53ef4a67c028235",
+      "src/efficient_agentic_inference/context.py": "0cdb12da7499d8f9f42a043a77091690eeb685430b5a961e27e3a8efc149f053",
+      "src/efficient_agentic_inference/evaluation.py": "056296b947af662f8dde0ae4a67e8a996c280ed3607a396c1744e7731ebf6e0e",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/labeler.py": "35d1f812c157512ab17a4e91e1b046afc069668c5353e9a730304b3d09c646e8",
+      "src/efficient_agentic_inference/llama_predict.py": "ec582e4749cfd513ad620299587a3c55b22f73feff7a48e7f20a85ab3747842f",
+      "src/efficient_agentic_inference/metrics.py": "f7fbbcc61c4db309036ccc2997358683c77591845debf0c53a1e42def43181f1",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "src/efficient_agentic_inference/reliability.py": "4c3e6bb27bdaac9409ed80b5c02798bb36ef4750ae2576554a0f359995f23235",
+      "tools/analyze-reliability.py": "dd9c5fac1abc535e4f26dde5fc7cc22b5cea1b0783ae56b5d475ccd84f31414d",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/freeze-reliability.py": "94ab569b6097b7d4354aed97f023af66fe10c8e073cb85ebce0297bdda868d70",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    },
+    "initial_sha256": "ce36c7805cb3382536fbe14adcd98182e5ecadd0b2174f75e40a7cfcbdd8ee2e"
+  },
+  "prepared_at_utc": "2026-10-06T22:44:45.208706+00:00",
+  "probes": {
+    "S-constrained": {
+      "config_sha256": "336a0749548ce518816066583c434ee403bf77a790d33f3c41870932b97e0db7",
+      "effective_grammar_sha256": "7d688819e312935900ca05e53e73f4f37f35620d542dd9f35f677a52668cd2bf",
+      "evidence_sha256": "2f81d895d8b6cf7c96b29d4901fa86efdde193d2a6e89f88a0689a06f39bcac0",
+      "grammar_lazy": false,
+      "input_token_ids_sha256": "5d9fee100b7c67ce38b9125ea400589a697cd89b6e8a3eee7aae3a755a602b7f",
+      "input_tokens": 192,
+      "isolation": {
+        "evaluator_visible": false,
+        "ipv4_routes": 0,
+        "network_errno": 101,
+        "project_visible": false,
+        "separate_network_namespace": true
+      },
+      "output_schema_sha256": "609d9426997d3c3735f1700c1c036b158ecfc62c830fa0c0133ba11526beccf3",
+      "output_token_ids_sha256": "d28b00d107bd78425353ef60a90dc39cbd751fcb91c383530a69e6468821a2bc",
+      "output_tokens": 7,
+      "raw_output_sha256": "24f4cb3f74b316ad077a4f6b8dd04c208f0d57643586bb51109cca06aac5062d",
+      "rendered_prompt_sha256": "313015b63ddcd6c9a99dfee8c4f202cc3bcfeab5e77020824eb1b8348c1b0394",
+      "status": "PASS",
+      "synthetic": true
+    },
+    "S-free": {
+      "config_sha256": "e183c924192c8dbba318d2e89467456716bd488eccbc4c9e86a3f0a64d81fce0",
+      "evidence_sha256": "55255fe8e6e3724210c1777b5956a03f08b6e082a7df9bc6303df7d0f252cd27",
+      "input_token_ids_sha256": "5d9fee100b7c67ce38b9125ea400589a697cd89b6e8a3eee7aae3a755a602b7f",
+      "input_tokens": 192,
+      "isolation": {
+        "evaluator_visible": false,
+        "ipv4_routes": 0,
+        "network_errno": 101,
+        "project_visible": false,
+        "separate_network_namespace": true
+      },
+      "output_token_ids_sha256": "d28b00d107bd78425353ef60a90dc39cbd751fcb91c383530a69e6468821a2bc",
+      "output_tokens": 7,
+      "raw_output_sha256": "24f4cb3f74b316ad077a4f6b8dd04c208f0d57643586bb51109cca06aac5062d",
+      "rendered_prompt_sha256": "313015b63ddcd6c9a99dfee8c4f202cc3bcfeab5e77020824eb1b8348c1b0394",
+      "status": "PASS",
+      "synthetic": true
+    }
+  },
+  "role": "CPU implementation and dataset preparation only; no validation quality evidence"
+}

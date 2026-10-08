@@ -142,3 +142,119 @@ The [next protocol](experiments/generalist-dev-v2.md) and
 opt-in non-thinking renderer and a reserved validation population. Actual 14B
 weights, native API, resource fit and quality remain NOT_RUN. The new cost ledger
 is a separate post-evaluation namespace; never mount it into inference.
+
+## Completed matched larger-candidate comparison
+
+The [report](../results/reports/generalist-dev-v2-l4/README.md) records two fresh
+60-task runs on the same L4, complete configuration/native trace hashes, paired
+analysis, phase accounting and confirmed VM/disk deletion. Original raw output
+and source-bearing traces are retained in the ignored archive; review predictions
+redact raw_output with original hashes recorded. Fresh evaluation of those exports
+produces identical per-task metrics. The 4B replication matches every historical
+ranked-path/disposition/failure record. The 14B candidate has no positive gap.
+
+Preparation-only statuses above remain historical; they are not the current model
+fit/quality state. Contract v2, schemas and previously frozen report bytes remain
+unchanged. Unknown costs stay unknown in actual and complete scenario CPS.
+
+## Reliability validation preparation
+
+The [campaign contract](experiments/reliability-validation-v1.md) freezes four new
+base configs and an output-constraint policy while retaining localization-v2.
+[Preparation checks](experiments/reliability-preparation-checks.json) record two
+synthetic native probes, two matching validation reconstructions, private artifact
+hashes and the failed initial preparation attempts. Validation quality is NOT_RUN.
+
+Before constructing new validation inputs, preserve an immutable preparation bundle:
+
+```bash
+uv run python tools/freeze-reliability.py --output .develop/reliability-freeze-new
+```
+
+After independently authorized inference and local evaluation of all four arms,
+arrange each arm's immutable `predictions/` and `evaluation/` directories under
+one root and analyze them without regenerating predictions:
+
+```bash
+uv run python tools/analyze-reliability.py \
+  --runs /path/to/four-arm-root --output /path/to/fresh-comparison
+```
+
+The analyzer checks artifact hashes, frozen membership, model/prompt/decoding,
+candidate/input/gold identities and prediction dispositions. It reports a numerical
+signal separately from technical/provenance gates, which metrics cannot establish.
+Unknown accounting remains null. This command does not authorize GPU execution.
+
+## Completed reliability validation
+
+The [four-arm report](../results/reports/reliability-validation-v1-l4/README.md)
+records 80 validation attempts and 32 separate technical requests on one L4.
+Both modes have identical rendered prompt and native input IDs for all 20
+issues within each model. Twelve same-backend replay pairs match native input/
+output IDs, raw response, paths and dispositions. Those checks establish execution,
+not additional quality samples. All four exact configs froze before validation;
+evaluation used local-only gold after complete collection.
+
+Execution identity is the immutable selected-source archive and its source hashes;
+the dirty base revision alone is insufficient. The campaign contract, primary
+rule, evaluator and earlier report bytes remain unchanged. Final transport verified
+980 checksum entries. Original raw traces remain private; the source-free report
+exports were independently re-evaluated to identical per-task metrics. VM/disk
+absence and existing-resource preservation are recorded. Actual cost and active
+GPU-seconds remain unknown. Validation-v1 is now exposed; Verified is untouched.
+
+## Prepared score-ranking validation
+
+The [score-ranking protocol](experiments/score-ranking-validation-v2.md) reserves
+30 fresh issues. [Preparation checks](experiments/score-ranking-preparation-checks.json)
+record 67 CPU contracts, seven isolated synthetic native requests and a same-host
+online/offline snapshot rebuild. Complete inference packet bytes match; provenance
+matches with only measured cpu_ms/wall_ms excluded. Both original timing journals
+remain unchanged. No validation model inference or quality evaluation has run.
+
+Freeze the current preparation to a fresh ignored directory, then reconstruct
+with the existing snapshot commands, replacing the split with validation-v2.
+Keep gold separate and defer quality evaluation until all four authorized arms
+have been collected. Never overwrite an existing snapshot or freeze.
+
+```bash
+uv run python tools/freeze-score-ranking.py --output .develop/score-freeze-new
+```
+
+To reproduce the short 4B synthetic score-format check with the already acquired,
+pinned weights and CPU backend, use [fabricated inputs](../examples/score-ranking-v1/README.md):
+
+```bash
+uv run python tools/configure-cpu-run.py \
+  --base-config configs/score-ranking-validation-v2/S-scores.json \
+  --binary .develop/backends/llama.cpp/build-cpu/bin/llama-server \
+  --build-dir .develop/backends/llama.cpp/build-cpu \
+  --inputs examples/score-ranking-v1/tasks.jsonl \
+  --campaign score-synthetic-reproduction --run-budget-s 300 \
+  --task-timeout-s 120 --synthetic --device cpu \
+  --output .develop/score-synthetic-new.json
+bash tools/llama-isolated.sh examples/score-ranking-v1/tasks.jsonl \
+  .develop/score-synthetic-new.json models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf \
+  .develop/backends/llama.cpp/build-cpu/bin/llama-server \
+  configs/prompts/candidate-scores-v1.txt .develop/score-synthetic-new-run
+```
+
+The backend build/weights and native binding/schema/counters/EOS must be checked;
+format acceptance says nothing about localization quality. For the matched path
+probe use S-paths and localization-v1; for historical compatibility use the
+separate historical input unchanged. These local CPU commands authorize no paid
+resources or validation evaluation.
+
+After a separately authorized complete four-arm run and unchanged evaluation,
+place ARM/predictions and ARM/evaluation under one root:
+
+```bash
+uv run python tools/analyze-score-ranking.py \
+  --runs /path/to/four-arm-root --output /path/to/fresh-score-comparison
+```
+
+The analyzer verifies hashes, membership, prompt/model/decoding/constraint/mapping,
+candidate/input/gold identities and dispositions. Retained valid score vectors
+must map to the reported rankings. Tie/zero diagnostics are selected diagnostics;
+primary quality includes every attempt. Numerical signals never substitute for
+independent technical/provenance gates or actual monetary accounting.

@@ -21,8 +21,14 @@ The frozen SWE-bench dev-v2 file-localization comparison covers **60 tasks acros
 | Lexical, full corpus | 0.5523 | 25/60 | 0.9854 |
 | Lexical, matched context | 0.2283 | 8/60 | 0.7835 |
 | Untuned Qwen3-4B-Instruct-2507 Q4_K_M, matched context | **0.6569** | **33/60** | 0.7835 |
+| Qwen3-14B Q4_K_M, non-thinking, matched context | 0.6091 | 30/60 | 0.7835 |
 
-All 60 model attempts are included, with eight invalid answers scored as failures.
+All 60 attempts per model are included, with eight invalid 4B answers and eleven
+invalid 14B answers scored as failures. A fresh 4B run reproduced all 60 ranked-path
+and disposition records. The larger candidate did not improve quality in the
+[matched comparison](results/reports/generalist-dev-v2-l4/README.md); its Recall@5
+difference versus fresh 4B is −0.0478 (repository-block 95% interval
+[−0.0790, −0.0281]). This finding is specific to the tested models/configurations.
 The positive development finding concerns matched evidence; the observed advantage
 against full-corpus lexical remains uncertain. These are localization measurements
 on exposed development data. Generalization, issue repair and economic benefit
@@ -30,6 +36,24 @@ remain untested; cost per successful task is unknown.
 Read the [technical report](docs/technical-reports/untuned-dev-v2.md),
 [experiment artifacts](results/reports/untuned-dev-v2-l4/README.md) and
 [v0.2.0 release](https://github.com/mks-hash/efficient-agentic-inference/releases/tag/v0.2.0).
+
+On a separate **20-issue validation set from five seen repositories**, generation
+constraints left 4B Recall@5 unchanged at 0.6333 (strict 9/20). The 14B change
+from 0.5958 to 0.6458 is exploratory; its paired interval includes zero. Unknown
+paths were eliminated, but duplicate paths still caused failures. The primary
+small-model improvement rule did not pass. See the
+[reliability validation report](results/reports/reliability-validation-v1-l4/README.md).
+This tests new issues within seen repositories, not repository/time generalization.
+
+A further **30-issue validation in four seen repositories** found that a complete
+candidate-score recipe reduced Recall@5 from 0.6528 to 0.3222 for 4B and from
+0.6750 to 0.1389 for 14B, despite format-valid scores in every task. This negative
+finding concerns the frozen prompt/representation/mapping recipe; it does not
+reject scoring methods generally. See the
+[score-recipe validation report](results/reports/score-ranking-validation-v2-l4/README.md).
+
+The [cross-report synthesis](docs/technical-reports/localization-synthesis-2026-10-08.md)
+connects these findings, candidate-coverage limits and the remaining economic questions.
 
 The earlier 12-task lexical pilot achieved Recall@5 0.5417, strict 6/12 and
 candidate ceiling 1.0; a separate machine reproduced its deterministic artifacts

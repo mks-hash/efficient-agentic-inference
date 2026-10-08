@@ -1,0 +1,54 @@
+{
+  "contract": "reliability-validation-v1 + session-checks-v1",
+  "files": {
+    "configs/reliability-validation-v1.json": "1b80a592de19368341e0bda73fb50f9812c44879f5c0a91f2a11a56aae391e4d",
+    "decisions/0007-constrained-output-validation.md": "70b43d68c5f055ddc006b32eb8c1efc0057738a5fe66c8ce96737c814cc2180f",
+    "decisions/0008-supplementary-session-checks.md": "48b133b5aa7f6f3eba30b2323d6d6809ccab4b03d339f2f93c1f69764d3470ca",
+    "docs/experiments/reliability-session-checks-v1.md": "426309cd6254eb9bba3ca615a98a20600809e6663ffa986ae8b0981e876460e6",
+    "docs/experiments/reliability-validation-v1.md": "b4c7ca23392afce521cf5d4c8405bc983b1566e9a373986c324cdc749b9353a2",
+    "splits/validation-v1.json": "fcf962e4e37bcfdf9243739c4930dbb0eedea41f90080b3cd6542381a5362121"
+  },
+  "frozen_at_utc": "2026-10-07T18:17:31.335707+00:00",
+  "paid_budget_usd": 5,
+  "source_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "configs/reliability-validation-v1/S-free.json",
+      "configs/reliability-validation-v1/S-constrained.json",
+      "configs/reliability-validation-v1/G-free.json",
+      "configs/reliability-validation-v1/G-constrained.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "a613a029790b4eba78cd51b90d878604225c2a678f628125f30dc64fa7f7b0f4",
+    "dirty": true,
+    "kind": "immutable archive of selected uncommitted inference sources; base Git revision is not their complete identity",
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+    "source_sha256": {
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/reliability-validation-v1/G-constrained.json": "776be5054691549ee79eda58bdd4c720c82e39c4992aea111dc958f3548e2fc4",
+      "configs/reliability-validation-v1/G-free.json": "3d9f4e1b65acad1b48fbc2dab5ad8c8c1855f27c11abb7b3f3b61d1c42bc95f7",
+      "configs/reliability-validation-v1/S-constrained.json": "63e9672e21f2d1cd25c20ebc5b5bac1d96ef0a4a5610b3e775f9c3f1f6c294d8",
+      "configs/reliability-validation-v1/S-free.json": "ae6d78e95826714efbf35745032b630abfe506c8b0a0fb1cb76699679daedba8",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/llama_predict.py": "ec582e4749cfd513ad620299587a3c55b22f73feff7a48e7f20a85ab3747842f",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    }
+  },
+  "technical_requests": 32,
+  "transport_data_hashes": {
+    "boundary.jsonl": "aa2ad0a45341d939a5a2adfa8c498d1b0e72ccb2d06b2831b940bc6b4aa7a9ab",
+    "old-replay.jsonl": "a20779a6c0fa248af1937c0e8dcd734b75fe9b12a9df71190b9bfe9e8e1160b0",
+    "synthetic.jsonl": "c1c592c2417cb175d0b8f3521cc6f8b08d698fd8c3ce857f6727e8eb98b6c20e",
+    "validation-v1.jsonl": "03ddfcbecd265350e6edc31a0536efa56cf5530bf8ed86a515bce81df82d9b7e"
+  },
+  "validation_slots": 80,
+  "vm_max_seconds": 10800
+}

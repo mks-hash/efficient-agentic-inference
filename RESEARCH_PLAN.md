@@ -1,9 +1,10 @@
 # Research plan — Small Specialist
 
-Status: development baselines, 2026-10-06; localization contract v2. A lexical
+Status: development baselines and new-issue validation, 2026-10-08; localization contract v2. A lexical
 pilot has a separate-host reproduction; a frozen untuned Qwen3-4B development
 comparison is recorded in [the report](results/reports/untuned-dev-v2-l4/README.md).
-Generalist substitution, specialization and full-system economics remain untested.
+One matched larger candidate has been evaluated; validated stronger-generalist
+substitution, specialization and full-system economics remain unconfirmed.
 The untuned dev protocol freezes its own numerical decision rule; future adaptation
 and fallback targets below require their own dated, hashed preregistration.
 
@@ -105,13 +106,66 @@ The released v0.1.0 records a reproducible lexical dev pilot. The completed
 [untuned-dev-v2](docs/experiments/untuned-dev-v2.md) campaign compares 60 new
 issues under full-corpus and matched-context lexical controls with one untuned
 model on the identical packet. The [technical report](docs/technical-reports/untuned-dev-v2.md)
-records a positive matched-context development finding. The next comparison is
-a stronger matched generalist with explicit system cost accounting; its execution
-contract and budget remain to be authorized. Training follows an evidence-based
-decision. No future campaign is authorized by these milestone notes.
+records a positive matched-context development finding. The [matched 14B comparison](results/reports/generalist-dev-v2-l4/README.md)
+replicated the small baseline and recorded lower quality for this larger candidate.
+Its preregistered positive-gap rule fails; this candidate does not justify training.
+Training follows new independent evidence and a separately authorized protocol
+and budget. No future campaign is authorized by these milestone notes.
 
 [Matched generalist preparation](docs/experiments/generalist-dev-v2.md) selects one
 larger 14B non-thinking candidate and a fresh 4B replication under the existing
 packet contract. [Cost accounting v1](docs/cost-accounting-v1.md) distinguishes
-actual charges from deployment scenarios. CPU implementation evidence is separate
-from model fit/quality and paid run authorization, which remain pending.
+actual charges from deployment scenarios. The completed comparison records actual fit/native/quality gates and partial
+cost scenarios separately from CPU implementation evidence. Actual full-system
+CPS remains unknown; validation-v1 was reserved for the intervention below,
+and Verified remains reserved.
+
+## Next bounded intervention: output reliability
+
+[ADR 0007](decisions/0007-constrained-output-validation.md) and the
+[reliability validation protocol](docs/experiments/reliability-validation-v1.md)
+compare both pinned models with/without generation-time JSON/candidate constraints
+on the 20 reserved validation issues. Membership has five previously seen repositories,
+four issues each. Exact datasets/labels and contexts were reconstructed twice;
+CPU/native synthetic checks established implementation before the separately
+authorized paid campaign. The primary small-model contrast and decision rule were
+frozen; larger-model effects remain exploratory. The
+[completed report](results/reports/reliability-validation-v1-l4/README.md) records
+all 80 research and 32 technical requests. S Recall@5 gain is zero, strict 9/20
+and valid 19/20 in both modes; the primary rule fails. G gain is +0.05 with
+repository-block interval [0, 0.15], an exploratory result. Candidate ceiling is
+0.879167 in all four arms. JSON/path constraints do not enforce uniqueness, and
+duplicate paths remain strict failures. This tests reliability without changing
+the localization-v2 grader and does not justify training, economics or
+repository/time generalization. Validation-v1 is now exposed and must not validate
+later recipes tuned from these failures. Future training still excludes its
+membership/equivalents; a new validation population/contract is required.
+
+## Completed recipe: complete candidate scores
+
+[ADR 0009](decisions/0009-score-vector-ranking.md) and the
+[score-ranking contract](docs/experiments/score-ranking-validation-v2.md) reserve
+30 new issues in four previously seen repositories, excluding every prior frozen
+population and Verified IDs/normalized equivalents. Compare fresh path-constrained
+controls with one fixed-length integer score per candidate. Positive scores map
+to unique paths by descending score, path-order ties, top ten; zero excludes.
+This changes prompt, representation and mapping together, not uniqueness alone.
+The evaluator, retrieval evidence, pinned artifacts and all-attempt denominators
+stay unchanged. Primary remains the 4B within-model gain, with strict/valid
+noninferiority and positive repository-block interval; 14B remains exploratory.
+Four blocks limit statistical confidence. Preparation and synthetic CPU evidence
+authorize neither validation inference, paid resources, training nor publication.
+
+The separately authorized L4 campaign is complete; see the
+[score-ranking report](results/reports/score-ranking-validation-v2-l4/README.md).
+All 120 research and 24 technical attempts were collected and independently
+audited before local evaluation. The primary 4B score-minus-path Recall@5 gain
+is −0.330556 (repository-block 95% interval [−0.575269, −0.166667]); strict successes
+fall from 15/30 to 7/30 despite 30/30 format-valid outputs in both arms. The 14B
+exploratory gain is −0.536111, strict 17/30 → 4/30, with score validity 30/30
+versus path validity 29/30. Candidate ceiling is 0.802778 in all four arms.
+This frozen score recipe is rejected for improvement; preserve path generation
+as the stronger tested recipe. Do not repair thresholds/ties and revalidate on
+these now-exposed 30 issues. No general scoring-method, training, parameter-count
+or economic-substitution claim follows. Actual billing/full CPS remain unknown.
+The new VM and auto-delete disk are absent; existing resource identities survived.

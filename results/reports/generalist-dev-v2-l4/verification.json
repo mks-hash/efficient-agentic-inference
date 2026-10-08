@@ -1,0 +1,27 @@
+{
+  "accounting_recalculation": {
+    "actual_CPS": "UNKNOWN",
+    "arms": 2,
+    "complete_scenario_CPS": "UNKNOWN"
+  },
+  "cleanup": "VM/disk absent; previous instance identities preserved",
+  "cpu_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -q",
+    "passed": 53
+  },
+  "credential_pattern_scan": "PASS",
+  "frozen_validation_and_verified": "UNTOUCHED",
+  "git_diff_check": "PASS",
+  "local_document_links": "PASS",
+  "new_release": "NOT_RUN",
+  "original_archive_checksum_entries": 900,
+  "preregistered_protocol_body": "Unchanged after ## Question and treatments relative to clean f0a654c; only preparation-status annotation added",
+  "prior_frozen_reports": "PASS; original checksums unchanged",
+  "public_evaluation": "Per-task metrics byte-identical to original evaluation after raw_output redaction",
+  "public_native_trace_hashes_verified_against_original": 120,
+  "public_prediction_schema_and_original_field_identity": 120,
+  "public_push": "NOT_RUN",
+  "ruff_check": "PASS",
+  "ruff_format_check": "PASS",
+  "status": "PASS"
+}

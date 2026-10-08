@@ -1,0 +1,48 @@
+{
+  "config_sha256": {
+    "S-free": "77500827d88340eea34ac2ed4a5da0261a588ee27ca9e344c799e68fba52101a",
+    "S-constrained": "c2510ce9bab0d72b475dbd33338f65595512799e67cc30384f3f66c3d7eca34a",
+    "G-constrained": "043966bd2a50ffcfe07788d5a2458b5e0ed4259c29d3afa298567d5123ed1e6a",
+    "G-free": "d8f0231f3fb4ceb0b995098c8ef8857c9bcf3c3479ca32a6bcc9e01ef95982af"
+  },
+  "arm_order": [
+    "S-free",
+    "S-constrained",
+    "G-constrained",
+    "G-free"
+  ],
+  "code_identity": {
+    "archive_members": [
+      "configs/prompts/localization-v1.txt",
+      "tools/configure-cpu-run.py",
+      "tools/llama-isolated.sh",
+      "configs/reliability-validation-v1/S-free.json",
+      "configs/reliability-validation-v1/S-constrained.json",
+      "configs/reliability-validation-v1/G-free.json",
+      "configs/reliability-validation-v1/G-constrained.json",
+      "src/efficient_agentic_inference/__init__.py",
+      "src/efficient_agentic_inference/inference.py",
+      "src/efficient_agentic_inference/llama_predict.py",
+      "src/efficient_agentic_inference/records.py"
+    ],
+    "archive_sha256": "a613a029790b4eba78cd51b90d878604225c2a678f628125f30dc64fa7f7b0f4",
+    "dirty": true,
+    "kind": "immutable archive of selected uncommitted inference sources; base Git revision is not their complete identity",
+    "revision": "f0a654ca81a8a7a17151ea37e3ec3855377ac728",
+    "source_sha256": {
+      "configs/prompts/localization-v1.txt": "6ca4580acd233d20f1855a04e3afa378f6229dd2a2ce98ab2566fca1f150303d",
+      "configs/reliability-validation-v1/G-constrained.json": "776be5054691549ee79eda58bdd4c720c82e39c4992aea111dc958f3548e2fc4",
+      "configs/reliability-validation-v1/G-free.json": "3d9f4e1b65acad1b48fbc2dab5ad8c8c1855f27c11abb7b3f3b61d1c42bc95f7",
+      "configs/reliability-validation-v1/S-constrained.json": "63e9672e21f2d1cd25c20ebc5b5bac1d96ef0a4a5610b3e775f9c3f1f6c294d8",
+      "configs/reliability-validation-v1/S-free.json": "ae6d78e95826714efbf35745032b630abfe506c8b0a0fb1cb76699679daedba8",
+      "src/efficient_agentic_inference/__init__.py": "7dc1104e4aa3f14b8dcef3ea9fbc7cd5aa4715c58df19eafc0cc93b6a6a9b004",
+      "src/efficient_agentic_inference/inference.py": "0dd155abcc73cb65652642ccd7055cb2143bc1aa970c3a4e281540552816a633",
+      "src/efficient_agentic_inference/llama_predict.py": "ec582e4749cfd513ad620299587a3c55b22f73feff7a48e7f20a85ab3747842f",
+      "src/efficient_agentic_inference/records.py": "1be74fda66f23b32f992904c0fde6b4db7b71ec74d84d489e5c2f3df47d0a340",
+      "tools/configure-cpu-run.py": "890dab3ab381372c18ca9fb364fddfc22f08dbf97c1ece86fe3b37e4fe5d99dd",
+      "tools/llama-isolated.sh": "92a9df4e3c857b017e93d2aa064e5947d2b833dd93d47ca357a41b2bb63484f0"
+    }
+  },
+  "utc": "2026-10-07T19:07:26.314669+00:00",
+  "monotonic_s": 2416.447108672
+}

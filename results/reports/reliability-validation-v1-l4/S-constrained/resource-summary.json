@@ -1,0 +1,60 @@
+{
+  "active_gpu_seconds": null,
+  "actual_monetary_usd": null,
+  "backend_phases": {
+    "backend_cpu_seconds": 70.138316,
+    "backend_lifetime_wall_ms": 70254.36992899995,
+    "backend_load_warmup_ms": 1757.8431219999402,
+    "backend_peak_rss_kib": 2759576,
+    "child_exit_code": 0,
+    "command": [
+      "/backend/llama-server",
+      "--model",
+      "/model/model.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8080",
+      "--log-verbosity",
+      "4",
+      "--ctx-size",
+      "16384",
+      "--parallel",
+      "1",
+      "--threads",
+      "4",
+      "--threads-batch",
+      "4",
+      "--n-gpu-layers",
+      "999",
+      "--no-context-shift",
+      "--cache-ram",
+      "0",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--jinja"
+    ],
+    "gpu_seconds": null,
+    "monetary_usd": null
+  },
+  "dispositions": {
+    "invalid_output": 1,
+    "valid": 19
+  },
+  "failure_reasons": {
+    "ValueError: Prediction contains duplicate paths": 1
+  },
+  "native_input_tokens_observed": 166338,
+  "output_tokens_received_observed": 637,
+  "request_wall_ms_observed_sum": 68123.01694899907,
+  "request_wall_ms_p50": 3068.0059430001165,
+  "request_wall_ms_p95": 4964.695286000278,
+  "sampled_max_gpu_memory_mib": 4942.0,
+  "selected": 20,
+  "telemetry_limitation": "One-second external samples may miss peaks; active GPU-seconds and per-task GPU attribution unknown.",
+  "telemetry_sample_count": 78,
+  "telemetry_sha256": "579178799be5636a08d853ac926a8e7b401d9982b30c606e70813c1394759488",
+  "token_complete_attempts": 20
+}

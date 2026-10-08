@@ -8,13 +8,17 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from jsonschema import Draft202012Validator
+
 from efficient_agentic_inference.inference import PreparedInference
 from efficient_agentic_inference.llama_predict import (
+    candidate_output_schema,
     classify,
     consume_event,
     gpu_layers,
     gpu_seconds,
     infer,
+    output_constraint,
     require_full_offload,
     token_ids,
 )
@@ -39,6 +43,77 @@ def evidence():
 
 
 class ModelEvidenceContracts(unittest.TestCase):
+    def test_candidate_schema_uses_only_paths_and_does_not_claim_uniqueness(self):
+        paths = ['src/quo"te.py', "src/é.py", "src/a.py"]
+        schema = candidate_output_schema(paths)
+        Draft202012Validator.check_schema(schema)
+        validator = Draft202012Validator(schema)
+        for allowed in ([], [paths[0]], [paths[1], paths[2]], [paths[2]] * 10):
+            self.assertTrue(validator.is_valid(allowed))
+        for forbidden in (["hidden.py"], paths * 4, {"paths": paths}, [3]):
+            self.assertFalse(validator.is_valid(forbidden))
+        self.assertEqual(schema["items"]["enum"], sorted(paths))
+        self.assertNotIn("uniqueItems", schema)
+        empty = Draft202012Validator(candidate_output_schema([]))
+        self.assertTrue(empty.is_valid([]))
+        self.assertFalse(empty.is_valid(["src/a.py"]))
+        for invalid in (["../escape.py"], ["src/a.py", "src/a.py"]):
+            with self.assertRaises(ValueError):
+                candidate_output_schema(invalid)
+        self.assertIsNone(output_constraint(CONFIG))
+        for unsupported in (
+            {},
+            {"policy": "arbitrary"},
+            {"policy": "candidate-json-array-v1", "uniqueItems": True},
+        ):
+            with self.assertRaises(ValueError):
+                output_constraint({"output_constraint": unsupported})
+
+    def test_effective_grammar_is_required_but_duplicates_still_fail(self):
+        config = {**CONFIG, "output_constraint": {"policy": "candidate-json-array-v1"}}
+        record = evidence()
+        with self.assertRaisesRegex(ValueError, "grammar_missing"):
+            classify(record, {"src/a.py"}, config)
+        record["final_response"]["generation_settings"].update(
+            grammar='root ::= "[]"', grammar_lazy=False
+        )
+        self.assertEqual(classify(record, {"src/a.py"}, config), ["src/a.py"])
+        with self.assertRaisesRegex(ValueError, "unexpected_constraint"):
+            classify(record, {"src/a.py"}, CONFIG)
+        record["raw_output"] = '["src/a.py", "src/a.py"]'
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            classify(record, {"src/a.py"}, config)
+        record["final_response"]["generation_settings"]["grammar_lazy"] = True
+        with self.assertRaisesRegex(ValueError, "not_eager"):
+            classify(record, {"src/a.py"}, config)
+
+    def test_constraint_changes_only_completion_request_not_evidence_prompt(self):
+        calls = []
+        for constrained in (False, True):
+            config = copy.deepcopy(CONFIG)
+            if constrained:
+                config["output_constraint"] = {"policy": "candidate-json-array-v1"}
+            with tempfile.TemporaryDirectory() as temporary:
+                with (
+                    patch(
+                        "efficient_agentic_inference.llama_predict.post",
+                        side_effect=[{"prompt": "native"}, {"tokens": [101, 102]}],
+                    ) as api,
+                    patch("efficient_agentic_inference.llama_predict.stream") as generate,
+                ):
+                    infer(self.task(), config, "system", Path(temporary), time.monotonic() + 10)
+                saved = json.loads((Path(temporary) / "evidence.json").read_text())
+                calls.append((api.call_args_list, generate.call_args.args[0], saved))
+        self.assertEqual(
+            [call.args[:2] for call in calls[0][0]], [call.args[:2] for call in calls[1][0]]
+        )
+        free_payload, constrained_payload = calls[0][1], calls[1][1]
+        schema = constrained_payload.pop("json_schema")
+        self.assertEqual(free_payload, constrained_payload)
+        self.assertEqual(schema["items"]["enum"], ["src/a.py"])
+        self.assertEqual(calls[1][2]["output_schema_sha256"], digest(encoded(schema)))
+        self.assertEqual(calls[0][2]["input_token_ids"], calls[1][2]["input_token_ids"])
+
     def test_gpu_flags_do_not_invent_utilization_or_allow_cpu_fallback(self):
         self.assertEqual(gpu_layers(CONFIG), "0")
         self.assertEqual(gpu_seconds(CONFIG), 0)

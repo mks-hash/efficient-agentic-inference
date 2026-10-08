@@ -1,0 +1,9 @@
+{
+  "actual_cost_per_success": "UNKNOWN",
+  "generalization": "NOT_RUN",
+  "independent_technical_provenance": "PASS",
+  "limitation": "New issues from five seen repositories, 20 tasks. Rule failure is not equivalence. Validation is now exposed.",
+  "numerical_rule": "FAIL",
+  "primary_signal": "FAIL",
+  "training": "NOT_RUN"
+}

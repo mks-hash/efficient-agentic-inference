@@ -1,0 +1,32 @@
+{
+  "bounded_top5_oracle": {
+    "method": "Only evaluator metrics: recover count of available gold files by round(candidate_ceiling * gold_count); top5 can include at most five. Strict possible iff all gold available and gold_count <=5. Not inference evidence.",
+    "recall_at5_upper_bound": 0.7813281065912645,
+    "selected": 60,
+    "strict_successes_at5_upper_bound": 39
+  },
+  "candidate_ceiling_is_all_available_gold_not_top5_limit": true,
+  "status": "POST_HOC_DESCRIPTIVE; not an acceptance criterion",
+  "validity_pair_categories": {
+    "S_failed__G_failed": {
+      "contribution_to_all_task_gain": 0.0,
+      "sum_recall5_gain": 0.0,
+      "tasks": 5
+    },
+    "S_failed__G_valid": {
+      "contribution_to_all_task_gain": 0.004166666666666667,
+      "sum_recall5_gain": 0.25,
+      "tasks": 3
+    },
+    "S_valid__G_failed": {
+      "contribution_to_all_task_gain": -0.07777777777777777,
+      "sum_recall5_gain": -4.666666666666666,
+      "tasks": 6
+    },
+    "S_valid__G_valid": {
+      "contribution_to_all_task_gain": 0.0258048433048433,
+      "sum_recall5_gain": 1.5482905982905981,
+      "tasks": 46
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "arm_order": [
+    "S-paths",
+    "S-scores",
+    "G-scores",
+    "G-paths"
+  ],
+  "arms": {
+    "G-paths": "configs/score-ranking-validation-v2/G-paths.json",
+    "G-scores": "configs/score-ranking-validation-v2/G-scores.json",
+    "S-paths": "configs/score-ranking-validation-v2/S-paths.json",
+    "S-scores": "configs/score-ranking-validation-v2/S-scores.json"
+  },
+  "artifact_schema": "2.0.0",
+  "bootstrap": {
+    "percentile_method": "nearest-rank",
+    "resamples": 5000,
+    "seed": 20261006,
+    "unit": "repository blocks, preserving paired tasks"
+  },
+  "campaign": "score-ranking-validation-v2",
+  "context_profile": "bm25-top20-prefix1200-v1",
+  "contract": "score-ranking-validation-v2",
+  "evidence_gates": {
+    "actual_cost": "UNKNOWN",
+    "cpu_contracts": "NOT_RUN",
+    "generalist_score_native": "NOT_RUN",
+    "gpu_native_isolation": "NOT_RUN",
+    "old_path_request_compatibility": "NOT_RUN",
+    "synthetic_small_native": "NOT_RUN",
+    "validation_quality": "NOT_RUN"
+  },
+  "execution": {
+    "context_tokens": 16384,
+    "per_task_timeout_s": 120,
+    "run_budget_s": 1800,
+    "startup_timeout_s": 180,
+    "threads": 4
+  },
+  "intervention": "Entire prompt / score representation / deterministic mapping recipe; not uniqueness alone",
+  "localization_contract": "localization-v2",
+  "paid_execution": "NOT_AUTHORIZED",
+  "population": {
+    "selected": 30,
+    "sha256": "ec782a79b046dff8731f3d5570aebd647a5bd47eaf449ebd36dc884d33fe4635",
+    "split": "splits/validation-v2.json"
+  },
+  "primary": {
+    "contrast": [
+      "S-scores",
+      "S-paths"
+    ],
+    "recall_at_5_min_gain": 0.05,
+    "repo_bootstrap_ci_lower_above": 0,
+    "strict_noninferiority": true,
+    "valid_noninferiority": true
+  },
+  "schema_version": "1.0.0",
+  "score_mapping": {
+    "binding": "canonical path-sorted candidate array positions",
+    "policy": "positive-score-desc-path-asc-top10-v1",
+    "score_semantics": "ordinal relevance; not calibrated probabilities"
+  },
+  "secondary": {
+    "contrasts": [
+      [
+        "G-scores",
+        "G-paths"
+      ]
+    ],
+    "interaction": "G within-model gain minus S within-model gain",
+    "status": "exploratory"
+  },
+  "status": "PREPARED_NOT_RUN"
+}

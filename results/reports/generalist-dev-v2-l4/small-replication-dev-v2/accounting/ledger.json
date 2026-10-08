@@ -1,0 +1,53 @@
+{
+  "allocation_policy": "Standalone cold 60-task replay scenario on same L4. Shared host setup/build/freeze, idle, final collection and cleanup are replayed once per treatment; model download/verification and its own research request batch are charged once. Explicit research probes/incremental archives are excluded. Common seconds = whole confirmed-absence allocation minus both model-specific phases minus recorded research-only intervals; all remaining gaps included. Two standalone scenarios are not additive components of the shared session. External preparation/network/other costs unknown, human labor excluded; actual treatment costs unknown. Cold lifecycle is a replay scenario using observed post-probe load/request timings, not a measured clean-cache cold-start benchmark.",
+  "boundary": "localization-batch-v1",
+  "components": [
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "compute",
+      "scenario_basis": "2122.188490433 scenario seconds, allocation from accounting/session-scenario.json; declared list rates, not measured charges. Storage uses 100 GiB, published us-east4 USD 0.000150685/GiB-hour (USD 0.11/GiB-month); ephemeral IP USD 0.005/h; compute USD 0.704517824/h.",
+      "scenario_usd": 0.41531100483269495
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "storage",
+      "scenario_basis": "2122.188490433 scenario seconds, allocation from accounting/session-scenario.json; declared list rates, not measured charges. Storage uses 100 GiB, published us-east4 USD 0.000150685/GiB-hour (USD 0.11/GiB-month); ephemeral IP USD 0.005/h; compute USD 0.704517824/h.",
+      "scenario_usd": 0.008882832574469349
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_ip",
+      "scenario_basis": "2122.188490433 scenario seconds, allocation from accounting/session-scenario.json; declared list rates, not measured charges. Storage uses 100 GiB, published us-east4 USD 0.000150685/GiB-hour (USD 0.11/GiB-month); ephemeral IP USD 0.005/h; compute USD 0.704517824/h.",
+      "scenario_usd": 0.0029474840144902777
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "network",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "external_preparation",
+      "scenario_basis": null,
+      "scenario_usd": null
+    },
+    {
+      "actual_evidence": null,
+      "actual_usd": null,
+      "name": "other",
+      "scenario_basis": null,
+      "scenario_usd": null
+    }
+  ],
+  "currency": "USD",
+  "schema_version": "1.0.0",
+  "selected": 60,
+  "synthetic": false,
+  "treatment": "small-replication-dev-v2"
+}

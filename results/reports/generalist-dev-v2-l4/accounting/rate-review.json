@@ -1,0 +1,28 @@
+{
+  "region": "us-east4",
+  "machine": "g2-standard-4",
+  "price_usd_per_hour": "0.704517824",
+  "pricing_model": "on-demand",
+  "source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+  "source_html_sha256": "9d41aaab6ea42ebf58dc4becd68b59829f32ce2594f7f6e8f7e491731f27e608",
+  "source_region_table_sha256": "314b96ff5bb665263e47527f2b0583272e86a051142961c43992ab5c83a34d38",
+  "review_utc": "2026-10-06T20:35:28.703630+00:00",
+  "compute_only_3h_usd": "2.113553472",
+  "actual_usd": null,
+  "reason": "Resource exhaustion in all supported us-central1 L4 zones. Same GPU, machine, image, code, inputs and per-arm settings; no new evaluation selection.",
+  "storage": {
+    "region": "us-east4",
+    "type": "pd-balanced",
+    "usd_per_gib_hour": "0.000150685",
+    "usd_per_gib_month": "0.11",
+    "source": "https://cloud.google.com/compute/disks-image-pricing",
+    "source_html_sha256": "cc8ac1009ee760b2945dcec607dc3a848a4d4f47e58778b56ae551972fa2f992",
+    "source_region_tables_sha256": "989b5bf1f812908317528e315f3ad7177be08cfd8861ad35fa6445e5cf68d853"
+  },
+  "external_ip": {
+    "usd_per_hour": "0.005",
+    "source": "https://cloud.google.com/vpc/network-pricing",
+    "credit_policy": "List rate before free-tier/account adjustments; actual UNKNOWN",
+    "review_utc": "2026-10-06T21:01:19.732889+00:00"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "provider_observed_termination_utc": "2026-10-07T21:26:54.441362Z",
+  "derived_deadline_utc": "2026-10-07T21:27:03.636Z",
+  "difference_s": 9.194638,
+  "meaning": "Provider resourceStatus termination timestamp precedes lastStart-derived estimate by 9.195s. Archived launch input remains immutable; 15-minute cleanup reserve covers difference. Use observed value for reporting."
+}

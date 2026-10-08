@@ -1,0 +1,69 @@
+[
+  {
+    "zone": "us-east4-c",
+    "result": "CAPACITY_FAIL",
+    "resources_absent": true
+  },
+  {
+    "zone": "us-east4-a",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:20:24.497809+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-east4-b",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:20:42.723122+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-central1-a",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:20:52.478567+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-central1-b",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:21:12.698567+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-central1-c",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:21:48.488775+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-east1-b",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:25:38.803935+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-east1-c",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:26:09.824509+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-east1-d",
+    "result": "FAIL",
+    "resources_absent": true,
+    "start_utc": "2026-10-07T18:26:31.672196+00:00",
+    "exit_code": 1
+  },
+  {
+    "zone": "us-west1-a",
+    "result": "CREATED",
+    "instance_id": "2006722488811859971",
+    "start_utc": "2026-10-07T18:26:50.039093+00:00"
+  }
+]

@@ -1,0 +1,1214 @@
+{
+  "eos_no_truncation_status": "PASS",
+  "offload": [
+    [
+      "41",
+      "41"
+    ]
+  ],
+  "raw_server_log_sha256": "9c145316da07fe6036d1d9729c71b77a2343fbd48e460776fcbee674ea4fd772",
+  "raw_trace_location": "private archive only; no inference text/token arrays in public export",
+  "status": "PASS",
+  "tasks": [
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "e121dda8aba4122faa1671b6a6231fe60255827a5b185f5faba38d200349ec0d",
+      "input_tokens": 7533,
+      "instance_id": "marshmallow-code__marshmallow-1343",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "8ec01f4525cff1909dc4d34c4efa6ead4263ad7145b7517dc5a192066e5a696f",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "3fa241f280498bdd5d292efe1881b5ae4f14b05afdd17b6312fba29cc8d5f744",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "a3ba292246b150ce58fb8fa91f94624719f4364f761ae8c9129073056778ea41",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "5d7905f905b9fc903bf37f854a59ccd3d5d325e9a5600d5a79f4efb93a938ad7",
+      "input_tokens": 8137,
+      "instance_id": "pvlib__pvlib-python-1225",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "0f610ba2b45c53ad24c83039be2a5f5f57f2554e87b876eeb1a221a00a8960db",
+      "output_tokens": 82,
+      "raw_evidence_sha256": "c3be4d8423e003a546eb506ce4f32e0aa437ea279ab7a166428985067c0a6256",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "aee1359ee8ba1ff631368e41a2a5fff1e90665d04f2a1b9b078aa6029efee78f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "b65ea534ae3a489c4eeb65f201088fea65193eacfd2fc9b5fa6d28143b2cc946",
+      "input_tokens": 8162,
+      "instance_id": "pydicom__pydicom-1033",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "109f8f152fb616441757642c26c51a74c304ea3f71b471281a51e655cc8ccf8f",
+      "output_tokens": 119,
+      "raw_evidence_sha256": "a61902083132062024f845b3f78cd36c870528350960a46c8543bf36de6e9d86",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "ee32ac080f87a5e5534f2c04752ccff768fa47fe506288d571562bac89d199c5",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "6eecda030a224b73ecf85112e5fa31fa57c19fe66b34ecba7268d33de69e012d",
+      "input_tokens": 7533,
+      "instance_id": "pylint-dev__astroid-1196",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "86f764793cd2b8165d616bb0ffa052cde6a6fa342f16a5529783b6b80bba64c6",
+      "output_tokens": 101,
+      "raw_evidence_sha256": "aa2c296a3abbae728fc4a040e4964b87508c5762353afce71aba20d83e94fe2c",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "c2b35b947e1a435ee431c4963855482b438fcf32cae62ae3a7b68fa10b4df332",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "99851b942208176f376866182e91e24c49819bb14a9b2850c903c6a0c2c371af",
+      "input_tokens": 8086,
+      "instance_id": "pyvista__pyvista-3710",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "00b83bb6b2a8c835a3ad463d386883c873a06ea5ff3232787aa31626f85aac58",
+      "output_tokens": 106,
+      "raw_evidence_sha256": "61c12be2733e8d12f3435329cb9aaf47cf97c5826123604447a3dcd82a1ac58d",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "7554231ac0933bd4b08c00d76832cf3a2e75ef9c903f54ecec512ae863234b4f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "a213788f16d1882005fcc1675f837f26f784b5aa5bda7a84c50e2a1b2d5db15f",
+      "input_tokens": 7424,
+      "instance_id": "sqlfluff__sqlfluff-3411",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "8e616c75cac5886646b8be547eb4b0ea180d1137622bbebd49db4ec20cd8a9a9",
+      "output_tokens": 137,
+      "raw_evidence_sha256": "4defd6ca6763ccc47bae272fe12d628ca4feb1b1855eeeba86b62b8a07844913",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "d539ee868b2c0a7637f3d2264d6320ac990c607cbea0d432951d3bfaa599bee5",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "44ab7fa4f0ee3d6a493bb44f860aa1eebc25c202a996d5f27f2ab75f35e420bb",
+      "input_tokens": 7448,
+      "instance_id": "marshmallow-code__marshmallow-1702",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "5ea0dd6fb42d7066d78f7f12e9e7ae5f4da51253fe0ec4478967612d0fb96d08",
+      "output_tokens": 92,
+      "raw_evidence_sha256": "4e4bb0bce1ef6c53c474ec80ae093cca2c34d7ed0198ec5e460583a28c631b1c",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "531f6a479382c431b5db56efa7d4402561a67108844ae51b0d19817c6d4b4891",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "2a7a4110b1562cc8d80daafd3d818407a7c712424244ec61741971a464d6ee53",
+      "input_tokens": 7867,
+      "instance_id": "pvlib__pvlib-python-1719",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "456cf4e2a56325d0f719cdfaed12a47cf39a503d5e8df649b80099d9842a1fc6",
+      "output_tokens": 102,
+      "raw_evidence_sha256": "38e4608fd15dd080d9e13ed2878d65f6f22adb8addf78c751cf8614f579539cc",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "c372ee71b2e388d4f66c4e56b1da4576025013af7171fb6fa8c576c9ffff2e2b",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "aca81d40d1504e2bf11538386dcaf117a1af205691368f18ad768c56cf6d8126",
+      "input_tokens": 8298,
+      "instance_id": "pydicom__pydicom-1365",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "acf3ac28b962ad0c601933a187fe55e3943c5ac8ec48d623f3a09ac1d827e717",
+      "output_tokens": 104,
+      "raw_evidence_sha256": "7f9d9bde19ce60e889bcd1c645036eb121e497cf613b9ec7877bd1a531e584e7",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "0995de34e2372b176af5bbe01f608e40affc797c539fb7bcd79e65b8040bf98f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "2604a98e3a849ec63cebaf7cfead4ebf52257e58b3119a2b2ce97c94495a980f",
+      "input_tokens": 7089,
+      "instance_id": "pylint-dev__astroid-2240",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "d3ac30bf85c600ce89b068504865066c870ed100be427ba1a192365d771b7eaf",
+      "output_tokens": 112,
+      "raw_evidence_sha256": "3337544f035b2198eda173838b9ea5eaac4e9d204927ce9a4b0d61aa2492a4a6",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "56123916b835e40b414c8d46a763a6bdcf5b630522ee4576a6dc6bf65354c6a1",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "b74deeffe7638c79b0be4bf43f9ff0368919ac937d444404a3c1ce42078a261f",
+      "input_tokens": 7334,
+      "instance_id": "pyvista__pyvista-3675",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "7ea24e735678fa4dc7fe1ad7c8ee8e10c16e2e348e322d05e684cd08698e0ecd",
+      "output_tokens": 120,
+      "raw_evidence_sha256": "f43b787111737712e1c194fbe3ff7c6d99feb64586408d98e9d9f31be7d9186e",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "457a4735695bd1fcab19cd81478f65dd1e0e083ac31ffcfedbbd034dd9c4de9b",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "2e20d2699b23f2d605df272ad511e3edcd1afcdddee5de4dc6ad560900a04e17",
+      "input_tokens": 8477,
+      "instance_id": "sqlfluff__sqlfluff-2907",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "e7985f519e388572fca44ddcaac85b8ce362ac933e3e5887ae7751633e6f7401",
+      "output_tokens": 133,
+      "raw_evidence_sha256": "9ce0f2b4da141704c824736aa9259edf0043b0fb5f8e93036adb1fe925b4a91a",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "f11e4723791846b6d528d440c696887aa3089ff8a0f479baf6b3a25ce750a28f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "6b6a27a4079e0e3b48f54394b5e99dfb98fde400e1a5cb96fa4ff7a56827a05d",
+      "input_tokens": 7206,
+      "instance_id": "marshmallow-code__marshmallow-2123",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "971c31b79006915925b7bfd71979c1461bab950b23265b006647a41aa1ac7282",
+      "output_tokens": 93,
+      "raw_evidence_sha256": "69b2308341fe677265d24303daa630f1d5cad8322e47e0de03583b58f78c2423",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "560bea345580b04defbf2836a4e5c8d28fd20e1a2c7014ffe9da25b26f22a9ec",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "de2ceb92c1c2fe2ad72b756f7cdc707a93640fce10b19a3fe3a5068fe9dc740a",
+      "input_tokens": 9891,
+      "instance_id": "pvlib__pvlib-python-1606",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "f5edb3f22ede1d6abceb41e131267e69ee624330de0d7465e403bfc51a18ec2a",
+      "output_tokens": 91,
+      "raw_evidence_sha256": "84ef4afad1e48f0efa357db7d6ffb41e07d00e1d772f6b5fdb89cc7fb25e50a2",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "b4553b06c35a8867039761a8ed64d5a0f1cf0702e451542552097b664b2d6387",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "2c495e68726fb9fae5f6525ec9ed65b3b838967241b0f176114afb7dce788e5b",
+      "input_tokens": 8005,
+      "instance_id": "pydicom__pydicom-809",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "c16e688f104405e538f1ac620c8f1c65541488a38d38b3adad1c219b6449e561",
+      "output_tokens": 112,
+      "raw_evidence_sha256": "582b558d67a4d31f5900b8c39eb2c0b501f699a84312f561ebb8c20bcd229551",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "7e7315dbc50d8cbcbdced7bb4d0fd48255c33835987fdf12dbcaeccd50855db0",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "08d88d7b902651321c622f70a3e7d43901096030cadb931f66798d040f0867c4",
+      "input_tokens": 7982,
+      "instance_id": "pylint-dev__astroid-1959",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "1a0282c91c1cd882c8d80b919523251e44be6d11c2450c377c5eed26d666a436",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "9f58d7b1a6b4933c9e4f056f0dc0deaff56cf0f56d025577d3e837fb700dbb0e",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "bd684c56281ec5d43784564f53bb362ec911371ff7dde41c2ce65c6f7acaa302",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "854e23b0870f0f3733777a79d5027ee99c1927248fcf827338cd0a6030d5e766",
+      "input_tokens": 8054,
+      "instance_id": "pyvista__pyvista-3750",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "bd2d4c9a5afb537994ebea0b49bde71563bc8edcf92d187b28ef3eba9133cd6e",
+      "output_tokens": 110,
+      "raw_evidence_sha256": "4d189559da7f746c18a4536aa98d8a716eb07522bf2a01f78c7d206bab072746",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "0c3b62fe01db0843e1722824c147936b6fe2a37d07fe4818986e8bb66befa091",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "9669fe6a1a99c481e8b4bcaf95934207d6e2a26913ec20eb790b1c1e32f6a72b",
+      "input_tokens": 8246,
+      "instance_id": "sqlfluff__sqlfluff-2573",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "c156ade6d742d25ad149950a4c93a88221789cde3e8805deb0ec2b4a2d2671b1",
+      "output_tokens": 114,
+      "raw_evidence_sha256": "7d93add949779bec5be1415f61f3fbcb0ba481c973cd9c12cd49ed28787defc7",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "8f5c241c3a4cb5212eec602b724cf0f32dd1eb968fa63ab2c7ee3a359d164437",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "0c9e0bfc4c2816edde26130b79ccee79555aa2774becd7474b436894eb116a70",
+      "input_tokens": 7147,
+      "instance_id": "marshmallow-code__marshmallow-1164",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "7b44af3e5d9300bb5eeb16a021c799ba2af882085f2b37a3b9eb74869c1ca5ff",
+      "output_tokens": 98,
+      "raw_evidence_sha256": "c476ce237d938d739bb13e3938e38746c8bb9a7cf9ae170f64cc6558452f7020",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "0e8c8b28ddc4136a9afe4a7514d5ed3a45ee9118d6a510217ebd782b3247a26a",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "33a184f41208439dc5117e656f10a83e0e309d407cd5df54c7b2f23e1e63d8ef",
+      "input_tokens": 7452,
+      "instance_id": "pvlib__pvlib-python-1852",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "c47c5b2c57009e816481c3963ececd45f51b815935583e4e195ef39fec15724d",
+      "output_tokens": 86,
+      "raw_evidence_sha256": "f57ab2568e4fe5a2378c9a80c28328fda1e17cbfa09ef6c1346f9281c212a80a",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "75ded214263eb26e8dc10e115b0b2dcaf8532b7bccda5866f0ff6720fbcb195e",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "27f8833841aeb13807539ddd287ef6ce0cb58a26ddf03abdaabb7272881eda62",
+      "input_tokens": 9644,
+      "instance_id": "pydicom__pydicom-863",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "ed49df3ca7e0c0518c326ba2007b22de6fb759ae5555a1514d3eb2330ad34eb7",
+      "output_tokens": 106,
+      "raw_evidence_sha256": "ac7df607aa4ed7ce35c585b46b8f3c52ee99d8d00446975fb1f5503efc10f74d",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "a2d479935f2eea5dc36cc48c611038eeeb8b8d9677a528c80f9cab6695020a75",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "317cd9b8916c8cab6fbffb4a93ba33394d76231d242bd1af0e59335e73fc76b7",
+      "input_tokens": 7213,
+      "instance_id": "pylint-dev__astroid-2023",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "15ec6a0b064f2b0803946340470dec42912b60060aaac57762eba8a518341015",
+      "output_tokens": 92,
+      "raw_evidence_sha256": "5fd9ec26b6516a4c35d4720f571879de74e49f617a72b0b6b6652c39d902d6dc",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "70aedd7c4299f3b0691107ce5d7459dcc918464f6ba15fcba6a0c9dab8a19498",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "02af7d8829ddab6306f3706f6f7e99c018c40ca2c9f041a369cab9bf7965acb4",
+      "input_tokens": 7075,
+      "instance_id": "pyvista__pyvista-4311",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "b874765635649e6a2f38b9e5965840d0a00810421529b8a3a50f72f0a3a18bc5",
+      "output_tokens": 102,
+      "raw_evidence_sha256": "8a8db2132356fe3f48b8b002e3ee4c517983ace5f89e9e9cd0fa4f3480b381bd",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "348e5209fc22638cd332b4263666081ab15a7a873a5d1095bf818717f8b44679",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "af8ec5fd3e826e00598d174643886f1948f72be0badd8661cd37cbf57a28f4cb",
+      "input_tokens": 8761,
+      "instance_id": "sqlfluff__sqlfluff-3700",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "d257b126d9ec5dc7effcefbf10625759db56987900e5be3edc641d13592617f6",
+      "output_tokens": 130,
+      "raw_evidence_sha256": "a4f522ebf20bfe8de03e777be7bcd3bff45d9cf9a14641f9ebc4e10c60ff7759",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "d6cd9c4259b9e17c2d368b920532b22307c6ab0831034f8a34fcb63189dd0f96",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "5930d457337e1e4d983b23be2cbce1c13d42a7aac5ae4de25bf5a56ba01aefa2",
+      "input_tokens": 7269,
+      "instance_id": "marshmallow-code__marshmallow-1229",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "408ea31615dcdfa9d8b2f1b85ab1dd063452079e1fdd4b7e2ecd6805a6f7ece9",
+      "output_tokens": 89,
+      "raw_evidence_sha256": "0f3f11105a855bb68a4e44ce516705a03269234053b594b115717ecb8d17b7b4",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "aa4729e237915bd708a45e1688372e2eb0dbfc3c1142e5151f914a52743802a7",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "b8f48000928e82461e3a9225060de5a5d1084d8abee47a07d90f565a93f5b352",
+      "input_tokens": 8294,
+      "instance_id": "pvlib__pvlib-python-1089",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "0796df9a65c1996c6359bf36c267a6d8a227a2c6450d1872d740172acbf5c5c5",
+      "output_tokens": 106,
+      "raw_evidence_sha256": "3620d2d91b2b6cbea8a54d51e8f4fbe8d744b64c5eadcd9e74480be87292c950",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "f685f245c6cb1ba14cd5dfee6e172a279eb129d5a1901ab3a3f09d3c06d83545",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "d2feb27203a15095225d171294f0354cc1db858be37039845279fe61b5fadb14",
+      "input_tokens": 8086,
+      "instance_id": "pydicom__pydicom-997",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "1590756d1fda622ae1b1e8a5b810ca0e1e4f8c2b0955889147f749fc742d3877",
+      "output_tokens": 126,
+      "raw_evidence_sha256": "5be2b946e9a0e452e0cd7b619b510750c1fa91722362ef0fad94f4769880c1e5",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "5a657c30844c587a9e215a9a80d4f63a401d9c348d4a9d2f0753643f454ea90e",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "1dc8c8f9ade815e48daa876d28714105d747cad7f634e2f777cd04e036bd3bd4",
+      "input_tokens": 7432,
+      "instance_id": "pylint-dev__astroid-1903",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "c884c23a3d863a65d9510143ba838cf1172d0d264e0dba289fdd90b8b06f115a",
+      "output_tokens": 98,
+      "raw_evidence_sha256": "5c3e876171bb755a9240cbf61f131e5d14f021cca502e69e2c4aeac2ee5b298c",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "47bd519240579530db0e6ff0d731cca1bb2075d84d1f8d65ddcdcf08b7158c3f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "a021d0892faf9a97b392ef65622cd01479f9f0356f816210b5741ef289513bf4",
+      "input_tokens": 7107,
+      "instance_id": "pyvista__pyvista-4648",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "bb5ab12154972cfe7c80ac207cd08de1a00fa622a94aedc5c18f0df33ef698c5",
+      "output_tokens": 132,
+      "raw_evidence_sha256": "c8cabbbc11d3f05fe26dc47dfcd68704a08dd53be26cabb6f14140cf438d0405",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "13135f7bcf95e7d5520552a38a8aae84d2ca343f2b37ad659561e5ced1e6a585",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "37e6dbce581bb996059fca1ac1ca4695a779040f9ec767148e4ff326e1d7bf23",
+      "input_tokens": 7420,
+      "instance_id": "sqlfluff__sqlfluff-4084",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "54648d4c908138faecd5116ff86cfd2ac0e2d70b8965db986873026069ac9078",
+      "output_tokens": 129,
+      "raw_evidence_sha256": "3ebe135980b362fb51b14a87bcf0f68792483c8396edb21805ce80ab94389408",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "d810677d26144ad78a570e76cb5c4d20cc8acf8b6879bf3448457d2b5bc3ebc0",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "48ce93fcfdf44dffd2871bf39274f9f8607cad4dfe043e8985039300d2720cb5",
+      "input_tokens": 7565,
+      "instance_id": "marshmallow-code__marshmallow-1359",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "ac7ef41e43c5766ee95f48b138f275a1f151812ec5dcb5dce58029beffc445d1",
+      "output_tokens": 94,
+      "raw_evidence_sha256": "5919ed6cc5f29fd3a10d6a0690d994cf24c2df0d1be1ba44592731c7892cb96b",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "c6e473590a25d17cd07e14720de7e360c05ff0c3882da83e49173ad67baaebbd",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "83a6a0cac33a0013e24179341b7b39c4eb1c06ef390cd1c617fee801c90cbd20",
+      "input_tokens": 8349,
+      "instance_id": "pvlib__pvlib-python-1395",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "6e5aea1e3605367aa133b4a50f172c4ee40f8fdb397f63f59d7342605d6b82f4",
+      "output_tokens": 126,
+      "raw_evidence_sha256": "d164699d85127c8983775bf2906ee817eae977ccabb2724efc71d459a8793932",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "3aef8a19c61eebf95ee4669168bcc323322f2fcf46643390545f7c9a8a9678e3",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "28fef2063fbf8687144cd48298d10fe839c048c1b28f3951e53da80cbef97ae8",
+      "input_tokens": 8368,
+      "instance_id": "pydicom__pydicom-1139",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "43caa07bb39d54fa063ae44967f722b4989ae545fc979ce5f428f47f1399e4cd",
+      "output_tokens": 90,
+      "raw_evidence_sha256": "1b353be17cb73b7e8e0aa857bbb44a4812bb05deb6a4a7b4ea2dc226da90abe1",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "95700c38b6c685f52cd47b3a07f66073059216d6c36489fc45850aaa60b8522a",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "e0b50aeb3e91429f1f8093d927a020fbf1902ac3d43497d36b5af4986900d12e",
+      "input_tokens": 10235,
+      "instance_id": "pylint-dev__astroid-1262",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "6cea802a8d86445db8f0d3ba73bec59b961f9189726a03c90f6c5b36d3ba0084",
+      "output_tokens": 104,
+      "raw_evidence_sha256": "777c7d930e8fd63d3c1f8e8421a121cea9e5b68343f9979e336076d0b0c399d3",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "b9b295016a922e53621d4a16adc4d308b4ddf2567a4116f5e2c80ec708cce1fb",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "4967c49f81398f90046c8896773ab297f418817dacd92e6679716fc6997712e9",
+      "input_tokens": 6642,
+      "instance_id": "pyvista__pyvista-432",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "915ef32865335ced6e9dcdac384bbdce8c5fd216899c8ada0634642078fc9809",
+      "output_tokens": 101,
+      "raw_evidence_sha256": "16bb53f7dd47f035aaa638a253a3f2fd7cb8a2dbc2c0d035bc43551672621823",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "a9b6bccff5dc5a01a6abf7b88cc3059bab20a0d0e7126dcb36e7d2ae117f1bbc",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "5503e320b926540413a7ed5cfe575dcc332cccf1d28b05e02c722c05e3851ae3",
+      "input_tokens": 7265,
+      "instance_id": "sqlfluff__sqlfluff-880",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "1aa1a691be4010dee8ef296edde52a07b72d02a9a4a5bddc529822eb1ec4b389",
+      "output_tokens": 141,
+      "raw_evidence_sha256": "1884ad3faa3ebb3731bbb30167812113aa0bcce7717482da4fc039c164a878a7",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "6fba3c20acb970c658e7c73a5401ca580deef22a3df39e2c163d6270b6243ed1",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "15e33f9662afec4cd7ba54c41982f1042c96e5fbd85b4e487db0381adcfc0cf5",
+      "input_tokens": 7181,
+      "instance_id": "marshmallow-code__marshmallow-1524",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "c7aa2a02f966c415d76501d5179d32aaefd8595d9f6bc0d475d221d311975dea",
+      "output_tokens": 100,
+      "raw_evidence_sha256": "72e44b3ac978437a334ccb4f6e84e30147ac43f1261ad204f516e2249edd8bf2",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "1132708f342dcda748f50be7e417ccdd83ebf59793826e119cd1502989cf9e6f",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "a688e03e266a02140d3fd4b8c2a2986cfea22bb772ccc500790f2163aa95dda3",
+      "input_tokens": 7486,
+      "instance_id": "pvlib__pvlib-python-763",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "38fbde0fd67f4999b8ab7cc5bd5f0e6fd2017b516925bf2f2b433e198f9f36e0",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "9dff348712d53ce9db8f22762897337afcf0b43e56a55e16332e4534e7e26f1b",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "2e87d570a39a2ee976559622c09e9d68794691a8ed53f1a63a9585d8f55520a1",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "eee1f3ddc39d48cf8aaa0a06818a71ccf29b50f118e1fc93413038845dd0a360",
+      "input_tokens": 8216,
+      "instance_id": "pydicom__pydicom-1334",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "5a4c03e2d6c890ef31e297233f8d8eb9f95f23c37153bc84f458c85d7b71a404",
+      "output_tokens": 105,
+      "raw_evidence_sha256": "8079d047b7eb7ab54feca03683989f0640d5e4eeb30d78294aa3d0bb620048b2",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "4e78b43d529561ae6c82e712ca9457a40ba6bd1dbd67847b90d64a7a7d336330",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "84918c60238d6fb4ffb871efaad63c1010398cf382fa1c011cf17c5cced12c7a",
+      "input_tokens": 10548,
+      "instance_id": "pylint-dev__astroid-1417",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "5f5d63511e011a753c6650def9ae134f51e884da9663b87fcb901b94b06b70cf",
+      "output_tokens": 83,
+      "raw_evidence_sha256": "f31f4eed735dce2180d7d06bfa4e1b2c50dc04abe168c6c06ec50017d5920f78",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "150f22686ecd312eb99e7fb81b8755fd45c64b55bf1d2af3c735f45bb1641eed",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "42b983185bbfcb1ccc09aabd76368533acaf201d780f549850f463f8567745dd",
+      "input_tokens": 8031,
+      "instance_id": "pyvista__pyvista-4853",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "91c08d8091068698aa739b52626cfb039bcd8359f3472da104a6b5c24f43c446",
+      "output_tokens": 108,
+      "raw_evidence_sha256": "ed4034c07d790c87b725996b2849c73c1947f98f6aab9db55d5973548c812508",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "f78f79ecd23600e27d3967220af18f45e4967dab1980596e828dd9d54b5f2424",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "0b6d3228a140c731e5c73777045f1315f07fdfbcf4266d44bede443b94caf8fb",
+      "input_tokens": 7679,
+      "instance_id": "sqlfluff__sqlfluff-1733",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "de415f239873927c77d1b68e1e164ffe14aab70cca31c28d6cc83c8ad48ecb61",
+      "output_tokens": 127,
+      "raw_evidence_sha256": "56f5b62463bc1fc0dbf6f3ed3bfeeb3fc5187f50deab51aa168ae4311bb5a8b5",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "e09a12cb70be1f92b751fe789a5f14227678270dd5b85e18e240cf59b6c0cb52",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "bbac0ccc5b35dee0a1954408684db20b4665e50a1fcf288ee9b2a313756cfc47",
+      "input_tokens": 7537,
+      "instance_id": "pvlib__pvlib-python-1213",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "ff0676dc074920f2f3e8219f95b3ac387c5cf35dd4ede1af0364dc11f2dc5217",
+      "output_tokens": 92,
+      "raw_evidence_sha256": "68fe84463cb4c8019c31ad5f20df4fe2cc8990b8413b0b027760c9ee4fb0ff5f",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "fc138f229643d241b904b93f02a07ac7c36ea70ac951211d4d04a23e94633978",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "d63023c33d1a90ba3f1428a39fdd98e9e97a8d3c52b2c531a19c1267c980d851",
+      "input_tokens": 8139,
+      "instance_id": "pydicom__pydicom-1416",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "805a337f76e1b13232c4aab5cd3bb394a5ed7b66076d5f2dd7fc070430cd6da7",
+      "output_tokens": 118,
+      "raw_evidence_sha256": "83406e47288fdef534de7aabb74adca9e45df9ca87a3ce5e796b21e82e353920",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "ba0ab2665530186745c6a0b6cdd04d8fff524c54c1ad25fd9a412b0d33751f6a",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "f0ce00ae923157c77ce2dd39360ea81de1b4d132dad41ed1665f3b5d6e9dcd25",
+      "input_tokens": 6874,
+      "instance_id": "pylint-dev__astroid-2219",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "e4460eb14650c75bdfdb4d39ade3fe948ab1bdccd23667c4131fba5ac869ad6f",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "3301ca4c44051c58cc85b1231554e34c983b2820c913a402a6983abd9eea7fda",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "b727793bdc2ea687ab2117bdaca71b9a8ca45be531c6cc700829bbcc492dabe9",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "e0a13fc23cfaadf67ff19b8bf3c42b286e2af91ee5afb3e63466f71fafe0544b",
+      "input_tokens": 7477,
+      "instance_id": "pyvista__pyvista-4225",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "56e64bdd8be9e18b0597895118d18dc5e0e95e52a95cef02e90a39d0df61d547",
+      "output_tokens": 110,
+      "raw_evidence_sha256": "36fd9c90b52760991143e1ff4d7c805e92b5ef94535515fe8ec9d703eccde411",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "6b112f7e525e02b9cc9752eab1e791e3f31d7736ba21aeae8d2862eb02026f91",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "c5d749a941259078dc7883dc05acbbf218a4923ed213e15aee98021369904efe",
+      "input_tokens": 7335,
+      "instance_id": "sqlfluff__sqlfluff-3109",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "22ea8d299f1f3ef3355a75ebbd98d12d31dbdb4fef87a85043acb6d35113e377",
+      "output_tokens": 120,
+      "raw_evidence_sha256": "ef80dcb8963b9dedeb0060a401f5e93d7dfde98e015233ac43c8db780bbd5a65",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "2bb66e3d430aab6ad02c92d57257a12d63f94a5f77fdfab733f5cebba8d10547",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "7649722447905b82137be0859e878a1bd9594f0b47e74972e8080ceac8a545e4",
+      "input_tokens": 7406,
+      "instance_id": "pvlib__pvlib-python-1031",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "9b5a8d2be4f37a97f5b8e5fb4a94cb899b8ea69c30a34850eac10f139c1fc3cd",
+      "output_tokens": 98,
+      "raw_evidence_sha256": "fb477adcacd0c939bb93379ba0a1808baa1615f1f31f1b48d7f8bd11f5e4d79a",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "41b66a5e2c376b522cb6a0c0851917917dd9c16dbb0aa6e5ba824909ac5d52dc",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "5eddfa9f63ccd83101b737641e543754cfe07c9707076e5bab0abb0bcda00df9",
+      "input_tokens": 8558,
+      "instance_id": "pydicom__pydicom-793",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "2920c14f4515ed1583385a7f6ae22bf63ee7228114ecabfc3fd1cad45d6f5a58",
+      "output_tokens": 105,
+      "raw_evidence_sha256": "cf4c8c822bc52b07975bdce8ff0193e197e72640bcbf7ec2814c25ce53f899a7",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "240a13c47fc24ac7d6a16907147a86958b9a49edd7bef4f2eb16cb52af47b33c",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "ff62712babf3a412d1fb5c4b55e1f9229d871830cae10ac4c709d876dd05aee1",
+      "input_tokens": 11051,
+      "instance_id": "pylint-dev__astroid-1164",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "ac9286cecfb665f657c3bafb8f67f9657812ffd8e4d71647f688485f4e49d7dd",
+      "output_tokens": 80,
+      "raw_evidence_sha256": "2f43cbcaa26ceb36271fafb50bd49a3fc3766f22b650ccb039ef74153ef8cd32",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "7aa0346c7f42055efc1bcd966e786227ac1c8817c5e2d770099de8f7c522ee68",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "59a9610b3bd49e9f7be9aa8db6f3c28c145b1c9e29d3cdd22a78f34e1035d0a6",
+      "input_tokens": 7777,
+      "instance_id": "pyvista__pyvista-4406",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "92ec5cee11bb4ce9335680bc659f198bfaf193de0c66fef09d1aec5a17ce20ee",
+      "output_tokens": 101,
+      "raw_evidence_sha256": "559f606dcd443655ad43ef83630ee04d77b75dea95f53ba1dd0dd4078d06483e",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "29396ffe2d16e7e9508eb6778ac912a38ab8c9268ed939f52d154819ed8a9363",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "a137e32bf6574e2b2aade935bcc1e1c0b6589d66823b7ce7150c190469e88e0c",
+      "input_tokens": 7523,
+      "instance_id": "sqlfluff__sqlfluff-3220",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "841e9aad306fe896b68330f82ec6ca7d9258be408f4597fc782dae15c1e9a2e0",
+      "output_tokens": 128,
+      "raw_evidence_sha256": "7aaeece24b9d00ca5dba858ba39bd294090b4adf67e966de7d8005f9bda86592",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "fb8c0e419ec78448b071d7d57665a63ebda77e765df070b46942d9e96281e91b",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "05c14f4da282dcb7b449f982bb509acae1010120646f0dfc43ac24500463dc99",
+      "input_tokens": 7992,
+      "instance_id": "pvlib__pvlib-python-1739",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "544b74da0ab36155bc2602c19611b775603bbafdf6bc7e828e44a265ac99ec12",
+      "output_tokens": 93,
+      "raw_evidence_sha256": "8f995110b0bb2051f9299a574c3ca44bb2a0b6cc39d2ea3c591a8edef6a91051",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "fce967a6378e59ff2b3de29b4251502442bf67833475e2b640bb884c5f2f8a7e",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "752cab6f3aee22b318c66ac150f0f5bf03407df2675e050b907d6b7d0b1da40d",
+      "input_tokens": 8039,
+      "instance_id": "pydicom__pydicom-800",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "324c3ad492bc192a41927e41dd3d02f75e3b599ddb5596c1262eb8d1f2c2d11d",
+      "output_tokens": 100,
+      "raw_evidence_sha256": "a9b2202ccb9ee48e010d3c1d710a9813e78f0300ff1b44f585e90f2915798e2b",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "5ff36d6597585a8130f8bdf2e2f6111eb086b8cb1540624aa975a85e466b9e04",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "08d88d7b902651321c622f70a3e7d43901096030cadb931f66798d040f0867c4",
+      "input_tokens": 7982,
+      "instance_id": "pylint-dev__astroid-1962",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "1a0282c91c1cd882c8d80b919523251e44be6d11c2450c377c5eed26d666a436",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "22d415f6729139bc78d763a56a72fd086c5c25aa7a1dc57eceea968e1a6ec639",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "bd684c56281ec5d43784564f53bb362ec911371ff7dde41c2ce65c6f7acaa302",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "9879e42565807de832cd9a0fb23450d43c3d329bd332b3f216995866e2ae91ad",
+      "input_tokens": 8335,
+      "instance_id": "pyvista__pyvista-4414",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "7e561c81a3c97665c75ea446816a19b986ca2acdf08de91e2660d50bcb49ea66",
+      "output_tokens": 109,
+      "raw_evidence_sha256": "109bd7e83672547ba43c9bd284acc7affea429e4ba55bcbf69fa7bdd0173ab15",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "121f7df3998f01c1a15823739089a6e4c58a882e1af182438f52b89f66768f14",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "71632e99ca514a774d7822952527746fc004a276c2560a448a7007f13c7fad2f",
+      "input_tokens": 7799,
+      "instance_id": "sqlfluff__sqlfluff-5074",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "da30fd2ef67d5a4e57d4e168373518201b9fce0a5e07d9da9989ce7d47e70d9c",
+      "output_tokens": 125,
+      "raw_evidence_sha256": "4154e74f281500c80adcfd2679f46f8a22fb1422db57b860bb521becd4490831",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "f015ca9111bba759a05f4dd8634fa8e9c016aa1c9ab19ddf350afeeab86b329c",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "811995aef6dd12cd1099e1b37867b19a6f633bff939afbbabf11acf22195da87",
+      "input_tokens": 8226,
+      "instance_id": "pvlib__pvlib-python-1048",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "8cfe7a9cff26022d5f1d8bec9117a718744725e73b8825985d93571a9319a1d6",
+      "output_tokens": 99,
+      "raw_evidence_sha256": "5643d6f92585350da8dbfd89352f4c3543ec91c4027c216f7c6ead984d0379ed",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "3a0f8da8d178faa86616394298ce953048678b71bb1851ca47db22fe20a69a48",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "1364d2631fb7c282991e0acfbf2e1699b5b4079cd4b4aa3da481ee87c4693890",
+      "input_tokens": 9056,
+      "instance_id": "pydicom__pydicom-1192",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "36ce1abbb741475100f1f9bdcf46f55ebd3a648b68b0e0fc6f6c320bdae76ce1",
+      "output_tokens": 99,
+      "raw_evidence_sha256": "b95c813983b573ed8f4f5f387f5223e57638d520feac71c038982f748f1cd247",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "f808c3a7a3480fb22fb9c4c4890e4ea45072b34d5ca291e3b93a21ecb3864a68",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    },
+    {
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "98bdf4ccfdbe4190305482e4e6900fd1d84c7f163f15085d9119601e0344aaff",
+      "input_tokens": 7230,
+      "instance_id": "pylint-dev__astroid-1616",
+      "nonthinking_suffix_verified": true,
+      "output_ids_sha256": "7dcf5a4f0c5682bb7e8518888adacfbab2a21d0a0a8d7d60230bebf50abfc3ca",
+      "output_tokens": 97,
+      "raw_evidence_sha256": "945058d7d292990ce9972e7a4877f44c4b0078a7ac3a55e99cae4e86dd75443c",
+      "received_input_count_matches": true,
+      "received_output_count_matches": true,
+      "rendered_prompt_sha256": "dc5ef8ea3cc388918642bd7d87dc91b93322ad83783631d4179fd89f5dc3a3e7",
+      "stop_type": "eos",
+      "template_request_kwargs": {
+        "enable_thinking": false
+      },
+      "truncated": false
+    }
+  ]
+}

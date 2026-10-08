@@ -1,0 +1,33 @@
+{"allocation": "shared", "event": "start", "monotonic_s": 71.010128163, "phase": "transport-integrity-and-host", "utc": "2026-10-06T20:37:45.859471+00:00"}
+{"allocation": "shared", "elapsed_s": 0.040813468999999714, "error": null, "event": "end", "monotonic_s": 71.050941632, "phase": "transport-integrity-and-host", "status": "PASS", "utc": "2026-10-06T20:37:45.900285+00:00"}
+{"allocation": "shared", "event": "start", "monotonic_s": 71.052781207, "phase": "backend-build", "utc": "2026-10-06T20:37:45.902129+00:00"}
+{"allocation": "shared", "elapsed_s": 1680.565884307, "error": null, "event": "end", "monotonic_s": 1751.618665514, "phase": "backend-build", "status": "PASS", "utc": "2026-10-06T21:05:46.468006+00:00"}
+{"allocation": "S", "event": "start", "monotonic_s": 1753.938450666, "phase": "S-weights-download-and-verification", "utc": "2026-10-06T21:05:48.787796+00:00"}
+{"arm": "S", "bytes": 2497281120, "event": "weights", "monotonic_s": 1777.890983656, "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597", "utc": "2026-10-06T21:06:12.740315+00:00"}
+{"allocation": "S", "elapsed_s": 23.954645080999853, "error": null, "event": "end", "monotonic_s": 1777.893095747, "phase": "S-weights-download-and-verification", "status": "PASS", "utc": "2026-10-06T21:06:12.742443+00:00"}
+{"allocation": "G", "event": "start", "monotonic_s": 1777.894621666, "phase": "G-weights-download-and-verification", "utc": "2026-10-06T21:06:12.743973+00:00"}
+{"arm": "G", "bytes": 9001753984, "event": "weights", "monotonic_s": 1899.255108212, "sha256": "5eaa0870bd81ed3b58a630a271234cfa604e43ffb3a19cd68e54a80dd9d52a66", "utc": "2026-10-06T21:08:14.104436+00:00"}
+{"allocation": "G", "elapsed_s": 121.36259755300011, "error": null, "event": "end", "monotonic_s": 1899.257219219, "phase": "G-weights-download-and-verification", "status": "PASS", "utc": "2026-10-06T21:08:14.106565+00:00"}
+{"allocation": "research-only-S", "event": "start", "monotonic_s": 1899.258705883, "phase": "s-synthetic", "utc": "2026-10-06T21:08:14.108053+00:00"}
+{"event": "gate", "monotonic_s": 1909.479032605, "name": "s-synthetic", "offload": [["37", "37"]], "selected": 1, "status": "PASS", "template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18", "utc": "2026-10-06T21:08:24.328356+00:00", "valid": 1}
+{"allocation": "research-only-S", "elapsed_s": 10.225762796000026, "error": null, "event": "end", "monotonic_s": 1909.484468679, "phase": "s-synthetic", "status": "PASS", "utc": "2026-10-06T21:08:24.333815+00:00"}
+{"allocation": "research-only-S", "event": "start", "monotonic_s": 1909.485873174, "phase": "s-old-dev-v1-resource", "utc": "2026-10-06T21:08:24.335221+00:00"}
+{"event": "gate", "monotonic_s": 1928.514746056, "name": "s-old-dev-v1-resource", "offload": [["37", "37"]], "selected": 3, "status": "PASS", "template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18", "utc": "2026-10-06T21:08:43.364091+00:00", "valid": 3}
+{"allocation": "research-only-S", "elapsed_s": 19.03200126999991, "error": null, "event": "end", "monotonic_s": 1928.517874444, "phase": "s-old-dev-v1-resource", "status": "PASS", "utc": "2026-10-06T21:08:43.367220+00:00"}
+{"allocation": "research-only-G", "event": "start", "monotonic_s": 1928.519267033, "phase": "g-synthetic", "utc": "2026-10-06T21:08:43.368617+00:00"}
+{"event": "gate", "monotonic_s": 1958.448719403, "name": "g-synthetic", "offload": [["41", "41"]], "selected": 1, "status": "PASS", "template_sha256": "5da44855ab7e0641774d5ed0ff0b4f89671d01df7d316e54d06557a962211cb4", "utc": "2026-10-06T21:09:13.298065+00:00", "valid": 1}
+{"allocation": "research-only-G", "elapsed_s": 29.93249605799997, "error": null, "event": "end", "monotonic_s": 1958.451763091, "phase": "g-synthetic", "status": "PASS", "utc": "2026-10-06T21:09:13.301111+00:00"}
+{"allocation": "research-only-G", "event": "start", "monotonic_s": 1958.453573486, "phase": "g-old-dev-v1-resource", "utc": "2026-10-06T21:09:13.302922+00:00"}
+{"event": "gate", "monotonic_s": 2022.125981832, "name": "g-old-dev-v1-resource", "offload": [["41", "41"]], "selected": 3, "status": "PASS", "template_sha256": "5da44855ab7e0641774d5ed0ff0b4f89671d01df7d316e54d06557a962211cb4", "utc": "2026-10-06T21:10:16.975326+00:00", "valid": 3}
+{"allocation": "research-only-G", "elapsed_s": 63.675002235999955, "error": null, "event": "end", "monotonic_s": 2022.128575722, "phase": "g-old-dev-v1-resource", "status": "PASS", "utc": "2026-10-06T21:10:16.977923+00:00"}
+{"allocation": "shared", "event": "start", "monotonic_s": 2022.130162521, "phase": "freeze-both-research-configurations", "utc": "2026-10-06T21:10:16.979512+00:00"}
+{"allocation": "shared", "elapsed_s": 0.5993838869999308, "error": null, "event": "end", "monotonic_s": 2022.729546408, "phase": "freeze-both-research-configurations", "status": "PASS", "utc": "2026-10-06T21:10:17.578899+00:00"}
+{"allocation": "S", "event": "start", "monotonic_s": 2022.731546795, "phase": "small-replication-dev-v2", "utc": "2026-10-06T21:10:17.580896+00:00"}
+{"allocation": "S", "elapsed_s": 206.6667870409999, "error": null, "event": "end", "monotonic_s": 2229.398333836, "phase": "small-replication-dev-v2", "status": "PASS", "utc": "2026-10-06T21:13:44.247676+00:00"}
+{"allocation": "research-only-S", "event": "start", "monotonic_s": 2229.400852664, "phase": "S-incremental-archive", "utc": "2026-10-06T21:13:44.250201+00:00"}
+{"allocation": "research-only-S", "elapsed_s": 0.6328102769998623, "error": null, "event": "end", "monotonic_s": 2230.033662941, "phase": "S-incremental-archive", "status": "PASS", "utc": "2026-10-06T21:13:44.883001+00:00"}
+{"allocation": "G", "event": "start", "monotonic_s": 2230.035993994, "phase": "generalist-dev-v2", "utc": "2026-10-06T21:13:44.885341+00:00"}
+{"allocation": "G", "elapsed_s": 724.8782290550002, "error": null, "event": "end", "monotonic_s": 2954.914223049, "phase": "generalist-dev-v2", "status": "PASS", "utc": "2026-10-06T21:25:49.763564+00:00"}
+{"allocation": "research-only-G", "event": "start", "monotonic_s": 2954.917429946, "phase": "G-incremental-archive", "utc": "2026-10-06T21:25:49.766775+00:00"}
+{"allocation": "research-only-G", "elapsed_s": 1.2265973220000888, "error": null, "event": "end", "monotonic_s": 2956.144027268, "phase": "G-incremental-archive", "status": "PASS", "utc": "2026-10-06T21:25:50.993343+00:00"}
+{"event": "campaign-finished", "monotonic_s": 2956.147964667, "status": "PASS", "utc": "2026-10-06T21:25:50.997311+00:00"}

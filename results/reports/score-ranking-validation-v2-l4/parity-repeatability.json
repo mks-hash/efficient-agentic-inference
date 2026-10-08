@@ -1,0 +1,52 @@
+{
+  "G": {
+    "pairs_verified": 30,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  },
+  "G-old-task": {
+    "pairs_verified": 1,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  },
+  "G-paths-synthetic-repeat": {
+    "pairs_verified": 1,
+    "scope": "same-backend greedy repeat, not fresh quality",
+    "status": "PASS"
+  },
+  "G-scores-synthetic-repeat": {
+    "pairs_verified": 1,
+    "scope": "same-backend greedy repeat, not fresh quality",
+    "status": "PASS"
+  },
+  "G-synthetic": {
+    "pairs_verified": 5,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  },
+  "S": {
+    "pairs_verified": 30,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  },
+  "S-old-task": {
+    "pairs_verified": 1,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  },
+  "S-paths-synthetic-repeat": {
+    "pairs_verified": 1,
+    "scope": "same-backend greedy repeat, not fresh quality",
+    "status": "PASS"
+  },
+  "S-scores-synthetic-repeat": {
+    "pairs_verified": 1,
+    "scope": "same-backend greedy repeat, not fresh quality",
+    "status": "PASS"
+  },
+  "S-synthetic": {
+    "pairs_verified": 5,
+    "scope": "identical user evidence; intentionally different system recipes",
+    "status": "PASS"
+  }
+}

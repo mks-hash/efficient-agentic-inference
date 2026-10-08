@@ -1,0 +1,24 @@
+{
+  "actual_reason": "No invoice/export evidence joined; no attribution to independent treatments",
+  "actual_total_usd": null,
+  "allocated_wall_s": 3093.153987,
+  "boundary": "provider lastStartTimestamp to local confirmed VM/disk absence; conservative wall boundary, not billed stop time",
+  "compute_only_usd": 0.6053283656161568,
+  "excluded_or_unknown": [
+    "network",
+    "external_preparation",
+    "other taxes/fees"
+  ],
+  "external_ip_scenario_usd": 0.004296047204166667,
+  "human_research_labor": "EXCLUDED",
+  "model_download_verify_and_run_s": {
+    "G": 846.2408266080004,
+    "S": 230.62143212199976
+  },
+  "price_source": "https://cloud.google.com/products/compute/pricing/accelerator-optimized",
+  "price_usd_per_hour": 0.704517824,
+  "research_only_excluded_from_standalone_s": 124.72466995899981,
+  "standalone_common_s": 1891.5670583110002,
+  "storage_scenario_usd": 0.012946997459197083,
+  "training": "NOT_APPLICABLE"
+}

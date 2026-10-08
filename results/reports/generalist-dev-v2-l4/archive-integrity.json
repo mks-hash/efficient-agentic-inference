@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_sha256": "05ee9d882296c294a156a5c780458aaf3afc23f7a40a2e03983155fd7139816e",
+  "bytes": 7643248,
+  "verified_checksum_entries": 900,
+  "transfer_start": "2026-10-06T21:26:42.470407+00:00",
+  "transfer_end": "2026-10-06T21:26:50.382901+00:00"
+}

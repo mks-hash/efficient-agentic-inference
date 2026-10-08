@@ -1,0 +1,66 @@
+{
+  "billing": "UNKNOWN",
+  "mode_prompt_and_input_id_parity": {
+    "G": {
+      "pairs_verified": 30,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    },
+    "G-old-task": {
+      "pairs_verified": 1,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    },
+    "G-paths-synthetic-repeat": {
+      "pairs_verified": 1,
+      "scope": "same-backend greedy repeat, not fresh quality",
+      "status": "PASS"
+    },
+    "G-scores-synthetic-repeat": {
+      "pairs_verified": 1,
+      "scope": "same-backend greedy repeat, not fresh quality",
+      "status": "PASS"
+    },
+    "G-synthetic": {
+      "pairs_verified": 5,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    },
+    "S": {
+      "pairs_verified": 30,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    },
+    "S-old-task": {
+      "pairs_verified": 1,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    },
+    "S-paths-synthetic-repeat": {
+      "pairs_verified": 1,
+      "scope": "same-backend greedy repeat, not fresh quality",
+      "status": "PASS"
+    },
+    "S-scores-synthetic-repeat": {
+      "pairs_verified": 1,
+      "scope": "same-backend greedy repeat, not fresh quality",
+      "status": "PASS"
+    },
+    "S-synthetic": {
+      "pairs_verified": 5,
+      "scope": "identical user evidence; intentionally different system recipes",
+      "status": "PASS"
+    }
+  },
+  "native_requests": 144,
+  "research_arms": {
+    "G-paths": "PASS",
+    "G-scores": "PASS",
+    "S-paths": "PASS",
+    "S-scores": "PASS"
+  },
+  "research_selected": 120,
+  "selected_slots": 144,
+  "source_transport_preregistration": "PASS",
+  "technical_requests": 24
+}

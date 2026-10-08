@@ -1,0 +1,230 @@
+{
+  "campaign_config_sha256": "c533c5294d43a407fefcbba03c701c98483032d338566dc978b5b52461c4ca3a",
+  "contract": "score-ranking-validation-v2",
+  "contrasts": {
+    "G": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "contrast": [
+        "G-scores",
+        "G-paths"
+      ],
+      "paired_repo_bootstrap_95_ci": [
+        -0.6380208333333334,
+        -0.42857142857142855
+      ],
+      "recall_at_5_gain": -0.5361111111111111,
+      "repository_blocks": 4,
+      "role": "secondary_exploratory",
+      "selected": 30,
+      "strict_control": 17,
+      "strict_model": 4,
+      "valid_paths": 29,
+      "valid_scores": 30,
+      "validity_discordance": {
+        "paths_invalid_scores_valid": 1,
+        "paths_valid_scores_invalid": 0
+      }
+    },
+    "S": {
+      "bootstrap": {
+        "percentile_method": "nearest-rank",
+        "resamples": 5000,
+        "seed": 20261006,
+        "unit": "repository blocks, preserving paired tasks"
+      },
+      "contrast": [
+        "S-scores",
+        "S-paths"
+      ],
+      "numerical_signal_rule_pass": false,
+      "paired_repo_bootstrap_95_ci": [
+        -0.575268817204301,
+        -0.16666666666666669
+      ],
+      "recall_at_5_gain": -0.33055555555555555,
+      "repository_blocks": 4,
+      "role": "primary",
+      "selected": 30,
+      "strict_control": 15,
+      "strict_model": 7,
+      "valid_paths": 30,
+      "valid_scores": 30,
+      "validity_discordance": {
+        "paths_invalid_scores_valid": 0,
+        "paths_valid_scores_invalid": 0
+      }
+    }
+  },
+  "identities": {
+    "G-paths": {
+      "gold_sha256": "8b09e564700700d918d9aa3656ca06fdfa58da65ef79911f3b428275f236a6c8",
+      "predictions_sha256": "9667b965d3dfa3b840d4b5a2ce135dd29a959aa812a8257ad2a65f37bc3c8a37"
+    },
+    "G-scores": {
+      "gold_sha256": "8b09e564700700d918d9aa3656ca06fdfa58da65ef79911f3b428275f236a6c8",
+      "predictions_sha256": "91972309ec3d872ce8b9c0293f3b9d452a8a6cc8ee790d75670e8c2b64bc9e22"
+    },
+    "S-paths": {
+      "gold_sha256": "8b09e564700700d918d9aa3656ca06fdfa58da65ef79911f3b428275f236a6c8",
+      "predictions_sha256": "a9b31fadef4273bd64e631cf653e8e36f7b639d3dd1768d4f27329d19443eeb4"
+    },
+    "S-scores": {
+      "gold_sha256": "8b09e564700700d918d9aa3656ca06fdfa58da65ef79911f3b428275f236a6c8",
+      "predictions_sha256": "45f5f45bb465c683a1aeb6fc9866db1b32359fdd3b60fa1108a7ee0ddb51c5cc"
+    }
+  },
+  "interaction_recall_at_5_point_estimate": -0.20555555555555555,
+  "interaction_role": "secondary_exploratory",
+  "intervention": "Entire prompt / score representation / deterministic mapping recipe",
+  "limitation": "Thirty new issues in four seen repositories; whole recipe, not uniqueness alone. Numerical signal requires independent technical/provenance gates. No equivalence, training, generalization or economic claim follows.",
+  "score_diagnostics": {
+    "G-scores": {
+      "positive_tie_vectors": 8,
+      "ranking_lengths": [
+        0,
+        1,
+        10,
+        2,
+        0,
+        1,
+        10,
+        10,
+        0,
+        2,
+        10,
+        2,
+        0,
+        0,
+        10,
+        0,
+        1,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        4,
+        1,
+        0,
+        0
+      ],
+      "scope": "valid predictions only; selected diagnostic, not primary quality",
+      "score_lengths": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "top5_boundary_tie_vectors": 5,
+      "valid_vectors": 30,
+      "zero_entries": 466
+    },
+    "S-scores": {
+      "positive_tie_vectors": 18,
+      "ranking_lengths": [
+        1,
+        8,
+        10,
+        10,
+        1,
+        10,
+        10,
+        8,
+        1,
+        10,
+        10,
+        10,
+        2,
+        2,
+        10,
+        1,
+        2,
+        10,
+        10,
+        10,
+        10,
+        10,
+        0,
+        10,
+        1,
+        10,
+        10,
+        10,
+        5,
+        10
+      ],
+      "scope": "valid predictions only; selected diagnostic, not primary quality",
+      "score_lengths": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "top5_boundary_tie_vectors": 14,
+      "valid_vectors": 30,
+      "zero_entries": 243
+    }
+  },
+  "technical_gates": "NOT_ASSESSED_BY_METRICS"
+}

@@ -1,0 +1,32 @@
+{
+  "all_eos_no_truncation": "PASS",
+  "findings": [],
+  "identity_status": "PASS",
+  "offload": [
+    [
+      "37",
+      "37"
+    ]
+  ],
+  "raw_server_log_sha256": "0c556c1edc82b35744ab00fb28c7f8d7fb7511d13ce9b884132dceb5c9f4405e",
+  "traces": [
+    {
+      "eager_grammar": true,
+      "effective_grammar_sha256": "c864aab5201d78f8512694969b2ecfa64421347362b466627cbfa5c002dfff1a",
+      "effective_max_output_tokens": 512,
+      "effective_seed": 0,
+      "effective_temperature": 0.0,
+      "input_ids_sha256": "9b013836f02710d13d123057b56403dce6eb8d846a533122f6f9a6b724aac74a",
+      "input_tokens": 8203,
+      "instance_id": "marshmallow-code__marshmallow-1810",
+      "native_status": "PASS",
+      "output_ids_sha256": "c3a4b22cc3a693ecc98607452c430557fc4e9fb6095a4f97acdca92472f700e6",
+      "output_schema_sha256": "82cea249c028876e800f8611246be7454e955562312c96b169aadda79bb797be",
+      "output_tokens_received": 99,
+      "raw_evidence_sha256": "cbefcea7a1682687ff1a395af737d4becb27c4812acc59ffb3676a58ebce8e5b",
+      "rendered_prompt_sha256": "165d73ae1a466fd7242cff98358cc70fd0a8f31421f5ec4cb907e3e4a09e35f4",
+      "stop_type": "eos",
+      "truncated": false
+    }
+  ]
+}

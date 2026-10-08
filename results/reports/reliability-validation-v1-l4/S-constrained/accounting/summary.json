@@ -1,0 +1,37 @@
+{
+  "actual": {
+    "cost_per_success_usd": null,
+    "cps_status": "UNKNOWN_COST",
+    "total_usd": null,
+    "unknown_components": [
+      "compute",
+      "storage",
+      "external_ip",
+      "network",
+      "external_preparation",
+      "other"
+    ]
+  },
+  "allocation_policy": "Shared campaign is counted once. Standalone 20-task lifecycle scenarios replay all remaining common seconds, one model download and one arm. These four scenarios are not additive parts of the shared invoice. All otherwise unpartitioned gaps, including transfer and cleanup, remain in common. Exclude explicitly timed technical phases, incremental archives and observed last-parity-to-technical-archive interval only. Post-probe timings; no actual treatment attribution. Human labor excluded; network/external preparation/other unknown.",
+  "boundary": "localization-batch-v1",
+  "currency": "USD",
+  "failed_or_unsuccessful_tasks": 11,
+  "known_strict_successes_at_5": 9,
+  "scenario": {
+    "cost_per_success_usd": null,
+    "cps_status": "UNKNOWN_COST",
+    "total_usd": null,
+    "unknown_components": [
+      "network",
+      "external_preparation",
+      "other"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "scope": "File localization only; scenario values are assumptions, not measured savings",
+  "selected": 20,
+  "success_denominator_status": "KNOWN",
+  "synthetic": false,
+  "treatment": "S-constrained",
+  "unknown_label_tasks": 0
+}
